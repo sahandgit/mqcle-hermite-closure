@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "method": "gaussian_hermite_coefficient",
+    "status": "completed",
+    "purpose": "GH-10 production-scale cross-check vs subsystem_qcle_grid_reference",
+    "timestamp_utc": "2026-09-19T03:05:53Z",
+    "script": "10g_gh_crosscheck.py",
+    "source_modules": [
+      "mqcle.hermite.operator",
+      "mqcle.hermite.frame",
+      "mqcle.hermite.propagator",
+      "mqcle.hermite.kernel",
+      "mqcle.propagation"
+    ],
+    "command_line": ".\\scripts\\10g_gh_crosscheck.py",
+    "P0": 40.0,
+    "R0": -15.0,
+    "T": 300.0,
+    "model": "tully_dual_avoided_crossing",
+    "mass": 2000.0,
+    "hbar": 1.0,
+    "sigma_R": 0.25,
+    "grids": [
+      "256x128",
+      "512x256"
+    ],
+    "reference_method": "subsystem_qcle_grid_reference (StrangPropagator)",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.0",
+    "output_files": {
+      "json": "D:\\Paper_SNN_MQCLE\\results\\raw\\07g_gh_crosscheck_P40_convergence.json"
+    }
+  },
+  "results": {
+    "256x128": {
+      "pop_hermite": [
+        0.9999473376100918,
+        6.424159849114395e-06
+      ],
+      "pop_strang": [
+        0.9999473371708999,
+        6.4245990738321665e-06
+      ],
+      "pop_absdiff": 4.3922471777149767e-10,
+      "field_reldiff": 0.0001230034380050596,
+      "residual": 5.85707918597512e-16,
+      "t_hermite_s": 22.01855829998385,
+      "t_strang_s": 5.694030200014822,
+      "t_hermite_fast_s": 11.650306300027296,
+      "fast_kernel_vs_reference_reldiff": 2.4854331811880794e-15,
+      "dt_hermite": 1.5151515151515151,
+      "n_steps_hermite": 198,
+      "dt_strang": 0.5
+    },
+    "512x256": {
+      "pop_hermite": [
+        0.9999935926828375,
+        6.407317157777882e-06
+      ],
+      "pop_strang": [
+        0.9999935927470951,
+        6.4072529848944754e-06
+      ],
+      "pop_absdiff": 6.425759924155727e-11,
+      "field_reldiff": 2.232951973013953e-05,
+      "residual": 7.77644080356445e-16,
+      "t_hermite_s": 183.5768456000369,
+      "t_strang_s": 32.02844209992327,
+      "t_hermite_fast_s": 58.45258240005933,
+      "fast_kernel_vs_reference_reldiff": 3.853623425818949e-15,
+      "dt_hermite": 0.821917808219178,
+      "n_steps_hermite": 365,
+      "dt_strang": 0.5
+    }
+  },
+  "checks": [
+    {
+      "name": "population_agreement_512",
+      "value": 6.425759924155727e-11,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "field_difference_decreases_under_refinement",
+      "value": 0.18153573666145031,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "physical_frame_residual_512",
+      "value": 7.77644080356445e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "production_kernel_matches_reference",
+      "value": 3.853623425818949e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

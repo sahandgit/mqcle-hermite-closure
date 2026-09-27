@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "method": "gaussian_hermite_coefficient",
+    "status": "completed",
+    "gate": "GH-11",
+    "timestamp_utc": "2026-09-18T04:25:17Z",
+    "script": "07cg_gh_basis_covariance.py",
+    "source_modules": [
+      "mqcle.hermite.covariance",
+      "mqcle.hermite.operator",
+      "mqcle.hermite.frame",
+      "mqcle.hermite.propagator"
+    ],
+    "command_line": "scripts/07cg_gh_basis_covariance.py",
+    "model": "tully_dual_avoided_crossing",
+    "mass": 2000.0,
+    "hbar": 1.0,
+    "P0": 40.0,
+    "R0": 0.0,
+    "grid": {
+      "n_R": 512,
+      "n_P": 256
+    },
+    "time": {
+      "dt": 0.13393830161387643,
+      "n_steps": 400,
+      "T": 53.575320645550576
+    },
+    "hermite": {
+      "K": 2,
+      "parity": "even",
+      "n_modes": 11
+    },
+    "rotations": [
+      "O(2), theta=0.30",
+      "O(2), theta=pi/4",
+      "U(2), theta=0.60 phi=0.90",
+      "U(2), theta=pi/4 phi=pi/3"
+    ],
+    "n_complex_rotations": 2,
+    "n_random_hamiltonians": 16,
+    "grad_h_over_region": 0.045388595008613246,
+    "grad_h_global_max": 0.0453885255739537,
+    "seed": 20260918,
+    "wall_time_s": 1057.035216521,
+    "wall_time_propagation_s": 1056.9412209460002,
+    "platform": "Linux-6.18.44-fc-v33-x86_64-with-glibc2.39",
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "numpy": "2.4.4",
+    "output_files": {
+      "json": "/home/claude/pp/results/raw/07cg_gh_basis_covariance.json"
+    }
+  },
+  "checks": [
+    {
+      "name": "order_mixing",
+      "value": 3.191891195797325e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "group_property",
+      "value": 1.2212453270876722e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "frame_intertwining",
+      "value": 6.406631336828919e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "operator_conjugation",
+      "value": 1.4100824195559691e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "covariance_after_propagation",
+      "value": 3.07104426398576e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "physical_frame_residual",
+      "value": 8.222245641789672e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "rotated_problem_is_different",
+      "value": 0.3097744924912977,
+      "tolerance": 0.01,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "structure": [
+      {
+        "rotation": "O(2), theta=0.30",
+        "complex": false,
+        "V_orthogonality": 1.1102230246251565e-16,
+        "order_mixing": 3.191891195797325e-16,
+        "group_property": 1.2212453270876722e-15,
+        "frame_intertwining": 4.3373895326478474e-16,
+        "rotation_matrix_conjugation": 9.00121073087345e-16,
+        "force_matrix_conjugation": 1.4100824195559691e-15
+      },
+      {
+        "rotation": "O(2), theta=pi/4",
+        "complex": false,
+        "V_orthogonality": 1.0146536357569526e-17,
+        "order_mixing": 3.191891195797325e-16,
+        "group_property": 8.881784197001252e-16,
+        "frame_intertwining": 4.336981345205184e-16,
+        "rotation_matrix_conjugation": 9.870115999596606e-16,
+        "force_matrix_conjugation": 1.3167378216169142e-15
+      },
+      {
+        "rotation": "U(2), theta=0.60 phi=0.90",
+        "complex": true,
+        "V_orthogonality": 1.920404023331907e-17,
+        "order_mixing": 3.191891195797325e-16,
+        "group_property": 8.881784197001252e-16,
+        "frame_intertwining": 6.406631336828919e-16,
+        "rotation_matrix_conjugation": 7.696902143681881e-16,
+        "force_matrix_conjugation": 1.1120942925166725e-15
+      },
+      {
+        "rotation": "U(2), theta=pi/4 phi=pi/3",
+        "complex": true,
+        "V_orthogonality": 2.133210794294821e-17,
+        "order_mixing": 3.191891195797325e-16,
+        "group_property": 6.661338147750939e-16,
+        "frame_intertwining": 4.299856973784426e-16,
+        "rotation_matrix_conjugation": 8.4928999388405295e-16,
+        "force_matrix_conjugation": 1.4045545644637545e-15
+      }
+    ],
+    "propagation": [
+      {
+        "rotation": "O(2), theta=0.30",
+        "complex": false,
+        "max_abs_difference": 6.661523056206359e-16,
+        "relative": 3.07104426398576e-15,
+        "separation_before_rotating_back": 0.3097744924912977,
+        "physical_frame_residual": 8.222245641789672e-16
+      },
+      {
+        "rotation": "O(2), theta=pi/4",
+        "complex": false,
+        "max_abs_difference": 5.377667016170128e-16,
+        "relative": 2.4791707998740712e-15,
+        "separation_before_rotating_back": 0.8986990047805851,
+        "physical_frame_residual": 7.864484987981398e-16
+      },
+      {
+        "rotation": "U(2), theta=0.60 phi=0.90",
+        "complex": true,
+        "max_abs_difference": 5.273787690150285e-16,
+        "relative": 2.4312811497702972e-15,
+        "separation_before_rotating_back": 0.6527720343048458,
+        "physical_frame_residual": 8.091138428326502e-16
+      },
+      {
+        "rotation": "U(2), theta=pi/4 phi=pi/3",
+        "complex": true,
+        "max_abs_difference": 3.885911690481664e-16,
+        "relative": 1.79145320172547e-15,
+        "separation_before_rotating_back": 0.840483285531039,
+        "physical_frame_residual": 8.023369335707e-16
+      }
+    ],
+    "worst": {
+      "order_mixing": 3.191891195797325e-16,
+      "group_property": 1.2212453270876722e-15,
+      "frame_intertwining": 6.406631336828919e-16,
+      "operator_conjugation": 1.4100824195559691e-15,
+      "propagated": 3.07104426398576e-15,
+      "least_separation": 0.3097744924912977,
+      "frame_residual": 8.222245641789672e-16
+    }
+  }
+}

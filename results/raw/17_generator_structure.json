@@ -1,0 +1,386 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-09-26T19:24:01Z",
+    "script": "17_generator_structure.py",
+    "config": {
+      "identity_order": 6,
+      "operator_order": 4,
+      "out": "/sessions/rcw-017i7ttnnte2kodd5kfestp2/mnt/Paper_SNN_MQCLE/results/raw/17_generator_structure.json"
+    },
+    "seed": null,
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "2.3.3",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "command_line": "scripts/17_generator_structure.py",
+    "wall_time_s": 63.625596,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "C0.gaussian_mean_of_Pi_is_delta",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C0.readout_of_symbol_of_ket_k_bra_kprime_is_rho_kprime_k",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C0.quadratic_form_equals_sum_h_adag_a",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C1.real.traceless.exact_generator_reproduces_qcle",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C1.real.untraced.exact_generator_reproduces_qcle",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C1.complex.traceless.exact_generator_reproduces_qcle",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C1.complex.untraced.exact_generator_reproduces_qcle",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C1.complex.real_symmetric_form_of_excess_fails",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "the D_ll' form discards Im h and must not reproduce the QCLE"
+    },
+    {
+      "name": "C2.second_derivative_is_pure_raising",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C2.force_split_raising_plus_T",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C3.real.K_antisymmetric",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C3.real.H_commutes_with_J",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C3.real.generator_is_coefficient_operator",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C3.real.poisson_bracket_is_operator_plus_raising",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C3.complex.K_antisymmetric",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C3.complex.H_commutes_with_J",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C3.complex.generator_is_coefficient_operator",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C3.complex.poisson_bracket_is_operator_plus_raising",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.real.traceless.orders_are_2_and_4",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.real.traceless.order2_part_in_physical_sector",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.real.traceless.order4_is_hermite_ordered_q4",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.real.traceless.plain_product_is_not_the_order4_part",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.real.untraced.orders_are_2_and_4",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.real.untraced.order2_part_is_physical_plus_gaussian",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.real.untraced.order4_is_hermite_ordered_q4",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.real.untraced.plain_product_is_not_the_order4_part",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.complex.traceless.orders_are_2_and_4",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.complex.traceless.order2_part_in_physical_sector",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.complex.traceless.order4_is_hermite_ordered_q4",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.complex.traceless.plain_product_is_not_the_order4_part",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.complex.untraced.orders_are_2_and_4",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.complex.untraced.order2_part_is_physical_plus_gaussian",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.complex.untraced.order4_is_hermite_ordered_q4",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "C4.complex.untraced.plain_product_is_not_the_order4_part",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "C0_normalisation": {
+      "mean_Pi_is_delta": true,
+      "readout_is_rho_transpose": true,
+      "H_form_equals_adag_a_form": true
+    },
+    "C1_qcle": [
+      {
+        "h": "real",
+        "convention": "traceless",
+        "residual_is_zero": true
+      },
+      {
+        "h": "real",
+        "convention": "untraced",
+        "residual_is_zero": true
+      },
+      {
+        "h": "complex",
+        "convention": "traceless",
+        "residual_is_zero": true
+      },
+      {
+        "h": "complex",
+        "convention": "untraced",
+        "residual_is_zero": true,
+        "real_symmetric_form_residual_is_zero": false
+      }
+    ],
+    "C2_identities": {
+      "order_max": 6,
+      "n_multi_indices": 210,
+      "n_cases": 3360,
+      "raising_failures": 0,
+      "force_split_failures": 0
+    },
+    "C3_coefficient_operator": [
+      {
+        "h": "real",
+        "order_max": 4,
+        "n_basis_functions": 70,
+        "K_antisymmetric": true,
+        "H_commutes_with_J": true,
+        "exact_failures": 0,
+        "poisson_bracket_failures": 0
+      },
+      {
+        "h": "complex",
+        "order_max": 4,
+        "n_basis_functions": 70,
+        "K_antisymmetric": true,
+        "H_commutes_with_J": true,
+        "exact_failures": 0,
+        "poisson_bracket_failures": 0
+      }
+    ],
+    "C4_pbme_deviation": [
+      {
+        "h": "real",
+        "convention": "traceless",
+        "hermite_orders": [
+          2,
+          4
+        ],
+        "order2_is_physical_density_of_quarter_dRh_dPtr": true,
+        "order2_is_that_minus_quarter_trace_dRh_dPtr_times_gaussian": true,
+        "order4_is_hermite_ordered_q4": true,
+        "q4_product_differs_from_order4_part": true,
+        "n_order4_functions_occupied": 31,
+        "n_order4_functions": 35
+      },
+      {
+        "h": "real",
+        "convention": "untraced",
+        "hermite_orders": [
+          2,
+          4
+        ],
+        "order2_is_physical_density_of_quarter_dRh_dPtr": false,
+        "order2_is_that_minus_quarter_trace_dRh_dPtr_times_gaussian": true,
+        "order4_is_hermite_ordered_q4": true,
+        "q4_product_differs_from_order4_part": true,
+        "n_order4_functions_occupied": 31,
+        "n_order4_functions": 35
+      },
+      {
+        "h": "complex",
+        "convention": "traceless",
+        "hermite_orders": [
+          2,
+          4
+        ],
+        "order2_is_physical_density_of_quarter_dRh_dPtr": true,
+        "order2_is_that_minus_quarter_trace_dRh_dPtr_times_gaussian": true,
+        "order4_is_hermite_ordered_q4": true,
+        "q4_product_differs_from_order4_part": true,
+        "n_order4_functions_occupied": 31,
+        "n_order4_functions": 35
+      },
+      {
+        "h": "complex",
+        "convention": "untraced",
+        "hermite_orders": [
+          2,
+          4
+        ],
+        "order2_is_physical_density_of_quarter_dRh_dPtr": false,
+        "order2_is_that_minus_quarter_trace_dRh_dPtr_times_gaussian": true,
+        "order4_is_hermite_ordered_q4": true,
+        "q4_product_differs_from_order4_part": true,
+        "n_order4_functions_occupied": 31,
+        "n_order4_functions": 35
+      }
+    ],
+    "seconds": 61.6
+  }
+}

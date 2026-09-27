@@ -1,0 +1,12 @@
+[18] P0=100.0 T=600.0 dt=0.5 n_steps=1200; reproducing 6/6 chunks of 200,000 (sign_optimal); cells 27x40 of 0.5469 x 1.25
+[18]   chunk 1/6 (seed 20260819) populations [0.1520908  0.84517365]  182s elapsed, ~908s left
+[18]   chunk 2/6 (seed 20261820) populations [0.14778618 0.85028466]  354s elapsed, ~708s left
+[18]   chunk 3/6 (seed 20262821) populations [0.14889224 0.8494572 ]  507s elapsed, ~507s left
+[18]   chunk 4/6 (seed 20263822) populations [0.14827099 0.85151542]  666s elapsed, ~333s left
+[18]   chunk 5/6 (seed 20264823) populations [0.14952343 0.84908509]  822s elapsed, ~164s left
+[18]   chunk 6/6 (seed 20265824) populations [0.15188716 0.84846198]  978s elapsed, ~0s left
+[18] total populations [0.14974180088332387, 0.8489963344273678], binned [0.1497418  0.84899633], outside |w| 0.00e+00; written to results/raw/18_pbme_phase_space_P100.h5/.json; checks all passed: True
+  PASS  pbme_field.reproduces_scripts11_seed_replicates  1.421e-14  (tol 1.0e-10)
+  PASS  pbme_field.binned_integral_consistency           1.110e-16  (tol 1.0e-12)
+  PASS  pbme_field.mapping_radius_drift                  2.025e-13  (tol 1.0e-09)
+  PASS  pbme_field.weight_outside_window                 0.000e+00  (tol 1.0e-03)

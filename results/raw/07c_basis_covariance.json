@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-22T01:19:20Z",
+    "script": "07c_basis_covariance.py",
+    "config": {
+      "rotations": [
+        "O(2), theta=0.30",
+        "O(2), theta=pi/4",
+        "U(2), theta=0.60 phi=0.90",
+        "U(2), theta=pi/4 phi=pi/3"
+      ],
+      "n_samples": 4000,
+      "n_steps": 400,
+      "dt": 0.5,
+      "n_R": 1024,
+      "n_P": 512,
+      "P0": 40.0,
+      "R0": 0.0,
+      "sigma_R": 0.25,
+      "convention": "traceless"
+    },
+    "seed": 20260819,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.44-fc-v21-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/07c_basis_covariance.py",
+    "wall_time_s": 863.647001,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "covariance.coupled_channel_is_active",
+      "value": 0.9999959127322277,
+      "tolerance": 10.0,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "covariance.pbme_generator",
+      "value": 2.5687675575179666e-14,
+      "tolerance": 1e-09,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "covariance.bath_coordinates",
+      "value": 1.5631940186722204e-13,
+      "tolerance": 1e-10,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "covariance.closed_generator",
+      "value": 1.4303844487741226e-14,
+      "tolerance": 1e-09,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "covariance.at_least_one_complex_rotation",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "grad_h_over_propagated_region": 0.03224014243002182,
+    "grad_h_global_max": 0.032240010655926694,
+    "region_spans_R": [
+      -5.0,
+      5.0
+    ],
+    "pbme_generator": {
+      "rows": [
+        {
+          "rotation": "O(2), theta=0.30",
+          "complex": false,
+          "max_dx": 3.1308289294429414e-14,
+          "relative_dx": 1.5679490286148627e-14,
+          "max_dR": 8.881784197001252e-15,
+          "max_dP": 9.947598300641403e-14
+        },
+        {
+          "rotation": "O(2), theta=pi/4",
+          "complex": false,
+          "max_dx": 3.3084646133829665e-14,
+          "relative_dx": 1.656910675628472e-14,
+          "max_dR": 9.769962616701378e-15,
+          "max_dP": 9.947598300641403e-14
+        },
+        {
+          "rotation": "U(2), theta=0.60 phi=0.90",
+          "complex": true,
+          "max_dx": 5.129230373768223e-14,
+          "relative_dx": 2.5687675575179666e-14,
+          "max_dR": 1.2434497875801753e-14,
+          "max_dP": 1.5631940186722204e-13
+        },
+        {
+          "rotation": "U(2), theta=pi/4 phi=pi/3",
+          "complex": true,
+          "max_dx": 4.574118861455645e-14,
+          "relative_dx": 2.290762410600438e-14,
+          "max_dR": 9.769962616701378e-15,
+          "max_dP": 1.4210854715202004e-13
+        }
+      ],
+      "wall_time_s": 39.43
+    },
+    "closed_generator": {
+      "rows": [
+        {
+          "rotation": "O(2), theta=0.30",
+          "max_abs_difference": 3.567045945648662e-15,
+          "relative": 1.4303844487741226e-14
+        },
+        {
+          "rotation": "O(2), theta=pi/4",
+          "max_abs_difference": 2.7100192718611563e-15,
+          "relative": 1.086716986944629e-14
+        },
+        {
+          "rotation": "U(2), theta=0.60 phi=0.90",
+          "max_abs_difference": 2.995580148336983e-15,
+          "relative": 1.2012268203230303e-14
+        },
+        {
+          "rotation": "U(2), theta=pi/4 phi=pi/3",
+          "max_abs_difference": 2.9822451262434333e-15,
+          "relative": 1.195879480110062e-14
+        }
+      ],
+      "wall_time_s": 823.7
+    },
+    "worst_relative_pbme": 2.5687675575179666e-14,
+    "worst_relative_closed": 1.4303844487741226e-14,
+    "n_complex_rotations": 2,
+    "worst_bath_deviation": 1.5631940186722204e-13
+  }
+}

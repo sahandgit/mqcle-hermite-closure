@@ -1,0 +1,16 @@
+[07] P0=40.0  R0=-15.0  sigma_R=0.25  T=1500.0  dt=0.5  n_steps=3000  grid=1024x512
+[07] spectral radius 2.954 (adv 1.11 + force 1.72 + elec 0.13);  RK4 limit dt < 0.9574;  integrator = strang
+[07] coefficient branch done in 1365.6 s
+[07] Schroedinger reference done in 10.9 s (norm drift 4.96e-12)
+[07] PBME branch done in 88.6 s (20000 trajectories)
+[07] |coefficient - Schroedinger| final population error = 6.0081e-07   (this is QCLE's own error, not the solver's)
+[07] |PBME - Schroedinger|          final population error = 4.7227e-05
+[07] checks: 7  all passed: True
+  PASS  gateL.trace_conservation               5.129e-14  (tol 1.0e-10)
+  PASS  gateL.initial_trace_normalisation      0.000e+00  (tol 1.0e-10)
+  PASS  gateL.hermiticity                      8.256e-14  (tol 1.0e-12)
+  PASS  gateL.boundary_mass_R                  1.900e-10  (tol 1.0e-09)
+  PASS  gateL.boundary_mass_P                  7.501e-15  (tol 1.0e-09)
+  PASS  gateL.se_norm                          4.962e-12  (tol 1.1e-11)
+  PASS  gateL.se_boundary_mass                 9.122e-28  (tol 1.0e-08)
+[07] written to results/raw/07_coefficient_propagation_P40_C0.06.json and results/raw/07_coefficient_propagation_P40_C0.06.h5

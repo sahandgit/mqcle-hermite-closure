@@ -1,0 +1,11 @@
+[08] P0=40.0 grid=1024x512 T=1500.0 dt=1.0 n_samples=20000  bandwidth floor h_R=0.1758 h_P=0.1719
+[08] routes A and B done in 888.7 s (39 sample times)
+[08] Route B / Route A leakage: median 0.559, range [0.279, 0.968]
+[08] estimator study at t=0 (analytic ground truth)
+     N=1000     rel-RMSE(grad_P)=0.3439   D_H estimate 1.2301e-08 +- 6.1e-10  (exact 1.1439e-08, rel err 0.075)
+     N=3000     rel-RMSE(grad_P)=0.2888   D_H estimate 1.1605e-08 +- 1.7e-10  (exact 1.1439e-08, rel err 0.015)
+     N=10000    rel-RMSE(grad_P)=0.2390   D_H estimate 1.1505e-08 +- 2.4e-10  (exact 1.1439e-08, rel err 0.006)
+     N=30000    rel-RMSE(grad_P)=0.2229   D_H estimate 1.1123e-08 +- 1.1e-10  (exact 1.1439e-08, rel err 0.028)
+     N=100000   rel-RMSE(grad_P)=0.2039   D_H estimate 1.0974e-08 +- 9.2e-11  (exact 1.1439e-08, rel err 0.041)
+[08] grad_P relative-RMSE scales as N^-0.113; D_H relative error as N^-0.050
+[08] written to results/raw/08_leakage_P40.json

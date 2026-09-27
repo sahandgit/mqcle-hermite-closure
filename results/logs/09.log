@@ -1,0 +1,26 @@
+[09] time-step study on a 512x128 grid, T=1200.0, reference dt=0.125
+     dt=4       err=3.9744e-04  cfl=4.1  16.1 s
+     dt=2       err=9.9083e-05  cfl=2.05  32.3 s
+     dt=1       err=2.4480e-05  cfl=1.02  64.1 s
+     dt=0.5     err=5.8287e-06  cfl=0.512  129.7 s
+     dt=0.25    err=1.1657e-06  cfl=0.256  247.8 s
+[09] measured time-step order: fit 2.091, pairwise ['2.004', '2.017', '2.070', '2.322']  (expected 2.0)
+[09] n_R study at n_P=512, dt=0.5
+     n_R=256    dR/sigma_R=1.406  err=3.9818e-05
+     n_R=512    dR/sigma_R=0.703  err=1.7237e-12
+     n_R=1024   dR/sigma_R=0.352  err=5.2958e-14
+[09] n_P study at n_R=1024, dt=0.5
+     n_P=128    dP/sigma_P=0.172  err=1.1890e-13
+     n_P=256    dP/sigma_P=0.086  err=8.7708e-14
+     n_P=512    dP/sigma_P=0.043  err=1.9096e-14
+[09] box-independence study (dR, dP held fixed)
+     R_half=45     P_half=22     err=0.0000e+00  boundary_mass=3.35e-06
+     R_half=67.5   P_half=33     err=2.1967e-11  boundary_mass=2.70e-06
+     R_half=90     P_half=44     err=3.6483e-11  boundary_mass=3.38e-06
+[09] checks: 5  all passed: True
+  PASS  gateL.time_step_order            9.141e-02  (tol 3.5e-01)  fitted order 2.091 vs expected 2.0 for integrator='strang'
+  PASS  gateL.time_step_error_decreases  0.000e+00  (tol 5.0e-01)  the error must fall monotonically under dt refinement
+  PASS  gateL.n_R_converged              5.296e-14  (tol 1.0e-06)  |pop(n_R=1024) - pop(n_R=2048)|
+  PASS  gateL.n_P_converged              1.910e-14  (tol 1.0e-06)  |pop(n_P=512) - pop(n_P=1024)|
+  PASS  gateL.box_independence           3.648e-11  (tol 1.0e-08)  final populations must not depend on where the empty boundary sits
+[09] written to results/raw/09_convergence.json and results/tables/convergence_*.csv

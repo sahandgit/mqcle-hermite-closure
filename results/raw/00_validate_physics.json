@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-20T22:25:47Z",
+    "script": "00_validate_physics.py",
+    "config": {
+      "units": "atomic",
+      "hbar": 1.0,
+      "dtype": "float64",
+      "trace_convention": "traceless",
+      "seed": 20260819,
+      "nstates": 2,
+      "nbath": 1,
+      "mass": 2000.0,
+      "output_root": "results",
+      "_config_path": "/home/claude/Pipeline/configs/tully_default.yaml",
+      "model": {
+        "name": "tully_dual_avoided_crossing",
+        "A": 0.1,
+        "B": 0.28,
+        "C": 0.015,
+        "D": 0.06,
+        "E0": 0.05
+      },
+      "initial_conditions": {
+        "R0": -15.0,
+        "P0": 40.0,
+        "sigma_R": 0.25,
+        "init_state": 0
+      },
+      "mapping_sampling": {
+        "scheme": "focused",
+        "n_samples": 20000
+      },
+      "propagation": {
+        "dt": 0.5,
+        "n_steps": 200
+      }
+    },
+    "seed": 20260819,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.5-fc-v20-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/00_validate_physics.py --config tully_default.yaml",
+    "wall_time_s": 3.788627,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "gate1.h_symmetry",
+      "value": 0.0,
+      "tolerance": 1e-14,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate1.dh_dR_vs_fd",
+      "value": 1.4103350431948769e-11,
+      "tolerance": 1e-07,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate2.grad_x_vs_fd",
+      "value": 8.969621573262643e-11,
+      "tolerance": 1e-07,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate2.grad_R_vs_fd",
+      "value": 8.212919658262092e-11,
+      "tolerance": 1e-07,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate2.K_antisymmetry",
+      "value": 0.0,
+      "tolerance": 1e-14,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate2.xdot_equals_Kx",
+      "value": 0.0,
+      "tolerance": 1e-14,
+      "passed": true,
+      "note": "PART X: frozen-R mapping sector is exactly linear"
+    },
+    {
+      "name": "gate3.orthogonality_g_c",
+      "value": 3.186340080674199e-14,
+      "tolerance": 1e-11,
+      "passed": true,
+      "note": "Kelly et al. (2012) Eq. (20)"
+    },
+    {
+      "name": "gate3.rho_W_roundtrip",
+      "value": 1.2989609388114332e-14,
+      "tolerance": 1e-11,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "sampling.focused_actions",
+      "value": 1.3322676295501878e-15,
+      "tolerance": 1e-12,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "sampling.focused_readout_pure_state",
+      "value": 1.0191847366058937e-13,
+      "tolerance": 0.035355339059327376,
+      "passed": true,
+      "note": "dedicated focused estimator, not the phi-importance one"
+    },
+    {
+      "name": "gate4.energy_drift",
+      "value": 9.480483065260614e-11,
+      "tolerance": 0.0001,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate4.time_reversibility",
+      "value": 8.681944052568724e-14,
+      "tolerance": 1e-09,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gateD.energy_error_decreases_with_dt",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "crossing-region initial condition, R = 0"
+    },
+    {
+      "name": "gateD.reversibility_interaction_region",
+      "value": 1.0880185641326534e-14,
+      "tolerance": 1e-09,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate5.excess_exact_vs_fd",
+      "value": 1.6624687836927473e-06,
+      "tolerance": 0.0001,
+      "passed": true,
+      "note": "symbolic derivatives versus central differences"
+    },
+    {
+      "name": "gate6.total_equals_sum",
+      "value": 0.0,
+      "tolerance": 1e-15,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate6.poisson_equals_advection",
+      "value": 1.7763568394002505e-15,
+      "tolerance": 1e-10,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate5.complex_field_imaginary_part_survives",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "gate5.complex_excess_exact_vs_fd",
+      "value": 1.1021694648103892e-06,
+      "tolerance": 0.0001,
+      "passed": true,
+      "note": ""
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "model_parameters": {
+      "name": "tully_dual_avoided_crossing",
+      "nstates": 2,
+      "nbath": 1,
+      "mass": 2000.0,
+      "A": 0.1,
+      "B": 0.28,
+      "C": 0.015,
+      "D": 0.06,
+      "E0": 0.05,
+      "reference": "Tully, J. Chem. Phys. 93, 1061 (1990), model II"
+    },
+    "trace_convention": "traceless",
+    "effective_parameters": {
+      "n_samples": 20000,
+      "n_samples_from_config": 20000,
+      "n_samples_overridden": false,
+      "dt": 0.5,
+      "n_steps": 200,
+      "scheme": "focused",
+      "hbar": 1.0,
+      "mass": 2000.0,
+      "R0": -15.0,
+      "P0": 40.0,
+      "sigma_R": 0.25,
+      "init_state": 0
+    },
+    "min_adiabatic_gap": 0.025754982948971522,
+    "min_gap_position": 1.6000000000000014,
+    "initial_observables": {
+      "rho00": 0.999999999999987,
+      "rho11": -5.8651266338471e-17,
+      "re_rho01": 1.7981812245827755e-17,
+      "im_rho01": -2.649499556624661e-18,
+      "trace": 0.9999999999999869,
+      "hermiticity_error": 0.0
+    },
+    "mapping_actions_mean": [
+      3.0,
+      1.0
+    ],
+    "focused_readout_rho00": 0.9999999999998981,
+    "bath_moments": {
+      "R_mean": -15.001598408809208,
+      "R_std": 0.2507610870574482,
+      "P_mean": 40.016358706525786,
+      "P_std": 1.9987275639356952
+    },
+    "energy_drift_relative": 1.7826032785921435e-10,
+    "mapping_radius_drift": 2.1094237467877974e-13,
+    "interaction_region_convergence": {
+      "0.5": {
+        "energy_error": 3.493256413023005e-07,
+        "reversibility": 1.9984014443252818e-15,
+        "mapping_radius_drift": 0.0,
+        "eps_symplectic": 9.386692952259594e-07
+      },
+      "0.25": {
+        "energy_error": 8.733120132609073e-08,
+        "reversibility": 1.0880185641326534e-14,
+        "mapping_radius_drift": 1.9095836023552692e-14,
+        "eps_symplectic": 1.176261709503844e-07
+      },
+      "0.125": {
+        "energy_error": 2.1832788021924898e-08,
+        "reversibility": 8.548717289613705e-15,
+        "mapping_radius_drift": 1.6431300764452317e-14,
+        "eps_symplectic": 1.5484978482180423e-08
+      }
+    },
+    "symplecticity_note": "eps_symplectic is measured, not asserted to vanish: the scheme is a symmetric frozen-R rotation splitting, not a proven symplectic integrator.",
+    "excess_magnitude": 1.5244972052893312e-07,
+    "diagnostic_testfield_excess_to_pbme_ratio": 1.3367839307440777e-08
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-20T22:37:22Z",
+    "script": "03_qcle_correspondence.py",
+    "config": {
+      "nstates": 2,
+      "nbath": 1,
+      "conventions": [
+        "traceless",
+        "full"
+      ],
+      "out": "results/raw/03_qcle_correspondence.json"
+    },
+    "seed": null,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.5-fc-v20-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/03_qcle_correspondence.py",
+    "wall_time_s": 8.78876,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "traceless.frame_residual_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "traceless.qcle_residuals_all_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "full.frame_residual_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "full.qcle_residuals_all_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "cases": [
+      {
+        "residuals": {
+          "residual_00": "0",
+          "residual_10": "0",
+          "residual_01": "0",
+          "residual_11": "0"
+        },
+        "all_zero": true,
+        "frame_residual_is_zero": true,
+        "convention": "traceless",
+        "nstates": 2,
+        "nbath": 1,
+        "seconds": 6.01
+      },
+      {
+        "residuals": {
+          "residual_00": "0",
+          "residual_10": "0",
+          "residual_01": "0",
+          "residual_11": "0"
+        },
+        "all_zero": true,
+        "frame_residual_is_zero": true,
+        "convention": "full",
+        "nstates": 2,
+        "nbath": 1,
+        "seconds": 1.95
+      }
+    ],
+    "reference_equation": "d_t rho_W = -(i/hbar)[h, rho_W] - (P/M) d_R rho_W - (1/2)(F d_P rho_W + d_P rho_W F),  F = -d_R(V_b I + h)"
+  }
+}

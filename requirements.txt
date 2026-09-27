@@ -1,0 +1,12 @@
+# Versions of the production runs (Python 3.13.14, Windows 11).  Post-processing
+# was also run with Python 3.11 and numpy 2.4.4, scipy 1.17.1, pandas 3.0.2.
+# Every output records the versions it was made with; see results/PROVENANCE.md.
+numpy==2.4.0
+scipy==1.16.3
+sympy==1.14.0
+matplotlib==3.10.8
+pandas==2.3.3
+h5py==3.16.0
+PyYAML==6.0.3
+pytest
+threadpoolctl  # optional: pins BLAS to one thread inside the Hermite kernel

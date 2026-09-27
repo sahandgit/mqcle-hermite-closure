@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-20T22:43:44Z",
+    "script": "02_hermite_projection.py",
+    "config": {
+      "nstates": 2,
+      "nbath": 1,
+      "convention": "traceless",
+      "vk_orders": [
+        5,
+        6
+      ],
+      "vk_max_indices": null,
+      "out": "results/raw/02c_vk_exhaustive.json"
+    },
+    "seed": null,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.5-fc-v20-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/02_hermite_projection.py --vk-orders 5 6 --out results/raw/02c_vk_exhaustive.json",
+    "wall_time_s": 588.910058,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "top4_and_hermite_residual_differ",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "records that the two quantities are NOT the same function"
+    },
+    {
+      "name": "hermite_residual_equals_wick_ordered_top4",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "full_generator_hermite_defect_K2_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "pbme_hermite_defect_K2_nonzero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "vk.K5.full_within_VK",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "vk.K5.pbme_raises_by_two",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "PBME alone leaves V_K"
+    },
+    {
+      "name": "vk.K6.full_within_VK",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "vk.K6.pbme_raises_by_two",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "PBME alone leaves V_K"
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "inner_product": "<f,g>_phi = int dz phi(z) conj(f) g, phi = (2 pi)^{-N} exp(-z^T z / 2), z = sqrt(2/hbar) x",
+    "operator_orders": {
+      "pbme": {
+        "polynomial_degrees": [
+          0,
+          2,
+          4
+        ],
+        "hermite_orders": [
+          0,
+          2,
+          4
+        ],
+        "hermite_defect_K2_is_zero": false,
+        "seconds": 12.88
+      },
+      "excess": {
+        "polynomial_degrees": [
+          0,
+          2,
+          4
+        ],
+        "hermite_orders": [
+          2,
+          4
+        ],
+        "hermite_defect_K2_is_zero": false,
+        "seconds": 9.71
+      },
+      "full": {
+        "polynomial_degrees": [
+          0,
+          2
+        ],
+        "hermite_orders": [
+          0,
+          2
+        ],
+        "hermite_defect_K2_is_zero": true,
+        "seconds": 4.71
+      }
+    },
+    "initial_density": {
+      "polynomial_degrees": [
+        0,
+        2
+      ],
+      "hermite_orders": [
+        0,
+        2
+      ]
+    },
+    "pbme_leakage": {
+      "top4_equals_hermite_residual": false,
+      "difference_monomial_degrees": [
+        0,
+        2
+      ],
+      "hermite_residual_is_wick_ordered_top4": true,
+      "n_terms_top4": 114,
+      "n_terms_hermite_residual": 148,
+      "top4_expression": "z0**4*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/8 - z0**4*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/8 + z0**3*z1*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0**3*z1*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0**3*z1*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)/2 - z0**3*z1*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0**3*z1*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0**3*z3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - I*z0**3*z3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - I*z0**3*z3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + I*z0**3*z3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - z0**2*z1**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/8 + z0**2*z1**2*Derivative(h00(R0), R0)*Derivative(rho11(R0, P0), P0)/8 + z0**2*z1**2*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 + z0**2*z1**2*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 + z0**2*z1**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/8 - z0**2*z1**2*Derivative(h11(R0), R0)*Derivative(rho11(R0, P0), P0)/8 - I*z0**2*z1*z2*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + I*z0**2*z1*z2*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0**2*z1*z2*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - I*z0**2*z1*z2*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0**2*z1*z3*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 - I*z0**2*z1*z3*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 + z0**2*z2**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/4 - z0**2*z2**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/4 + z0**2*z2*z3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0**2*z2*z3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0**2*z2*z3*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)/2 - z0**2*z2*z3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0**2*z2*z3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - z0**2*z3**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/8 + z0**2*z3**2*Derivative(h00(R0), R0)*Derivative(rho11(R0, P0), P0)/8 + z0**2*z3**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/8 - z0**2*z3**2*Derivative(h11(R0), R0)*Derivative(rho11(R0, P0), P0)/8 - z0*z1**3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0*z1**3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1**3*Derivative(h01(R0), R0)*Derivative(rho11(R0, P0), P0)/2 + z0*z1**3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0*z1**3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - I*z0*z1**2*z2*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 + I*z0*z1**2*z2*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 - I*z0*z1**2*z3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + I*z0*z1**2*z3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0*z1**2*z3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - I*z0*z1**2*z3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z2**2*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0*z1*z2**2*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z2**2*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)/2 - z0*z1*z2**2*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0*z1*z2**2*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z2*z3*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0) + z0*z1*z2*z3*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0) - z0*z1*z3**2*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0*z1*z3**2*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z3**2*Derivative(h01(R0), R0)*Derivative(rho11(R0, P0), P0)/2 + z0*z1*z3**2*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0*z1*z3**2*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0*z2**2*z3*Derivative(h00(R0), R0",
+      "hermite_residual_expression": "z0**4*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/8 - z0**4*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/8 + z0**3*z1*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0**3*z1*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0**3*z1*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)/2 - z0**3*z1*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0**3*z1*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0**3*z3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - I*z0**3*z3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - I*z0**3*z3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + I*z0**3*z3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - z0**2*z1**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/8 + z0**2*z1**2*Derivative(h00(R0), R0)*Derivative(rho11(R0, P0), P0)/8 + z0**2*z1**2*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 + z0**2*z1**2*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 + z0**2*z1**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/8 - z0**2*z1**2*Derivative(h11(R0), R0)*Derivative(rho11(R0, P0), P0)/8 - I*z0**2*z1*z2*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + I*z0**2*z1*z2*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0**2*z1*z2*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - I*z0**2*z1*z2*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0**2*z1*z3*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 - I*z0**2*z1*z3*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 + z0**2*z2**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/4 - z0**2*z2**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/4 + z0**2*z2*z3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0**2*z2*z3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0**2*z2*z3*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)/2 - z0**2*z2*z3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0**2*z2*z3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - z0**2*z3**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/8 + z0**2*z3**2*Derivative(h00(R0), R0)*Derivative(rho11(R0, P0), P0)/8 + z0**2*z3**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/8 - z0**2*z3**2*Derivative(h11(R0), R0)*Derivative(rho11(R0, P0), P0)/8 - 3*z0**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/4 - z0**2*Derivative(h00(R0), R0)*Derivative(rho11(R0, P0), P0)/4 - z0**2*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 - z0**2*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 + 3*z0**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/4 + z0**2*Derivative(h11(R0), R0)*Derivative(rho11(R0, P0), P0)/4 - z0*z1**3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0*z1**3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1**3*Derivative(h01(R0), R0)*Derivative(rho11(R0, P0), P0)/2 + z0*z1**3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0*z1**3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - I*z0*z1**2*z2*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 + I*z0*z1**2*z2*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 - I*z0*z1**2*z3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + I*z0*z1**2*z3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0*z1**2*z3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - I*z0*z1**2*z3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z2**2*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0*z1*z2**2*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z2**2*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)/2 - z0*z1*z2**2*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0*z1*z2**2*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z2*z3*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0) + z0*z1*z2*z3*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0) ",
+      "note": "Top_4 keeps the degree-4 monomials of the amplitude; (I - P_2) keeps the degree-4 Hermite components. They differ by degree-0 and degree-2 terms. The corrected closed form is the Wick-ordered Top_4: replace each monomial z^alpha of degree 4 by He_alpha(z)."
+    },
+    "vk_audit": {
+      "5": {
+        "n_basis_functions_total": 56,
+        "n_basis_functions_checked": 56,
+        "full_max": 5,
+        "pbme_max": 7,
+        "excess_max": 7,
+        "full_within_VK": true,
+        "pbme_raises_by_two": true
+      },
+      "6": {
+        "n_basis_functions_total": 84,
+        "n_basis_functions_checked": 84,
+        "full_max": 6,
+        "pbme_max": 8,
+        "excess_max": 8,
+        "full_within_VK": true,
+        "pbme_raises_by_two": true
+      }
+    },
+    "vk_audit_seconds": 555.4
+  }
+}

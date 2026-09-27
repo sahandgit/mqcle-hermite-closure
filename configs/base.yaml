@@ -1,0 +1,11 @@
+# Global conventions shared by every run.  No scientific parameter may live in
+# a script; all of them come from this directory.
+units: atomic
+hbar: 1.0
+dtype: float64
+trace_convention: traceless   # traceless h in BOTH H_m and A'; Tr h / N in V_b
+seed: 20260819
+nstates: 2
+nbath: 1
+mass: 2000.0
+output_root: results

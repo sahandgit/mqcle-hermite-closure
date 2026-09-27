@@ -1,0 +1,7 @@
+[07b] P0=20.0  n_R=512  T=3000.0  dt=0.5
+      n_P=256    dP=0.1562  pop=[0.937015 0.062985]  bmass_P=1.73e-04  625 s
+      n_P=512    dP=0.0781  pop=[0.937015 0.062985]  bmass_P=8.90e-05  1232 s
+      n_P=1024   dP=0.0391  pop=[0.937014 0.062986]  bmass_P=3.91e-05  2467 s
+[07b] observable spread 1.075e-06  = 0.0002 x the reported error
+  PASS  gateL.observable_grid_independence  1.993e-04  (tol 1.0e-02)
+[07b] written to results/raw/07b_grid_independence_P20.json

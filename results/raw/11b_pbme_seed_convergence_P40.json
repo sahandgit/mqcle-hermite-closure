@@ -1,0 +1,541 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-23T22:14:39Z",
+    "script": "11b_pbme_statistics.py",
+    "config": {
+      "units": "atomic",
+      "hbar": 1.0,
+      "dtype": "float64",
+      "trace_convention": "traceless",
+      "seed": 20260819,
+      "nstates": 2,
+      "nbath": 1,
+      "mass": 2000.0,
+      "output_root": "results",
+      "model": {
+        "name": "tully_dual_avoided_crossing",
+        "A": 0.1,
+        "B": 0.28,
+        "C": 0.015,
+        "D": 0.06,
+        "E0": 0.05
+      },
+      "initial_conditions": {
+        "R0": -15.0,
+        "P0": 40.0,
+        "sigma_R": 0.25,
+        "init_state": 0
+      },
+      "mapping_sampling": {
+        "scheme": "focused",
+        "n_samples": 20000
+      },
+      "propagation": {
+        "dt": 0.5,
+        "n_steps": 200
+      },
+      "P0": 40.0,
+      "R0": -15.0,
+      "sigma_R": 0.25,
+      "T": 1500.0,
+      "dt": 0.5,
+      "n_steps": 3000,
+      "n_save": 10,
+      "n_samples": 1200000,
+      "chunk": 200000,
+      "n_chunks": 6,
+      "n_seeds": 6,
+      "blocks_per_chunk": 40,
+      "scheme": "sign_optimal"
+    },
+    "seed": 20260819,
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "2.4.0",
+      "scipy": "1.16.3",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.8",
+      "pandas": "2.3.3",
+      "h5py": "not installed",
+      "yaml": "6.0.3",
+      "torch": "2.9.1+cpu"
+    },
+    "dtype": "float64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 190 Stepping 0, GenuineIntel",
+    "command_line": "scripts\\11_pbme_projected.py --config tully_default.yaml --P0 40 --n-samples 1200000 --chunk 200000 --n-seeds 6 --blocks-per-chunk 40 --focused-samples 200000",
+    "wall_time_s": 5208.487207,
+    "git_commit": null,
+    "source_file": "11_pbme_projected_P40.json"
+  },
+  "checks": [
+    {
+      "name": "pbme_statistics.at_least_five_seeds",
+      "passed": true,
+      "evidence": "n_seeds=6"
+    },
+    {
+      "name": "pbme_statistics.sample_size_range",
+      "passed": true,
+      "evidence": "sample sizes=[5000, 10000, 20000, 40000, 80000, 160000, 320000, 640000, 1200000]"
+    },
+    {
+      "name": "pbme_statistics.sem_decreases_with_sample_size",
+      "passed": true,
+      "evidence": "log-log slope=-0.529"
+    },
+    {
+      "name": "pbme_statistics.sem_uses_seed_variance",
+      "passed": true,
+      "evidence": "recomputed=[0.0004700936875545311, 0.0004700936875546557], archived=[0.0004700936875545311, 0.0004700936875546557]"
+    },
+    {
+      "name": "pbme_statistics.ci95_uses_recorded_sem",
+      "passed": true,
+      "evidence": "ci95 = mean +/- 1.96*SEM"
+    },
+    {
+      "name": "pbme_statistics.weights_not_self_normalised",
+      "passed": true,
+      "evidence": "weights_renormalised_by_their_sum=false"
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "P0": 40.0,
+    "source_file": "11_pbme_projected_P40.json",
+    "n_samples": 1200000,
+    "n_seeds": 6,
+    "sample_size_convergence": [
+      {
+        "estimator": "plain",
+        "n_samples": 5000,
+        "n_blocks": 1,
+        "final_populations": [
+          0.6726896343824241,
+          0.30872942035005607
+        ],
+        "sem": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "estimator": "cv",
+        "n_samples": 5000,
+        "n_blocks": 1,
+        "final_populations": [
+          0.6823617387562256,
+          0.3176382612437765
+        ],
+        "sem": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "estimator": "plain",
+        "n_samples": 10000,
+        "n_blocks": 2,
+        "final_populations": [
+          0.6614096009957624,
+          0.3158439839171309
+        ],
+        "sem": [
+          0.011280033386661725,
+          0.00711456356707485
+        ]
+      },
+      {
+        "estimator": "cv",
+        "n_samples": 10000,
+        "n_blocks": 2,
+        "final_populations": [
+          0.6708630197220451,
+          0.32913698027795835
+        ],
+        "sem": [
+          0.011498719034180482,
+          0.011498719034181868
+        ]
+      },
+      {
+        "estimator": "plain",
+        "n_samples": 20000,
+        "n_blocks": 4,
+        "final_populations": [
+          0.6618754816933778,
+          0.3342357156872283
+        ],
+        "sem": [
+          0.0070786421917444445,
+          0.01160847340816197
+        ]
+      },
+      {
+        "estimator": "cv",
+        "n_samples": 20000,
+        "n_blocks": 4,
+        "final_populations": [
+          0.6696290181592754,
+          0.33037098184072616
+        ],
+        "sem": [
+          0.004781367680381569,
+          0.004781367680381919
+        ]
+      },
+      {
+        "estimator": "plain",
+        "n_samples": 40000,
+        "n_blocks": 8,
+        "final_populations": [
+          0.6630308939610084,
+          0.33518088568587606
+        ],
+        "sem": [
+          0.003979665542392824,
+          0.006237660586804104
+        ]
+      },
+      {
+        "estimator": "cv",
+        "n_samples": 40000,
+        "n_blocks": 8,
+        "final_populations": [
+          0.6672858314178639,
+          0.3327141685821384
+        ],
+        "sem": [
+          0.003860058570502247,
+          0.003860058570502986
+        ]
+      },
+      {
+        "estimator": "plain",
+        "n_samples": 80000,
+        "n_blocks": 16,
+        "final_populations": [
+          0.6664940848070284,
+          0.33559918731433036
+        ],
+        "sem": [
+          0.0034709477280205968,
+          0.003909059623466579
+        ]
+      },
+      {
+        "estimator": "cv",
+        "n_samples": 80000,
+        "n_blocks": 16,
+        "final_populations": [
+          0.6677555295742684,
+          0.33224447042573385
+        ],
+        "sem": [
+          0.002513210309544755,
+          0.0025132103095449857
+        ]
+      },
+      {
+        "estimator": "plain",
+        "n_samples": 160000,
+        "n_blocks": 32,
+        "final_populations": [
+          0.665886567532794,
+          0.33387319653195485
+        ],
+        "sem": [
+          0.0023109757152473755,
+          0.0025151394553332156
+        ]
+      },
+      {
+        "estimator": "cv",
+        "n_samples": 160000,
+        "n_blocks": 32,
+        "final_populations": [
+          0.6696995633411646,
+          0.3303004366588375
+        ],
+        "sem": [
+          0.0021169488202729698,
+          0.002116948820272957
+        ]
+      },
+      {
+        "estimator": "plain",
+        "n_samples": 320000,
+        "n_blocks": 64,
+        "final_populations": [
+          0.6668706499658672,
+          0.33011258900399865
+        ],
+        "sem": [
+          0.0014945861714317265,
+          0.0018403989746120207
+        ]
+      },
+      {
+        "estimator": "cv",
+        "n_samples": 320000,
+        "n_blocks": 64,
+        "final_populations": [
+          0.6708306859159779,
+          0.3291693140840246
+        ],
+        "sem": [
+          0.001399100916657762,
+          0.0013991009166577821
+        ]
+      },
+      {
+        "estimator": "plain",
+        "n_samples": 640000,
+        "n_blocks": 128,
+        "final_populations": [
+          0.6682141121613384,
+          0.33002997132225154
+        ],
+        "sem": [
+          0.0011362759780533394,
+          0.0012992752124498857
+        ]
+      },
+      {
+        "estimator": "cv",
+        "n_samples": 640000,
+        "n_blocks": 128,
+        "final_populations": [
+          0.6701405810472341,
+          0.3298594189527684
+        ],
+        "sem": [
+          0.0010073437898649306,
+          0.0010073437898649432
+        ]
+      },
+      {
+        "estimator": "plain",
+        "n_samples": 1200000,
+        "n_blocks": 240,
+        "final_populations": [
+          0.6682845437758778,
+          0.3304535915348144
+        ],
+        "sem": [
+          0.0007998544178183394,
+          0.0009177940536147128
+        ]
+      },
+      {
+        "estimator": "cv",
+        "n_samples": 1200000,
+        "n_blocks": 240,
+        "final_populations": [
+          0.6701725589356798,
+          0.3298274410643221
+        ],
+        "sem": [
+          0.0007053406974941006,
+          0.0007053406974941017
+        ]
+      }
+    ],
+    "seed_replicates": [
+      {
+        "seed_group": 0,
+        "n_samples": 200000,
+        "final_populations": [
+          0.6652324386363084,
+          0.33203201102065866
+        ],
+        "sem": [
+          0.0019058233497618233,
+          0.002135213908518097
+        ],
+        "final_populations_cv": [
+          0.6699588206765889,
+          0.3300411793234136
+        ],
+        "sem_cv": [
+          0.0017558575302239056,
+          0.0017558575302238978
+        ]
+      },
+      {
+        "seed_group": 1,
+        "n_samples": 200000,
+        "final_populations": [
+          0.6704367947939436,
+          0.32763404553349407
+        ],
+        "sem": [
+          0.0018715313337165863,
+          0.002402211785991849
+        ],
+        "final_populations_cv": [
+          0.6717824003763843,
+          0.3282175996236177
+        ],
+        "sem_cv": [
+          0.0016646344453295056,
+          0.001664634445329564
+        ]
+      },
+      {
+        "seed_group": 2,
+        "n_samples": 200000,
+        "final_populations": [
+          0.6682513704900755,
+          0.3300980746816271
+        ],
+        "sem": [
+          0.0022815336959793628,
+          0.0024962983825712057
+        ],
+        "final_populations_cv": [
+          0.6692106103815838,
+          0.33078938961841897
+        ],
+        "sem_cv": [
+          0.0020583640937402404,
+          0.0020583640937402656
+        ]
+      },
+      {
+        "seed_group": 3,
+        "n_samples": 200000,
+        "final_populations": [
+          0.670387429334633,
+          0.3293989897480895
+        ],
+        "sem": [
+          0.0021293796057842286,
+          0.002195616902084182
+        ],
+        "final_populations_cv": [
+          0.6713273451806918,
+          0.32867265481931013
+        ],
+        "sem_cv": [
+          0.0014786883356711475,
+          0.001478688335671039
+        ]
+      },
+      {
+        "seed_group": 4,
+        "n_samples": 200000,
+        "final_populations": [
+          0.6678293868565668,
+          0.33077913350753996
+        ],
+        "sem": [
+          0.0019324822390147558,
+          0.0021685256259585954
+        ],
+        "final_populations_cv": [
+          0.6688927402202607,
+          0.33110725977974187
+        ],
+        "sem_cv": [
+          0.0017193195614699397,
+          0.0017193195614698844
+        ]
+      },
+      {
+        "seed_group": 5,
+        "n_samples": 200000,
+        "final_populations": [
+          0.6675698425437425,
+          0.33277929471747814
+        ],
+        "sem": [
+          0.0015573554533855265,
+          0.0021087957526444595
+        ],
+        "final_populations_cv": [
+          0.6698634367785695,
+          0.33013656322143264
+        ],
+        "sem_cv": [
+          0.0016998289621883624,
+          0.0016998289621884214
+        ]
+      }
+    ],
+    "across_seed": {
+      "mean": [
+        0.6682845437758783,
+        0.33045359153481463
+      ],
+      "sd": [
+        0.0019539050151056734,
+        0.0018544377993438407
+      ],
+      "sem": [
+        0.0007976783821456596,
+        0.0007570710613536912
+      ],
+      "mean_cv": [
+        0.6701725589356798,
+        0.3298274410643225
+      ],
+      "sd_cv": [
+        0.0011514896658119439,
+        0.0011514896658122492
+      ],
+      "sem_cv": [
+        0.0004700936875545311,
+        0.0004700936875546557
+      ]
+    },
+    "final": {
+      "plain": {
+        "populations": [
+          0.6682845437758778,
+          0.3304535915348144
+        ],
+        "sem": [
+          0.0007998544178183394,
+          0.0009177940536147128
+        ],
+        "ci95": [
+          [
+            0.6667168291169538,
+            0.6698522584348017
+          ],
+          [
+            0.32865471518972955,
+            0.33225246787989926
+          ]
+        ]
+      },
+      "cv": {
+        "populations": [
+          0.6701725589356798,
+          0.3298274410643221
+        ],
+        "sem": [
+          0.0007053406974941006,
+          0.0007053406974941017
+        ],
+        "ci95": [
+          [
+            0.6687900911685914,
+            0.6715550267027682
+          ],
+          [
+            0.32844497329723366,
+            0.33120990883141055
+          ]
+        ]
+      },
+      "variance_reduction_factor": [
+        1.1339972592819647,
+        1.301206717371342
+      ]
+    },
+    "sem_loglog_slope": -0.5287487442793688
+  }
+}

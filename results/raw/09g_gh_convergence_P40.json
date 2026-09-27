@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "method": "gaussian_hermite_coefficient",
+    "status": "completed",
+    "timestamp_utc": "2026-09-19T14:17:00Z",
+    "script": "09g_gh_convergence.py",
+    "source_modules": [
+      "mqcle.hermite.operator",
+      "mqcle.hermite.frame",
+      "mqcle.hermite.propagator"
+    ],
+    "command_line": ".\\scripts\\09g_gh_convergence.py",
+    "P0": 40.0,
+    "T": 300.0,
+    "reference_grid": [
+      512,
+      256
+    ],
+    "rk4_dt_limit": 1.6475867110395017,
+    "wall_time_s": 40283.88815929997,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.0",
+    "output_files": {
+      "json": "D:\\Paper_SNN_MQCLE\\results\\raw\\09g_gh_convergence_P40.json"
+    }
+  },
+  "checks": [
+    {
+      "name": "temporal_order_at_least_three",
+      "value": 3.9998772220124716,
+      "tolerance": 3.0,
+      "passed": true
+    },
+    {
+      "name": "temporal_order_density_at_least_three",
+      "value": 3.999877270478716,
+      "tolerance": 3.0,
+      "passed": true
+    },
+    {
+      "name": "grid_change_decreases",
+      "value": 4.6255072745693404e-05,
+      "tolerance": 0.08370706034429787,
+      "evaluated": true,
+      "passed": true
+    },
+    {
+      "name": "integrators_agree_state_at_finest_step",
+      "value": 5.14186700647532e-09,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "integrators_agree_density_at_finest_step",
+      "value": 5.141861653010576e-09,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "integrators_agree_populations",
+      "value": 1.700829468347239e-11,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "physical_frame_residual_finest",
+      "value": 7.77644080356445e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "time_step": {
+      "rows": [
+        {
+          "dt": 0.1029512697323267,
+          "n_steps": 2914,
+          "error": 1.8207657603852567e-14,
+          "error_population": 1.8207657603852567e-14,
+          "error_state": 5.14186700647532e-09,
+          "error_density": 5.141861653010576e-09,
+          "wall_time_s": 1471.7233905999456
+        },
+        {
+          "dt": 0.2059025394646534,
+          "n_steps": 1457,
+          "error": 1.4654943925052066e-14,
+          "error_population": 1.4654943925052066e-14,
+          "error_state": 8.226894063407142e-08,
+          "error_density": 8.226885467052484e-08,
+          "wall_time_s": 800.8719188999385
+        },
+        {
+          "dt": 0.411522633744856,
+          "n_steps": 729,
+          "error": 3.712544645485946e-14,
+          "error_population": 3.712544645485946e-14,
+          "error_state": 1.3126345718681131e-06,
+          "error_density": 1.3126332459556469e-06,
+          "wall_time_s": 416.2861431000056
+        },
+        {
+          "dt": 0.821917808219178,
+          "n_steps": 365,
+          "error": 5.848290144397578e-13,
+          "error_population": 5.848290144397578e-13,
+          "error_state": 2.0882918105833323e-05,
+          "error_density": 2.0882898458020643e-05,
+          "wall_time_s": 37048.432209599996
+        }
+      ],
+      "fitted_order": 3.9998772220124716,
+      "fitted_order_state": 3.9998772220124716,
+      "fitted_order_density": 3.999877270478716,
+      "fitted_order_population": 1.636915681774066,
+      "reference": "exponential action (propagate_krylov)",
+      "reference_dt": 0.051484468851896344
+    },
+    "bath_grid": {
+      "rows": [
+        {
+          "n_R": 128,
+          "n_P": 64,
+          "populations": [
+            0.9162402772657939,
+            0.0012521614611987432
+          ],
+          "physical_frame_residual": 3.678256285882454e-16,
+          "change_vs_coarser": null
+        },
+        {
+          "n_R": 256,
+          "n_P": 128,
+          "populations": [
+            0.9999473376100918,
+            6.424159849114395e-06
+          ],
+          "physical_frame_residual": 5.85707918597512e-16,
+          "change_vs_coarser": 0.08370706034429787
+        },
+        {
+          "n_R": 512,
+          "n_P": 256,
+          "populations": [
+            0.9999935926828375,
+            6.407317157777882e-06
+          ],
+          "physical_frame_residual": 7.77644080356445e-16,
+          "change_vs_coarser": 4.6255072745693404e-05
+        }
+      ]
+    },
+    "integrator": {
+      "n_R": 256,
+      "n_P": 128,
+      "dt_rk4": 1.5151515151515151,
+      "n_steps_rk4": 198,
+      "eps_C": 0.00015164431708353986,
+      "eps_rho": 0.00015162097424300652,
+      "relative_state_difference": 0.00012307461052686795,
+      "population_difference": 1.700829468347239e-11,
+      "wall_rk4_s": 22.989089900045656,
+      "wall_krylov_s": 35.167220899951644,
+      "krylov_over_rk4": 1.5297352375781437,
+      "gated": false,
+      "note": "RK4 at cfl = 0.5 x the RK4 stability limit, against the exponential action of the same generator.  Reported, not gated: this is the number that disqualifies RK4 as the production propagator."
+    }
+  }
+}

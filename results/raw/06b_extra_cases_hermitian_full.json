@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-22T01:40:23Z",
+    "script": "05_extra_cases.py",
+    "config": {
+      "case": "Herm",
+      "convention": "full",
+      "skip_qcle": false,
+      "skip_frame": false,
+      "out": "results/raw/06b_extra_cases_hermitian_full.json",
+      "nstates": 2,
+      "nbath": 1,
+      "hermitian": true
+    },
+    "seed": null,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.44-fc-v21-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/05_extra_cases.py --case Herm --convention full --out results/raw/06b_extra_cases_hermitian_full.json",
+    "wall_time_s": 27.411282,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "N2_Nb1_hermitian.h_is_hermitian",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_hermitian.h_imaginary_part_is_nonzero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_hermitian.real_form_is_symmetric",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_hermitian.mapping_hamiltonian_is_real",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_hermitian.initial_polynomial_degrees_are_0_2",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_hermitian.full_polynomial_degrees_are_0_2",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_hermitian.full_hermite_defect_K2_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_hermitian.pbme_leaves_V2",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_hermitian.physical_frame_residual_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_hermitian.qcle_residuals_all_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "h_is_hermitian": true,
+    "h_has_nonzero_imaginary_part": true,
+    "bigH_is_symmetric": true,
+    "H_m_is_real": true,
+    "initial_density": {
+      "polynomial_degrees": [
+        0,
+        2
+      ],
+      "hermite_orders": [
+        0,
+        2
+      ]
+    },
+    "operators": {
+      "pbme": {
+        "polynomial_degrees": [
+          0,
+          2,
+          4
+        ],
+        "hermite_orders": [
+          0,
+          2,
+          4
+        ],
+        "hermite_defect_K2_is_zero": false,
+        "seconds": 10.04
+      },
+      "excess": {
+        "polynomial_degrees": [
+          0,
+          2,
+          4
+        ],
+        "hermite_orders": [
+          2,
+          4
+        ],
+        "hermite_defect_K2_is_zero": false,
+        "seconds": 7.72
+      },
+      "full": {
+        "polynomial_degrees": [
+          0,
+          2
+        ],
+        "hermite_orders": [
+          0,
+          2
+        ],
+        "hermite_defect_K2_is_zero": true,
+        "seconds": 4.74
+      }
+    },
+    "physical_frame_residual_is_zero": true,
+    "physical_frame_seconds": 2.67,
+    "qcle_correspondence": {
+      "residuals": {
+        "residual_00": "0",
+        "residual_10": "0",
+        "residual_01": "0",
+        "residual_11": "0"
+      },
+      "all_zero": true,
+      "frame_residual_is_zero": true,
+      "seconds": 1.55
+    }
+  }
+}

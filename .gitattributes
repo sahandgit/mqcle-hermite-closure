@@ -1,0 +1,4 @@
+# Store every file byte for byte.  The archived outputs are bound by SHA-256
+# (MANIFEST.sha256, results/raw/07c_p10_refinement_acceptance.json), so no
+# line-ending conversion may touch them.
+* -text

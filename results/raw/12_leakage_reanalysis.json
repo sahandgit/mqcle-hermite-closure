@@ -1,0 +1,411 @@
+{
+  "results": {
+    "rows": [
+      {
+        "P0": 10.0,
+        "peak_leakage": 0.12438535249465056,
+        "t_peak": 6000.0,
+        "T": 6000.0,
+        "peak_inside_half_window": false,
+        "integrated_leakage_early": 25.526602045215235,
+        "integrated_leakage_full": 218.05266044184657,
+        "mean_leakage_full": 0.0363421100736411,
+        "discard_cost": 0.10467323416917963,
+        "discard_cost_sem": 0.0003399849947238398,
+        "projected_final_populations": [
+          1.0876659224002527,
+          -0.0876659224001244
+        ],
+        "projected_sem": [
+          0.000339984994724088,
+          0.0003399849947238398
+        ],
+        "projected_n_samples": 1200000,
+        "projected_scheme": "sign_optimal",
+        "focused_effect": 0.0064518546658013515,
+        "focused_final_populations": [
+          1.0941177770660535,
+          -0.09411777706592575
+        ],
+        "focused_minus_coefficient": 0.11112508883498098,
+        "focused_pbme_terminal_error": 0.11255384932251733,
+        "qcle_terminal_error": 0.0014287604875363492
+      },
+      {
+        "P0": 20.0,
+        "peak_leakage": 0.026105050576289587,
+        "t_peak": 1600.0,
+        "T": 3000.0,
+        "peak_inside_half_window": false,
+        "integrated_leakage_early": 6.654147879463524,
+        "integrated_leakage_full": 15.019407089453333,
+        "mean_leakage_full": 0.005006469029817778,
+        "discard_cost": 0.05135425244638206,
+        "discard_cost_sem": 0.0004605980684023706,
+        "projected_final_populations": [
+          0.9883586100531697,
+          0.011641389946843826
+        ],
+        "projected_sem": [
+          0.00046059806840239285,
+          0.0004605980684023706
+        ],
+        "projected_n_samples": 1000000,
+        "projected_scheme": "sign_optimal",
+        "focused_effect": 0.03467799566094118,
+        "focused_final_populations": [
+          0.9536806143922328,
+          0.04631938560778501
+        ],
+        "focused_minus_coefficient": 0.01667625678544088,
+        "focused_pbme_terminal_error": 0.011274251961786934,
+        "qcle_terminal_error": 0.005402004830316054
+      },
+      {
+        "P0": 30.0,
+        "peak_leakage": 0.024192457822685993,
+        "t_peak": 1080.0,
+        "T": 2000.0,
+        "peak_inside_half_window": false,
+        "integrated_leakage_early": 4.053265425676405,
+        "integrated_leakage_full": 9.234286684498032,
+        "mean_leakage_full": 0.004617143342249016,
+        "discard_cost": 0.03217807256624916,
+        "discard_cost_sem": 0.0008432242061610672,
+        "projected_final_populations": [
+          0.3908602783114663,
+          0.6091397216885356
+        ],
+        "projected_sem": [
+          0.000843224206161062,
+          0.0008432242061610672
+        ],
+        "projected_n_samples": 1200000,
+        "projected_scheme": "sign_optimal",
+        "focused_effect": 0.013616868261221216,
+        "focused_final_populations": [
+          0.3772434100502582,
+          0.6227565899497568
+        ],
+        "focused_minus_coefficient": 0.018561204305027945,
+        "focused_pbme_terminal_error": 0.017661315232057606,
+        "qcle_terminal_error": 0.0008998890784113756
+      },
+      {
+        "P0": 40.0,
+        "peak_leakage": 0.02210871283232973,
+        "t_peak": 840.0,
+        "T": 1500.0,
+        "peak_inside_half_window": false,
+        "integrated_leakage_early": 2.386832360148518,
+        "integrated_leakage_full": 6.70204702391265,
+        "mean_leakage_full": 0.0044680313492751,
+        "discard_cost": 0.03027063585838019,
+        "discard_cost_sem": 0.0007053406974941006,
+        "projected_final_populations": [
+          0.6701725589356798,
+          0.3298274410643221
+        ],
+        "projected_sem": [
+          0.0007053406974941006,
+          0.0007053406974941017
+        ],
+        "projected_n_samples": 1200000,
+        "projected_scheme": "sign_optimal",
+        "focused_effect": 0.018540690780632252,
+        "focused_final_populations": [
+          0.6887132497163121,
+          0.31128675028369307
+        ],
+        "focused_minus_coefficient": 0.011729945077747939,
+        "focused_pbme_terminal_error": 0.017290364042254924,
+        "qcle_terminal_error": 0.0008291095427931383
+      },
+      {
+        "P0": 70.0,
+        "peak_leakage": 0.021532948556582925,
+        "t_peak": 480.0,
+        "T": 857.5,
+        "peak_inside_half_window": false,
+        "integrated_leakage_early": 1.422035943691262,
+        "integrated_leakage_full": 3.646176314897703,
+        "mean_leakage_full": 0.004252100658772831,
+        "discard_cost": 0.010709320594129934,
+        "discard_cost_sem": 0.000761752891091605,
+        "projected_final_populations": [
+          0.5775627830164961,
+          0.4224372169835047
+        ],
+        "projected_sem": [
+          0.0007617528910916008,
+          0.000761752891091605
+        ],
+        "projected_n_samples": 1200000,
+        "projected_scheme": "sign_optimal",
+        "focused_effect": 0.012984825362592989,
+        "focused_final_populations": [
+          0.5645779576539082,
+          0.4354220423460977
+        ],
+        "focused_minus_coefficient": 0.0022755047686749963,
+        "focused_pbme_terminal_error": 0.0021900039833592233,
+        "qcle_terminal_error": 8.55007903640681e-05
+      },
+      {
+        "P0": 100.0,
+        "peak_leakage": 0.01964303733038115,
+        "t_peak": 320.0,
+        "T": 600.0,
+        "peak_inside_half_window": false,
+        "integrated_leakage_early": 0.727760499438338,
+        "integrated_leakage_full": 2.5558113360398087,
+        "mean_leakage_full": 0.0042596855600663475,
+        "discard_cost": 0.0034710542394844612,
+        "discard_cost_sem": 0.0010127763571657815,
+        "projected_final_populations": [
+          0.15162981604312528,
+          0.8483701839568751
+        ],
+        "projected_sem": [
+          0.0010127763571657776,
+          0.0010127763571657815
+        ],
+        "projected_n_samples": 1200000,
+        "projected_scheme": "sign_optimal",
+        "focused_effect": 0.004750490319093581,
+        "focused_final_populations": [
+          0.14687932572403514,
+          0.8531206742759687
+        ],
+        "focused_minus_coefficient": 0.0012794360797518667,
+        "focused_pbme_terminal_error": 0.000392921935339241,
+        "qcle_terminal_error": 1.958433401852422e-05
+      }
+    ],
+    "n_regimes": 6,
+    "corr__integrated_leakage_early__discard_cost": {
+      "pearson_r": 0.9625598567210066,
+      "spearman_r": 1.0
+    },
+    "corr__integrated_leakage_early__focused_pbme_terminal_error": {
+      "pearson_r": 0.9810832530559332,
+      "spearman_r": 0.8285714285714287
+    },
+    "corr__peak_leakage__discard_cost": {
+      "pearson_r": 0.9076052475788396,
+      "spearman_r": 1.0
+    },
+    "corr__peak_leakage__focused_pbme_terminal_error": {
+      "pearson_r": 0.9894277602508956,
+      "spearman_r": 0.8285714285714287
+    },
+    "corr__mean_leakage_full__discard_cost": {
+      "pearson_r": 0.894528525655308,
+      "spearman_r": 0.942857142857143
+    },
+    "corr__mean_leakage_full__focused_pbme_terminal_error": {
+      "pearson_r": 0.986992620774491,
+      "spearman_r": 0.7714285714285715
+    },
+    "pearson_r": 0.894528525655308,
+    "spearman_r": 0.942857142857143,
+    "pearson_r_peak": 0.9076052475788396,
+    "response_variable": "E_discard = |projected-density PBME - coefficient QCLE|",
+    "coupling_scan": {
+      "rows": [
+        {
+          "C": 0.005,
+          "peak_leakage": 0.022478967223465544,
+          "t_peak": 840.0,
+          "T": 1500.0,
+          "peak_inside_half_window": false,
+          "integrated_leakage_early": 2.2776726480499767,
+          "integrated_leakage_full": 6.320749096392722,
+          "mean_leakage_full": 0.004213832730928482,
+          "discard_cost": 0.01568949598483238,
+          "discard_cost_sem": 0.0003229914998383475,
+          "projected_final_populations": [
+            0.9755965864273966,
+            0.02440341357260234
+          ],
+          "projected_sem": [
+            0.0003229914998383475,
+            0.0003229914998383227
+          ],
+          "projected_n_samples": 400000,
+          "projected_scheme": "sign_optimal",
+          "focused_effect": 0.018881784650123447,
+          "focused_final_populations": [
+            0.9944783710775096,
+            0.005521628922478892
+          ],
+          "focused_minus_coefficient": 0.003192288665690949,
+          "focused_pbme_terminal_error": 0.002580187878606411,
+          "qcle_terminal_error": 0.0002446118585301849,
+          "max_grad_h_frobenius": 0.03211072899651748,
+          "max_grad_h_offdiagonal": 0.001050541847798054,
+          "min_adiabatic_gap": 0.008613837392913892
+        },
+        {
+          "C": 0.0075,
+          "peak_leakage": 0.022117443623729853,
+          "t_peak": 840.0,
+          "T": 1500.0,
+          "peak_inside_half_window": false,
+          "integrated_leakage_early": 2.3020231496731767,
+          "integrated_leakage_full": 6.386133705157473,
+          "mean_leakage_full": 0.004257422470104982,
+          "discard_cost": 0.02956671580093706,
+          "discard_cost_sem": 0.0005488504573058838,
+          "projected_final_populations": [
+            0.938464776256053,
+            0.061535223743947154
+          ],
+          "projected_sem": [
+            0.0005488504573058838,
+            0.0005488504573058283
+          ],
+          "projected_n_samples": 400000,
+          "projected_scheme": "sign_optimal",
+          "focused_effect": 0.03253208568384637,
+          "focused_final_populations": [
+            0.9709968619398809,
+            0.02900313806010078
+          ],
+          "focused_minus_coefficient": 0.002965369883351287,
+          "focused_pbme_terminal_error": 0.0016760406954380719,
+          "qcle_terminal_error": 0.00022032226294380758,
+          "max_grad_h_frobenius": 0.03213096098682107,
+          "max_grad_h_offdiagonal": 0.0015758127716970815,
+          "min_adiabatic_gap": 0.01290956376897653
+        },
+        {
+          "C": 0.015,
+          "peak_leakage": 0.02210871283232973,
+          "t_peak": 840.0,
+          "T": 1500.0,
+          "peak_inside_half_window": false,
+          "integrated_leakage_early": 2.386832360148518,
+          "integrated_leakage_full": 6.70204702391265,
+          "mean_leakage_full": 0.0044680313492751,
+          "discard_cost": 0.03027063585838019,
+          "discard_cost_sem": 0.0007053406974941006,
+          "projected_final_populations": [
+            0.6701725589356798,
+            0.3298274410643221
+          ],
+          "projected_sem": [
+            0.0007053406974941006,
+            0.0007053406974941017
+          ],
+          "projected_n_samples": 1200000,
+          "projected_scheme": "sign_optimal",
+          "focused_effect": 0.018540690780632252,
+          "focused_final_populations": [
+            0.6887132497163121,
+            0.31128675028369307
+          ],
+          "focused_minus_coefficient": 0.011729945077747939,
+          "focused_pbme_terminal_error": 0.017290364042254924,
+          "qcle_terminal_error": 0.0008291095427931383,
+          "max_grad_h_frobenius": 0.03224016293952573,
+          "max_grad_h_offdiagonal": 0.003151625543394163,
+          "min_adiabatic_gap": 0.02569430247526818
+        },
+        {
+          "C": 0.03,
+          "peak_leakage": 0.022184733056550592,
+          "t_peak": 800.0,
+          "T": 1500.0,
+          "peak_inside_half_window": false,
+          "integrated_leakage_early": 2.655917889243728,
+          "integrated_leakage_full": 7.207244035015096,
+          "mean_leakage_full": 0.004804829356676731,
+          "discard_cost": 0.005380205120832964,
+          "discard_cost_sem": 0.00048472386366786346,
+          "projected_final_populations": [
+            0.9777232641559733,
+            0.022276735844028783
+          ],
+          "projected_sem": [
+            0.0004847238636678819,
+            0.00048472386366786346
+          ],
+          "projected_n_samples": 400000,
+          "projected_scheme": "sign_optimal",
+          "focused_effect": 0.0003392690040988633,
+          "focused_final_populations": [
+            0.9773839951518745,
+            0.022616004848114667
+          ],
+          "focused_minus_coefficient": 0.00504093611674708,
+          "focused_pbme_terminal_error": 0.0067569108549719835,
+          "qcle_terminal_error": 3.000092455971229e-05,
+          "max_grad_h_frobenius": 0.03267782959069346,
+          "max_grad_h_offdiagonal": 0.006303251086788326,
+          "min_adiabatic_gap": 0.05019445714879419
+        },
+        {
+          "C": 0.06,
+          "peak_leakage": 0.023708591949734525,
+          "t_peak": 800.0,
+          "T": 1500.0,
+          "peak_inside_half_window": false,
+          "integrated_leakage_early": 3.559583850573059,
+          "integrated_leakage_full": 9.290783992596188,
+          "mean_leakage_full": 0.0061938559950641256,
+          "discard_cost": 2.884007456877925e-06,
+          "discard_cost_sem": 6.984661453701638e-06,
+          "projected_final_populations": [
+            0.9999969448253436,
+            3.055174658233799e-06
+          ],
+          "projected_sem": [
+            6.984661453725158e-06,
+            6.984661453701638e-06
+          ],
+          "projected_n_samples": 400000,
+          "projected_scheme": "sign_optimal",
+          "focused_effect": 1.9821691619585745e-05,
+          "focused_final_populations": [
+            1.0000167665169628,
+            -1.6766516961351946e-05
+          ],
+          "focused_minus_coefficient": 2.270569907646367e-05,
+          "focused_pbme_terminal_error": 4.7227257836075875e-05,
+          "qcle_terminal_error": 6.008137619553241e-07,
+          "max_grad_h_frobenius": 0.03444311456553097,
+          "max_grad_h_offdiagonal": 0.012606502173576652,
+          "min_adiabatic_gap": 0.05187580598315844
+        }
+      ],
+      "n_points": 5,
+      "corr__peak_leakage__discard_cost": {
+        "pearson_r": -0.7141443610234814,
+        "spearman_r": -0.8999999999999998
+      },
+      "corr__peak_leakage__focused_pbme_terminal_error": {
+        "pearson_r": -0.5324939303078255,
+        "spearman_r": -0.7
+      },
+      "corr__mean_leakage_full__discard_cost": {
+        "pearson_r": -0.7593806569150174,
+        "spearman_r": -0.6
+      },
+      "corr__mean_leakage_full__focused_pbme_terminal_error": {
+        "pearson_r": -0.33813677713926293,
+        "spearman_r": -0.19999999999999998
+      },
+      "predictor_dynamic_range": 1.072364190965712,
+      "response_dynamic_range": 10496.0324517155,
+      "response_is_monotone_in_C": false,
+      "response_range_over_worst_sem": 42.91224362702603,
+      "every_point_resolved_above_its_own_noise": false,
+      "response_variable": "E_discard = |projected-density PBME - coefficient QCLE|",
+      "grad_h_dynamic_range": 1.0726357090574448,
+      "coupling_dynamic_range": 12.0
+    },
+    "n_degree_four_coefficients": 31,
+    "all_coefficients_are_degree_four": true
+  }
+}

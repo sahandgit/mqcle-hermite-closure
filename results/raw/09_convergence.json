@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-21T17:16:29Z",
+    "script": "09_convergence.py",
+    "config": {
+      "P0": 40.0,
+      "R0": -15.0,
+      "sigma_R": 0.25,
+      "T": 1200.0,
+      "integrator": "strang",
+      "quick": false,
+      "trace_convention": "traceless",
+      "mass": 2000.0,
+      "hbar": 1.0,
+      "observable": "final diabatic population vector, max-norm difference"
+    },
+    "seed": 20260819,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.44-fc-v21-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/09_convergence.py --config tully_default.yaml --P0 40 --T 1200",
+    "wall_time_s": 11329.674702,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "gateL.time_step_order",
+      "value": 0.09140774324569945,
+      "tolerance": 0.35,
+      "passed": true,
+      "note": "fitted order 2.091 vs expected 2.0 for integrator='strang'"
+    },
+    {
+      "name": "gateL.time_step_error_decreases",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "the error must fall monotonically under dt refinement"
+    },
+    {
+      "name": "gateL.n_R_converged",
+      "value": 5.295763827461997e-14,
+      "tolerance": 1e-06,
+      "passed": true,
+      "note": "|pop(n_R=1024) - pop(n_R=2048)|"
+    },
+    {
+      "name": "gateL.n_P_converged",
+      "value": 1.9095836023552692e-14,
+      "tolerance": 1e-06,
+      "passed": true,
+      "note": "|pop(n_P=512) - pop(n_P=1024)|"
+    },
+    {
+      "name": "gateL.box_independence",
+      "value": 3.648314983450973e-11,
+      "tolerance": 1e-08,
+      "passed": true,
+      "note": "final populations must not depend on where the empty boundary sits"
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "time_step": {
+      "grid": {
+        "n_R": 512,
+        "n_P": 128,
+        "R_half": 45.0,
+        "P_half": 22.0
+      },
+      "reference_dt": 0.125,
+      "rows": [
+        {
+          "dt": 4.0,
+          "error": 0.00039743652612578284,
+          "cfl": 4.095966203533806,
+          "trace_drift": 1.6209256159527285e-14,
+          "wall_time_s": 16.11305295200009,
+          "n_steps": 300
+        },
+        {
+          "dt": 2.0,
+          "error": 9.908257232960072e-05,
+          "cfl": 2.047983101766903,
+          "trace_drift": 3.930189507173054e-14,
+          "wall_time_s": 32.333847574000174,
+          "n_steps": 600
+        },
+        {
+          "dt": 1.0,
+          "error": 2.4480140472404877e-05,
+          "cfl": 1.0239915508834514,
+          "trace_drift": 7.37188088351104e-14,
+          "wall_time_s": 64.08257761100003,
+          "n_steps": 1200
+        },
+        {
+          "dt": 0.5,
+          "error": 5.828659612516773e-06,
+          "cfl": 0.5119957754417257,
+          "trace_drift": 1.0791367799356522e-13,
+          "wall_time_s": 129.70525550699995,
+          "n_steps": 2400
+        },
+        {
+          "dt": 0.25,
+          "error": 1.1657347649962624e-06,
+          "cfl": 0.25599788772086285,
+          "trace_drift": 2.446931546273845e-13,
+          "wall_time_s": 247.8176661269997,
+          "n_steps": 4800
+        }
+      ],
+      "fitted_order": 2.0914077432456994,
+      "pairwise_orders": [
+        2.004021239886248,
+        2.01701948700563,
+        2.0703757791835495,
+        2.3219245770584833
+      ],
+      "expected_order": 2.0,
+      "reference_populations": [
+        0.7003998731028943,
+        0.29960012689764043
+      ]
+    },
+    "n_R": {
+      "n_P": 512,
+      "dt": 0.5,
+      "reference_n_R": 2048,
+      "rows": [
+        {
+          "n_R": 256,
+          "dR": 0.3515625,
+          "dR_over_sigma_R": 1.40625,
+          "error": 3.981792928509087e-05,
+          "wall_time_s": 263.2049780870002
+        },
+        {
+          "n_R": 512,
+          "dR": 0.17578125,
+          "dR_over_sigma_R": 0.703125,
+          "error": 1.723732268033018e-12,
+          "wall_time_s": 559.848666071
+        },
+        {
+          "n_R": 1024,
+          "dR": 0.087890625,
+          "dR_over_sigma_R": 0.3515625,
+          "error": 5.295763827461997e-14,
+          "wall_time_s": 1254.0181165699996
+        }
+      ],
+      "reference_populations": [
+        0.7004057017988574,
+        0.29959429820150857
+      ]
+    },
+    "n_P": {
+      "n_R": 1024,
+      "dt": 0.5,
+      "reference_n_P": 1024,
+      "rows": [
+        {
+          "n_P": 128,
+          "dP": 0.34375,
+          "dP_over_sigma_P": 0.171875,
+          "error": 1.1890488593735427e-13,
+          "wall_time_s": 262.39288485900033
+        },
+        {
+          "n_P": 256,
+          "dP": 0.171875,
+          "dP_over_sigma_P": 0.0859375,
+          "error": 8.770761894538737e-14,
+          "wall_time_s": 580.7422135209999
+        },
+        {
+          "n_P": 512,
+          "dP": 0.0859375,
+          "dP_over_sigma_P": 0.04296875,
+          "error": 1.9095836023552692e-14,
+          "wall_time_s": 1229.5024163209991
+        }
+      ],
+      "reference_populations": [
+        0.7004057017987854,
+        0.29959429820149697
+      ]
+    },
+    "box": {
+      "dR": 0.17578125,
+      "dP": 0.34375,
+      "rows": [
+        {
+          "R_half": 45.0,
+          "P_half": 22.0,
+          "n_R": 512,
+          "n_P": 128,
+          "error_vs_smallest_box": 0.0,
+          "boundary_mass": 3.3542561096471778e-06,
+          "wall_time_s": 122.24203590599973
+        },
+        {
+          "R_half": 67.5,
+          "P_half": 33.0,
+          "n_R": 768,
+          "n_P": 192,
+          "error_vs_smallest_box": 2.196742787674566e-11,
+          "boundary_mass": 2.7005804677510895e-06,
+          "wall_time_s": 295.60732318400005
+        },
+        {
+          "R_half": 90.0,
+          "P_half": 44.0,
+          "n_R": 1024,
+          "n_P": 256,
+          "error_vs_smallest_box": 3.648314983450973e-11,
+          "boundary_mass": 3.3801820518542645e-06,
+          "wall_time_s": 571.0573514000007
+        }
+      ]
+    }
+  }
+}

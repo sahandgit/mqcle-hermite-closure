@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-09-27T02:28:47Z",
+    "script": "18_pbme_phase_space.py",
+    "config": {
+      "units": "atomic",
+      "hbar": 1.0,
+      "dtype": "float64",
+      "trace_convention": "traceless",
+      "seed": 20260819,
+      "nstates": 2,
+      "nbath": 1,
+      "mass": 2000.0,
+      "output_root": "results",
+      "model": {
+        "name": "tully_dual_avoided_crossing",
+        "A": 0.1,
+        "B": 0.28,
+        "C": 0.015,
+        "D": 0.06,
+        "E0": 0.05
+      },
+      "initial_conditions": {
+        "R0": -15.0,
+        "P0": 40.0,
+        "sigma_R": 0.25,
+        "init_state": 0
+      },
+      "mapping_sampling": {
+        "scheme": "focused",
+        "n_samples": 20000
+      },
+      "propagation": {
+        "dt": 0.5,
+        "n_steps": 200
+      },
+      "P0": 30.0,
+      "R0": -15.0,
+      "sigma_R": 0.3333333333333333,
+      "T": 2000.0,
+      "dt": 0.5,
+      "n_steps": 4000,
+      "scheme": "sign_optimal",
+      "chunk": 200000,
+      "n_chunks_reproduced": 6,
+      "n_chunks_of_source": 6,
+      "n_seeds_of_source": 6,
+      "blocks_per_chunk": 10,
+      "pbme_archive": "results/raw/11_pbme_projected_P30.json",
+      "window_archive": "results/raw/10b_qcle_grid_crosscheck_P30.json"
+    },
+    "seed": 20260819,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/18_pbme_phase_space.py --P0 30 --blocks-per-chunk 10 --extend-to 5 25 12.5 44",
+    "wall_time_s": 3447.066031,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "pbme_field.reproduces_scripts11_seed_replicates",
+      "value": 1.7763568394002505e-14,
+      "tolerance": 1e-10,
+      "passed": true,
+      "note": "chunk totals against the archived seed-replicate populations of the same seeds"
+    },
+    {
+      "name": "pbme_field.binned_integral_consistency",
+      "value": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "passed": true,
+      "note": "integral of the pooled binned field against the direct sum of w c over the trajectories inside the cells"
+    },
+    {
+      "name": "pbme_field.mapping_radius_drift",
+      "value": 1.0409451078885468e-12,
+      "tolerance": 1e-09,
+      "passed": true,
+      "note": "max |x(T)|^2 - |x(0)|^2 over the ensemble"
+    },
+    {
+      "name": "pbme_field.weight_outside_window",
+      "value": 1.0000000000000003e-05,
+      "tolerance": 0.001,
+      "passed": true,
+      "note": "fraction of total |weight| outside the cells"
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "estimator": "projected-density PBME, plain (no control variate)",
+    "components": [
+      "A",
+      "C",
+      "bR",
+      "bI"
+    ],
+    "component_meaning": [
+      "rho_W^{11}",
+      "rho_W^{22}",
+      "Re rho_W^{12}",
+      "Im rho_W^{12}"
+    ],
+    "n_samples": 1200000,
+    "n_blocks": 60,
+    "block_size": 20000,
+    "seeds": [
+      20260819,
+      20261820,
+      20262821,
+      20263822,
+      20264823,
+      20265824
+    ],
+    "cells": {
+      "n_R": 58,
+      "n_P": 93,
+      "dR": 0.3515625,
+      "dP": 0.34375,
+      "R_lo": 4.74609375,
+      "P_lo": 12.2109375,
+      "coarsen_block": 4,
+      "index_origin": [
+        566,
+        49
+      ],
+      "index_end": [
+        798,
+        421
+      ],
+      "grid": {
+        "R_min": -45.0,
+        "R_max": 45.0,
+        "n_R": 1024,
+        "P_min": 8.0,
+        "P_max": 52.0,
+        "n_P": 512
+      },
+      "edges": "cell k spans [R_lo + k dR, R_lo + (k+1) dR), likewise in P; R_lo and P_lo are coefficient nodes",
+      "source": "scripts/10b focused-PBME window, enlarged to cover R in [5, 25], P in [12.5, 44]"
+    },
+    "total_populations": [
+      0.3889722631516646,
+      0.6097658721590283
+    ],
+    "total_coherence": [
+      -0.01069749651798754,
+      -0.010236607032947632
+    ],
+    "binned_integrals": [
+      0.38896937687922356,
+      0.6097541991720031,
+      -0.01069457091642539,
+      -0.010233397006265188
+    ],
+    "fraction_trajectories_outside_window": 9.99999999995449e-06,
+    "outside_signed_integrals": [
+      2.8862724410429934e-06,
+      1.1672987025364035e-05,
+      -2.9256015621393517e-06,
+      -3.2100266824516462e-06
+    ],
+    "outside_abs_integrals": [
+      2.8862724410429934e-06,
+      1.1672987025364035e-05,
+      5.831008307925412e-06,
+      3.2100266824516462e-06
+    ],
+    "fraction_abs_weight_outside_window": 1.0000000000000003e-05,
+    "reproduction_max_abs_difference": 1.7763568394002505e-14,
+    "mean_trajectories_per_cell": 222.46718576195772,
+    "wall_time_s": 3446.8009873439987,
+    "binned_minus_total": [
+      -2.8862724410494423e-06,
+      -1.167298702520192e-05,
+      2.9256015621516307e-06,
+      3.2100266824444668e-06
+    ]
+  }
+}

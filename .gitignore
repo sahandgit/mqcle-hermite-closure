@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Manuscript sources, PDFs and LaTeX build products stay out of the public
+# repository until publication.  The generated macro file is tracked.
+manuscript/*
+!manuscript/paper_values.tex
+
+# Development records, kept locally; read by scripts/13_acceptance.py
+CLAIM_TABLE.md
+CORRECTIONS.md
+MODULE_STATUS.md
+
+# Field archives above GitHub's 50 MiB file-size recommendation.  Their
+# SHA-256 digests are in MANIFEST.sha256.
+results/raw/07g_gh_coefficient_propagation_P*.h5
+results/raw/10b_qcle_grid_crosscheck_P10.h5
+results/raw/10b_qcle_grid_crosscheck_P20.h5
+results/raw/10b_qcle_grid_crosscheck_P70.h5
+results/raw/10b_qcle_grid_crosscheck_P100.h5
+
+# Local housekeeping
+_to_delete/
+Claude outputs/

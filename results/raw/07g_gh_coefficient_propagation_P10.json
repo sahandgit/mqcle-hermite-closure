@@ -1,0 +1,1074 @@
+{
+  "metadata": {
+    "method": "gaussian_hermite_coefficient",
+    "status": "completed",
+    "timestamp_utc": "2026-09-26T05:27:41Z",
+    "script": "07g_gh_coefficient_propagation.py",
+    "source_modules": [
+      "mqcle.hermite.operator",
+      "mqcle.hermite.frame",
+      "mqcle.hermite.propagator"
+    ],
+    "command_line": ".\\scripts\\07g_gh_coefficient_propagation.py --P0 10 --save-field --threads 4 --krylov-m 8",
+    "P0": 10.0,
+    "model": "tully_dual_avoided_crossing",
+    "mass": 2000.0,
+    "hbar": 1.0,
+    "dtype": "complex128",
+    "grid": {
+      "R_box": [
+        -45.0,
+        45.0
+      ],
+      "n_R": 4096,
+      "P_box": [
+        -30.0,
+        50.0
+      ],
+      "n_P": 2048
+    },
+    "time": {
+      "T": 6000.0,
+      "dt": 0.1724534375718556,
+      "n_steps": 34792,
+      "save_every": 869,
+      "integrator": "krylov",
+      "cfl": 0.5,
+      "rk4_dt_limit": 0.34491391700931145,
+      "krylov_m": 8,
+      "krylov_tol": 1e-10,
+      "krylov_stats": {
+        "applications": 62088,
+        "substeps": 7761,
+        "rejected": 262,
+        "breakdowns": 0,
+        "reorthogonalisations": 15520
+      }
+    },
+    "hermite": {
+      "K": 2,
+      "parity": "even",
+      "n_modes": 11,
+      "modes": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "R_blocks": 24,
+      "G_blocks": 27
+    },
+    "spectral_radius": {
+      "advection": 3.571641781281196,
+      "rotation": 0.1485288616052046,
+      "force": 4.480214975852877,
+      "total": 8.200385618739277,
+      "rk4_dt_limit": 0.34491391700931145
+    },
+    "kernel": {
+      "name": "real_blocked_threaded",
+      "module": "mqcle.hermite.kernel",
+      "threads": 4,
+      "generator_is_real": true,
+      "initial_state_max_abs_imag": 0.0,
+      "equivalence_gate": "GH-12",
+      "note": "same operator, same spectral derivatives, same RK4 tableau, same dt and grid; real arithmetic and a reordered mode contraction"
+    },
+    "rhs_applications": 62088,
+    "wall_time_s": 388265.1200904,
+    "state_bytes": 738197504,
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 190 Stepping 0, GenuineIntel",
+    "packages": {
+      "numpy": "2.4.0",
+      "h5py": "3.16.0"
+    },
+    "seed": null,
+    "output_files": {
+      "json": "D:\\Paper_SNN_MQCLE\\results\\raw\\07g_gh_coefficient_propagation_P10.json",
+      "h5": "D:\\Paper_SNN_MQCLE\\results\\raw\\07g_gh_coefficient_propagation_P10.h5"
+    }
+  },
+  "checks": [
+    {
+      "name": "physical_frame_residual_max",
+      "value": 7.788948620838764e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "parity_leakage_max",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "trace_drift",
+      "value": 2.924707365181689e-09,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "hermiticity_max",
+      "value": 0.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "initial_state_imaginary_part",
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "final": {
+      "t": 6000.0,
+      "step": 40,
+      "populations": [
+        0.9829927326546738,
+        0.017007264420577123
+      ],
+      "adiabatic_populations": [
+        0.9776887910413498,
+        0.02231120603394478
+      ],
+      "coherence_re": 0.005142169443693168,
+      "coherence_im": 0.00019670626521615792,
+      "physical_frame_residual": 7.788948620838764e-12,
+      "physical_frame_residual_euclid": 8.400646626379723e-12,
+      "hermite_norm": 0.778352900681535,
+      "parity_leakage": 0.0,
+      "max_hermite_order": 2,
+      "trace": 0.9999999970752926,
+      "hermiticity_error": 0.0
+    },
+    "history": [
+      {
+        "t": 0.0,
+        "step": 0,
+        "populations": [
+          0.9999999999998911,
+          3.2198657010818042e-19
+        ],
+        "adiabatic_populations": [
+          0.9999999999717445,
+          2.8256575163898525e-11
+        ],
+        "coherence_re": 0.0,
+        "coherence_im": 0.0,
+        "physical_frame_residual": 1.6183687031425142e-16,
+        "physical_frame_residual_euclid": 1.5975656478216048e-16,
+        "hermite_norm": 0.7957747154594769,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 1.0,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 150.0,
+        "step": 1,
+        "populations": [
+          0.9999999996107385,
+          2.1173880412022594e-10
+        ],
+        "adiabatic_populations": [
+          0.9999999997697048,
+          5.287507804394261e-11
+        ],
+        "coherence_re": -4.435858612402028e-06,
+        "coherence_im": 2.224290630728193e-06,
+        "physical_frame_residual": 1.1814064253958763e-15,
+        "physical_frame_residual_euclid": 1.2259882930819225e-15,
+        "hermite_norm": 0.7957747154397454,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999998225821,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 300.0,
+        "step": 2,
+        "populations": [
+          0.9999999975869078,
+          2.1343060493388885e-09
+        ],
+        "adiabatic_populations": [
+          0.9999999996350497,
+          8.624664969906611e-11
+        ],
+        "coherence_re": -1.7127432550757965e-05,
+        "coherence_im": 3.584617357422345e-06,
+        "physical_frame_residual": 1.7453336439713288e-15,
+        "physical_frame_residual_euclid": 1.805962889940457e-15,
+        "hermite_norm": 0.7957747152388013,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999997212987,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 450.0,
+        "step": 3,
+        "populations": [
+          0.9999999867378352,
+          1.2892345260194567e-08
+        ],
+        "adiabatic_populations": [
+          0.9999999995067239,
+          1.2357416483292114e-10
+        ],
+        "coherence_re": -4.803716858686788e-05,
+        "coherence_im": 5.845318568916657e-06,
+        "physical_frame_residual": 2.164812959600205e-15,
+        "physical_frame_residual_euclid": 2.237868093268174e-15,
+        "hermite_norm": 0.7957747139718295,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999996302937,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 600.0,
+        "step": 4,
+        "populations": [
+          0.9999999263963085,
+          7.314697599342196e-08
+        ],
+        "adiabatic_populations": [
+          0.9999999987681248,
+          7.752826960407802e-10
+        ],
+        "coherence_re": -0.00012676975172429793,
+        "coherence_im": 1.4808500092564681e-05,
+        "physical_frame_residual": 2.517364115601442e-15,
+        "physical_frame_residual_euclid": 2.6007007033202616e-15,
+        "hermite_norm": 0.795774706290553,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999995434082,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 750.0,
+        "step": 5,
+        "populations": [
+          0.9999995951571709,
+          4.043036530162639e-07
+        ],
+        "adiabatic_populations": [
+          0.9999999943243421,
+          5.136627312147514e-09
+        ],
+        "coherence_re": -0.00032375320213547457,
+        "coherence_im": 3.898001618540318e-05,
+        "physical_frame_residual": 2.836240331364165e-15,
+        "physical_frame_residual_euclid": 2.9305699557767363e-15,
+        "hermite_norm": 0.7957746621483195,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999994609695,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 900.0,
+        "step": 6,
+        "populations": [
+          0.9999979677090289,
+          2.031672257759109e-06
+        ],
+        "adiabatic_populations": [
+          0.9999999762454722,
+          2.313592112755676e-08
+        ],
+        "coherence_re": -0.0007842257357252797,
+        "coherence_im": 9.03054140352182e-05,
+        "physical_frame_residual": 3.101879653800071e-15,
+        "physical_frame_residual_euclid": 3.2044703733539413e-15,
+        "hermite_norm": 0.7957744389478432,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999993813915,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 1050.0,
+        "step": 7,
+        "populations": [
+          0.9999909611052876,
+          9.038198076660665e-06
+        ],
+        "adiabatic_populations": [
+          0.9999999147573878,
+          8.454600560991129e-08
+        ],
+        "coherence_re": -0.0017834969824041319,
+        "coherence_im": 0.00018894662055300764,
+        "physical_frame_residual": 3.3289846916018943e-15,
+        "physical_frame_residual_euclid": 3.443221032390704e-15,
+        "hermite_norm": 0.7957734653814096,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999993033972,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 1200.0,
+        "step": 8,
+        "populations": [
+          0.999964324256949,
+          3.567496903160813e-05
+        ],
+        "adiabatic_populations": [
+          0.9999997231124387,
+          2.761136604471697e-07
+        ],
+        "coherence_re": -0.0038053550215388383,
+        "coherence_im": 0.00036832616422247046,
+        "physical_frame_residual": 3.5650915088330454e-15,
+        "physical_frame_residual_euclid": 3.699358631563926e-15,
+        "hermite_norm": 0.7957697928961972,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999992261001,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 1350.0,
+        "step": 9,
+        "populations": [
+          0.9998744621611607,
+          0.00012553698834208437
+        ],
+        "adiabatic_populations": [
+          0.999999186293787,
+          8.128558886527828e-07
+        ],
+        "coherence_re": -0.007625670411736388,
+        "coherence_im": 0.0006737832044201852,
+        "physical_frame_residual": 3.762344890040079e-15,
+        "physical_frame_residual_euclid": 3.962888946868754e-15,
+        "hermite_norm": 0.7957578128442668,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999991496769,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 1500.0,
+        "step": 10,
+        "populations": [
+          0.9996052047830023,
+          0.0003947942916069206
+        ],
+        "adiabatic_populations": [
+          0.9999978686391782,
+          2.130435494574913e-06
+        ],
+        "coherence_re": -0.01435832678863637,
+        "coherence_im": 0.0011519804405708994,
+        "physical_frame_residual": 3.931882862657593e-15,
+        "physical_frame_residual_euclid": 4.258794331677369e-15,
+        "hermite_norm": 0.7957242229266073,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999990746765,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 1650.0,
+        "step": 11,
+        "populations": [
+          0.998882640063278,
+          0.001117358938940644
+        ],
+        "adiabatic_populations": [
+          0.9999947030622764,
+          5.295939954616552e-06
+        ],
+        "coherence_re": -0.025419530383887792,
+        "coherence_im": 0.0018418970332051417,
+        "physical_frame_residual": 4.112696607429159e-15,
+        "physical_frame_residual_euclid": 4.559037913199325e-15,
+        "hermite_norm": 0.7956438342626602,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999990022337,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 1800.0,
+        "step": 12,
+        "populations": [
+          0.9970733051111116,
+          0.0029266938184722637
+        ],
+        "adiabatic_populations": [
+          0.9999821486615439,
+          1.7850268163951338e-05
+        ],
+        "coherence_re": -0.04247258674056799,
+        "coherence_im": 0.0028299138427010473,
+        "physical_frame_residual": 4.276399551696951e-15,
+        "physical_frame_residual_euclid": 4.8090806641255725e-15,
+        "hermite_norm": 0.7954776305132472,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999989297038,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 1950.0,
+        "step": 13,
+        "populations": [
+          0.9923680987131709,
+          0.007631900145953667
+        ],
+        "adiabatic_populations": [
+          0.999894289780434,
+          0.0001057090787637042
+        ],
+        "coherence_re": -0.06770215500464874,
+        "coherence_im": 0.004612812912091492,
+        "physical_frame_residual": 4.431223336877583e-15,
+        "physical_frame_residual_euclid": 5.0118565196972786e-15,
+        "hermite_norm": 0.7951394582554481,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999988591991,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 2100.0,
+        "step": 14,
+        "populations": [
+          0.9784659117016955,
+          0.02153408708746253
+        ],
+        "adiabatic_populations": [
+          0.999377506533691,
+          0.0006224922554775656
+        ],
+        "coherence_re": -0.10452720281816619,
+        "coherence_im": 0.009148627600299232,
+        "physical_frame_residual": 4.599694030903109e-15,
+        "physical_frame_residual_euclid": 5.198492862831334e-15,
+        "hermite_norm": 0.7941043117665965,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999987891678,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 2250.0,
+        "step": 15,
+        "populations": [
+          0.9372641458828808,
+          0.06273585283768997
+        ],
+        "adiabatic_populations": [
+          0.9974654750835089,
+          0.00253452363714239
+        ],
+        "coherence_re": -0.15609943317291364,
+        "coherence_im": 0.020217486806199638,
+        "physical_frame_residual": 4.7699253767573255e-15,
+        "physical_frame_residual_euclid": 5.309548623924725e-15,
+        "hermite_norm": 0.7895438919970178,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999987206512,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 2400.0,
+        "step": 16,
+        "populations": [
+          0.8390873733478804,
+          0.16091262530188838
+        ],
+        "adiabatic_populations": [
+          0.9932227057859171,
+          0.006777292863873733
+        ],
+        "coherence_re": -0.21778056827406053,
+        "coherence_im": 0.0379261014404522,
+        "physical_frame_residual": 4.9747032223995196e-15,
+        "physical_frame_residual_euclid": 5.3387653493523734e-15,
+        "hermite_norm": 0.775177380939699,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999986497935,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 2550.0,
+        "step": 17,
+        "populations": [
+          0.6754902011350115,
+          0.32450979744384395
+        ],
+        "adiabatic_populations": [
+          0.9875166960758532,
+          0.012483302503118023
+        ],
+        "coherence_re": -0.2728656929302524,
+        "coherence_im": 0.04969287783622102,
+        "physical_frame_residual": 5.2230461509154126e-15,
+        "physical_frame_residual_euclid": 5.3545826210850015e-15,
+        "hermite_norm": 0.7528841058450251,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999985789699,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 2700.0,
+        "step": 18,
+        "populations": [
+          0.50424488195307,
+          0.49575511655626625
+        ],
+        "adiabatic_populations": [
+          0.982363284595411,
+          0.017636713913926703
+        ],
+        "coherence_re": -0.3061606948372864,
+        "coherence_im": 0.037466906417542675,
+        "physical_frame_residual": 5.463433487800808e-15,
+        "physical_frame_residual_euclid": 5.5003693049262e-15,
+        "hermite_norm": 0.7405057753426252,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999985093396,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 2850.0,
+        "step": 19,
+        "populations": [
+          0.4257479159432055,
+          0.5742520824940662
+        ],
+        "adiabatic_populations": [
+          0.977891955935543,
+          0.022108042501779255
+        ],
+        "coherence_re": -0.31561851164730903,
+        "coherence_im": 0.001847274196922628,
+        "physical_frame_residual": 5.6652409217220246e-15,
+        "physical_frame_residual_euclid": 5.752196590967635e-15,
+        "hermite_norm": 0.7411791403601476,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.999999998437324,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 3000.0,
+        "step": 20,
+        "populations": [
+          0.4885323859467759,
+          0.5114676124197319
+        ],
+        "adiabatic_populations": [
+          0.9732390937824134,
+          0.02676090458408314
+        ],
+        "coherence_re": -0.30153156765012296,
+        "coherence_im": -0.03308281615855495,
+        "physical_frame_residual": 5.839879276224464e-15,
+        "physical_frame_residual_euclid": 5.973627207156677e-15,
+        "hermite_norm": 0.7418590950673174,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999983664959,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 3150.0,
+        "step": 21,
+        "populations": [
+          0.6422576636800282,
+          0.3577423346189729
+        ],
+        "adiabatic_populations": [
+          0.9697877000999504,
+          0.030212298199085247
+        ],
+        "coherence_re": -0.26272265596719946,
+        "coherence_im": -0.04564962661739483,
+        "physical_frame_residual": 5.954432204435136e-15,
+        "physical_frame_residual_euclid": 6.181865712176179e-15,
+        "hermite_norm": 0.7454026461752133,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999982990405,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 3300.0,
+        "step": 22,
+        "populations": [
+          0.7963216435552034,
+          0.20367835467633028
+        ],
+        "adiabatic_populations": [
+          0.9695755582449418,
+          0.03042443998662977
+        ],
+        "coherence_re": -0.20750478138836653,
+        "coherence_im": -0.037135766740659805,
+        "physical_frame_residual": 5.9926385172909315e-15,
+        "physical_frame_residual_euclid": 6.388776264594e-15,
+        "hermite_norm": 0.7547659308827328,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999982315695,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 3450.0,
+        "step": 23,
+        "populations": [
+          0.8994537214668625,
+          0.10054627669807349
+        ],
+        "adiabatic_populations": [
+          0.9718100954435442,
+          0.028189902721439473
+        ],
+        "coherence_re": -0.1506842783762913,
+        "coherence_im": -0.02269478593406878,
+        "physical_frame_residual": 6.017747207766839e-15,
+        "physical_frame_residual_euclid": 6.561260124247156e-15,
+        "hermite_norm": 0.7637915163785789,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999981649812,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 3600.0,
+        "step": 24,
+        "populations": [
+          0.9533870851752335,
+          0.046612912924755126
+        ],
+        "adiabatic_populations": [
+          0.9740739065331935,
+          0.025926091566653157
+        ],
+        "coherence_re": -0.10260233644379796,
+        "coherence_im": -0.012379545028178326,
+        "physical_frame_residual": 6.0656937079147325e-15,
+        "physical_frame_residual_euclid": 6.702073466775448e-15,
+        "hermite_norm": 0.7698517759492362,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999980998457,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 3750.0,
+        "step": 25,
+        "populations": [
+          0.9787295038000394,
+          0.021270494234799563
+        ],
+        "adiabatic_populations": [
+          0.9752537077766351,
+          0.024746290258197298
+        ],
+        "coherence_re": -0.06662496966418052,
+        "coherence_im": -0.006876624469151965,
+        "physical_frame_residual": 6.165154933768746e-15,
+        "physical_frame_residual_euclid": 6.860289968146256e-15,
+        "hermite_norm": 0.7735204417559188,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999980348344,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 3900.0,
+        "step": 26,
+        "populations": [
+          0.989975523300009,
+          0.010024474669663379
+        ],
+        "adiabatic_populations": [
+          0.9756717143305409,
+          0.02432828363916722
+        ],
+        "coherence_re": -0.041515450822018525,
+        "coherence_im": -0.0037501340405766215,
+        "physical_frame_residual": 6.4097281378272756e-15,
+        "physical_frame_residual_euclid": 7.147494050851935e-15,
+        "hermite_norm": 0.7756496710526618,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999979697098,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 4050.0,
+        "step": 27,
+        "populations": [
+          0.9930090362998037,
+          0.006990961604812162
+        ],
+        "adiabatic_populations": [
+          0.9758709434435228,
+          0.024129054461112524
+        ],
+        "coherence_re": -0.024348730886762423,
+        "coherence_im": -0.0014724810475588847,
+        "physical_frame_residual": 7.0539773170366945e-15,
+        "physical_frame_residual_euclid": 7.835466317439097e-15,
+        "hermite_norm": 0.7768780089238037,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999979046362,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 4200.0,
+        "step": 28,
+        "populations": [
+          0.9900989359342497,
+          0.009901061905444927
+        ],
+        "adiabatic_populations": [
+          0.976047878961013,
+          0.023952118878682826
+        ],
+        "coherence_re": -0.01268756059964059,
+        "coherence_im": 0.0002593608789901093,
+        "physical_frame_residual": 8.74198780821396e-15,
+        "physical_frame_residual_euclid": 9.626008058139195e-15,
+        "hermite_norm": 0.7775948247375342,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999978396937,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 4350.0,
+        "step": 29,
+        "populations": [
+          0.9836195754117512,
+          0.016380422363083007
+        ],
+        "adiabatic_populations": [
+          0.9761506327264156,
+          0.023849365048499997
+        ],
+        "coherence_re": -0.005037357505389959,
+        "coherence_im": 0.0011354175092033333,
+        "physical_frame_residual": 1.2740154792309362e-14,
+        "physical_frame_residual_euclid": 1.3899555423461224e-14,
+        "hermite_norm": 0.7780727037617048,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999977749182,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 4500.0,
+        "step": 30,
+        "populations": [
+          0.9770828811437703,
+          0.0229171165666628
+        ],
+        "adiabatic_populations": [
+          0.9761673072877646,
+          0.02383269042255941
+        ],
+        "coherence_re": -0.00035233071940147837,
+        "coherence_im": 0.000939706798037404,
+        "physical_frame_residual": 2.0987481889182722e-14,
+        "physical_frame_residual_euclid": 2.2781933858413535e-14,
+        "hermite_norm": 0.7784257967207114,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999977103251,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 4650.0,
+        "step": 31,
+        "populations": [
+          0.973915898642057,
+          0.026084099003872763
+        ],
+        "adiabatic_populations": [
+          0.9761986062743968,
+          0.023801391371526953
+        ],
+        "coherence_re": 0.002223495007210217,
+        "coherence_im": -5.584344897216175e-05,
+        "physical_frame_residual": 3.70633142223082e-14,
+        "physical_frame_residual_euclid": 4.01503841297457e-14,
+        "hermite_norm": 0.778660862757275,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999976459217,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 4800.0,
+        "step": 32,
+        "populations": [
+          0.9756794750605281,
+          0.024320522521149014
+        ],
+        "adiabatic_populations": [
+          0.9763123075980668,
+          0.023687689983564065
+        ],
+        "coherence_re": 0.0033132136862633436,
+        "coherence_im": -0.0011692796897019848,
+        "physical_frame_residual": 6.567580233342658e-14,
+        "physical_frame_residual_euclid": 7.108983542412626e-14,
+        "hermite_norm": 0.7787851412060298,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999975816306,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 4950.0,
+        "step": 33,
+        "populations": [
+          0.9811559531079231,
+          0.018844044409690997
+        ],
+        "adiabatic_populations": [
+          0.9764728135521844,
+          0.023527183965448038
+        ],
+        "coherence_re": 0.0035211736654063414,
+        "coherence_im": -0.0017008905796245186,
+        "physical_frame_residual": 1.1991704860217187e-13,
+        "physical_frame_residual_euclid": 1.2974567427812372e-13,
+        "hermite_norm": 0.7788491388254353,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999975176314,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 5100.0,
+        "step": 34,
+        "populations": [
+          0.9872927299725417,
+          0.012707267481747062
+        ],
+        "adiabatic_populations": [
+          0.9766515121313831,
+          0.023348485322981945
+        ],
+        "coherence_re": 0.0035847898048162897,
+        "coherence_im": -0.00144031535630278,
+        "physical_frame_residual": 2.2489727788347616e-13,
+        "physical_frame_residual_euclid": 2.432528721868569e-13,
+        "hermite_norm": 0.7789062461037826,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999974543672,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 5250.0,
+        "step": 35,
+        "populations": [
+          0.9913983082595393,
+          0.008601689130842053
+        ],
+        "adiabatic_populations": [
+          0.9769057157427111,
+          0.0230942816476154
+        ],
+        "coherence_re": 0.003980016619061162,
+        "coherence_im": -0.0006987167649974945,
+        "physical_frame_residual": 3.8657979932473647e-13,
+        "physical_frame_residual_euclid": 4.1799171044956885e-13,
+        "hermite_norm": 0.7789272507683197,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999973903272,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 5400.0,
+        "step": 36,
+        "populations": [
+          0.9924277292545266,
+          0.007572268072529634
+        ],
+        "adiabatic_populations": [
+          0.9772512907477927,
+          0.022748706579212376
+        ],
+        "coherence_re": 0.004603417073710826,
+        "coherence_im": 9.524243600122982e-05,
+        "physical_frame_residual": 7.162480747451438e-13,
+        "physical_frame_residual_euclid": 7.741051205651875e-13,
+        "hermite_norm": 0.778879510790728,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999973270034,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 5550.0,
+        "step": 37,
+        "populations": [
+          0.9908204909173158,
+          0.009179506346722857
+        ],
+        "adiabatic_populations": [
+          0.977545840862854,
+          0.022454156401197214
+        ],
+        "coherence_re": 0.0050376858264535255,
+        "coherence_im": 0.0006524233972898242,
+        "physical_frame_residual": 1.368435891266859e-12,
+        "physical_frame_residual_euclid": 1.4782076037157804e-12,
+        "hermite_norm": 0.7788071487850129,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999972640558,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 5700.0,
+        "step": 38,
+        "populations": [
+          0.9877831232465684,
+          0.012216873954230273
+        ],
+        "adiabatic_populations": [
+          0.9776625607290971,
+          0.022337436471684007
+        ],
+        "coherence_re": 0.0050996020690247685,
+        "coherence_im": 0.0008551161535590328,
+        "physical_frame_residual": 2.406279966486519e-12,
+        "physical_frame_residual_euclid": 2.5979259439090605e-12,
+        "hermite_norm": 0.778732312627773,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999972007806,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 5850.0,
+        "step": 39,
+        "populations": [
+          0.9847240957321536,
+          0.015275901406472699
+        ],
+        "adiabatic_populations": [
+          0.9776684377922145,
+          0.022331559346352104
+        ],
+        "coherence_re": 0.005067392981772549,
+        "coherence_im": 0.000678918702076647,
+        "physical_frame_residual": 4.591653400302781e-12,
+        "physical_frame_residual_euclid": 4.954737521191584e-12,
+        "hermite_norm": 0.7785988487098321,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999971385659,
+        "hermiticity_error": 0.0
+      },
+      {
+        "t": 6000.0,
+        "step": 40,
+        "populations": [
+          0.9829927326546738,
+          0.017007264420577123
+        ],
+        "adiabatic_populations": [
+          0.9776887910413498,
+          0.02231120603394478
+        ],
+        "coherence_re": 0.005142169443693168,
+        "coherence_im": 0.00019670626521615792,
+        "physical_frame_residual": 7.788948620838764e-12,
+        "physical_frame_residual_euclid": 8.400646626379723e-12,
+        "hermite_norm": 0.778352900681535,
+        "parity_leakage": 0.0,
+        "max_hermite_order": 2,
+        "trace": 0.9999999970752926,
+        "hermiticity_error": 0.0
+      }
+    ]
+  }
+}

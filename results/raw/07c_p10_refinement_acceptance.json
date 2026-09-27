@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-09-04T00:43:57Z",
+    "script": "07c_p10_refinement_acceptance.py",
+    "config": {
+      "fine_json": "results\\raw\\07_coefficient_propagation_P10.json",
+      "fine_h5": "results\\raw\\07_coefficient_propagation_P10.h5",
+      "coarse_json": "results\\failed\\P10_2048x1024_20260829\\07_coefficient_propagation_P10.json",
+      "coarse_h5": "results\\failed\\P10_2048x1024_20260829\\07_coefficient_propagation_P10.h5",
+      "fine_grid": {
+        "R_min": -45.0,
+        "R_max": 45.0,
+        "n_R": 4096,
+        "P_min": -30.0,
+        "P_max": 50.0,
+        "n_P": 2048
+      },
+      "coarse_grid": {
+        "R_min": -45.0,
+        "R_max": 45.0,
+        "n_R": 2048,
+        "P_min": -30.0,
+        "P_max": 50.0,
+        "n_P": 1024
+      },
+      "population_budget_definition": "min(0.02 * final coefficient-QCLE vs Schrodinger population difference, 0.5e-4)",
+      "minimum_boundary_reduction": 16.0,
+      "maximum_opposite_edge_asymmetry": 0.05
+    },
+    "seed": 20260819,
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "2.4.0",
+      "scipy": "1.16.3",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.8",
+      "pandas": "2.3.3",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "2.9.1+cpu"
+    },
+    "dtype": "float64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 190 Stepping 0, GenuineIntel",
+    "command_line": ".\\scripts\\07c_p10_refinement_acceptance.py --fine-json .\\results\\raw\\07_coefficient_propagation_P10.json --fine-h5 .\\results\\raw\\07_coefficient_propagation_P10.h5 --coarse-json .\\results\\failed\\P10_2048x1024_20260829\\07_coefficient_propagation_P10.json --coarse-h5 .\\results\\failed\\P10_2048x1024_20260829\\07_coefficient_propagation_P10.h5 --out .\\results\\raw\\07c_p10_refinement_acceptance.json",
+    "wall_time_s": 10.716161,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "p10_refinement.exact_grids",
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "note": "fine and coarse grids must be the pinned simultaneous two-axis refinement pair"
+    },
+    {
+      "name": "p10_refinement.same_physical_configuration",
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "note": "the two runs may differ only in n_R and n_P"
+    },
+    {
+      "name": "p10_refinement.only_boundary_sentinels_fail",
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "note": "all production checks other than the generic R/P edge sentinels must pass; unexpected failures: none"
+    },
+    {
+      "name": "p10_refinement.complete_matching_histories",
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "note": "the complete saved population histories must share every time"
+    },
+    {
+      "name": "p10_refinement.finite_inputs",
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "note": "all datasets used by the acceptance calculation are finite"
+    },
+    {
+      "name": "p10_refinement.population_history_change",
+      "value": 1.4400365585087727e-05,
+      "tolerance": 2.8575209750726987e-05,
+      "passed": true,
+      "note": "max population L-infinity change over the complete history; budget is tied to the physical comparison and table precision"
+    },
+    {
+      "name": "p10_refinement.boundary_R_reduction",
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "note": "R-edge sentinel must fall by at least 16x; observed 54.1x"
+    },
+    {
+      "name": "p10_refinement.boundary_P_reduction",
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "note": "P-edge sentinel must fall by at least 16x; observed 30.5x"
+    },
+    {
+      "name": "p10_refinement.fine_boundary_R_below_observable_budget",
+      "value": 1.0920938854095625e-05,
+      "tolerance": 2.8575209750726987e-05,
+      "passed": true,
+      "note": "the residual R-edge proxy must be below the declared population error budget"
+    },
+    {
+      "name": "p10_refinement.fine_boundary_P_below_observable_budget",
+      "value": 1.571741787536653e-05,
+      "tolerance": 2.8575209750726987e-05,
+      "passed": true,
+      "note": "the residual P-edge proxy must be below the declared population error budget"
+    },
+    {
+      "name": "p10_refinement.opposite_R_edges_symmetric",
+      "value": 1.9620235593629964e-06,
+      "tolerance": 0.05,
+      "passed": true,
+      "note": "symmetric opposite edges identify a spectral floor rather than one-sided physical leakage"
+    },
+    {
+      "name": "p10_refinement.opposite_P_edges_symmetric",
+      "value": 0.010444861173947818,
+      "tolerance": 0.05,
+      "passed": true,
+      "note": "symmetric opposite edges identify a spectral floor rather than one-sided physical leakage"
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "input_sha256": {
+      "fine_json": "640988e525342a6068d6832001ad526a260038cdcf1f7e03fab4512ccaf44ebb",
+      "fine_h5": "86ca9781a92bfcfc055fc9c352a537300e955d1e888713bd09423291c4af91ee",
+      "coarse_json": "1178a40a54ad71f443d253e172a3647752e41c790e2e80486c34ecb49a48f7af",
+      "coarse_h5": "170b4babccbd6ecb8f0f07f6b227a5ba0cbd76393485c565297de14b8ae0c364"
+    },
+    "failed_fine_checks_preserved": [
+      "gateL.boundary_mass_P",
+      "gateL.boundary_mass_R"
+    ],
+    "max_population_linf_over_time": 1.4400365585087727e-05,
+    "final_coefficient_vs_schrodinger_population_linf": 0.0014287604875363492,
+    "population_error_budget": 2.8575209750726987e-05,
+    "population_change_over_physical_difference": 0.01007892205216192,
+    "boundary_mass": {
+      "R": {
+        "coarse": 0.0005909569887986236,
+        "fine": 1.0920938854095625e-05,
+        "reduction": 54.112288027049985,
+        "opposite_edge_asymmetry": 1.9620235593629964e-06
+      },
+      "P": {
+        "coarse": 0.00047928461291694876,
+        "fine": 1.571741787536653e-05,
+        "reduction": 30.49385189841635,
+        "opposite_edge_asymmetry": 0.010444861173947818
+      }
+    },
+    "interpretation": "The original edge sentinels remain failed in the raw production archive.  The refined result is accepted for the reported population observable because simultaneous two-axis refinement collapses a symmetric Fourier floor and changes the complete population history by less than the declared numerical budget."
+  }
+}

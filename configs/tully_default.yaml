@@ -1,0 +1,23 @@
+inherit: base.yaml
+
+model:
+  name: tully_dual_avoided_crossing   # Tully, JCP 93, 1061 (1990), model II
+  A: 0.1
+  B: 0.28
+  C: 0.015
+  D: 0.06
+  E0: 0.05
+
+initial_conditions:
+  R0: -15.0
+  P0: 40.0
+  sigma_R: 0.25
+  init_state: 0
+
+mapping_sampling:
+  scheme: focused
+  n_samples: 20000
+
+propagation:
+  dt: 0.5
+  n_steps: 200

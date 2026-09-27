@@ -1,0 +1,11 @@
+[08] P0=40.0 grid=1024x512 T=1500.0 dt=1.0 n_samples=20000  bandwidth floor h_R=0.1758 h_P=0.1719
+[08] routes A and B done in 758.4 s (39 sample times)
+[08] Route B / Route A leakage: median 0.645, range [0.501, 0.968]
+[08] estimator study at t=0 (analytic ground truth)
+     N=1000     rel-RMSE(grad_P)=0.3439   D_H estimate 2.4601e-08 +- 1.2e-09  (exact 2.2879e-08, rel err 0.075)
+/home/claude/Pipeline/scripts/08_leakage_diagnostic.py:317: RankWarning: Polyfit may be poorly conditioned
+  slope = float(np.polyfit(np.log(Ns), np.log(rm), 1)[0])
+/home/claude/Pipeline/scripts/08_leakage_diagnostic.py:319: RankWarning: Polyfit may be poorly conditioned
+  slope_leak = (float(np.polyfit(np.log(Ns), np.log(np.maximum(lk, 1e-16)), 1)[0])
+[08] grad_P relative-RMSE scales as N^-0.077; D_H relative error as N^-0.187
+[08] written to results/raw/08_leakage_P40_C0.03.json

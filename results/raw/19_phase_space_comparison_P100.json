@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-09-27T11:57:33Z",
+    "script": "19_phase_space_comparison.py",
+    "config": {
+      "P0": 100.0,
+      "inputs": [
+        "results/raw/07g_gh_coefficient_propagation_P100.h5",
+        "results/raw/10b_qcle_grid_crosscheck_P100.h5",
+        "results/raw/10b_qcle_grid_crosscheck_P100.json",
+        "results/raw/18_pbme_phase_space_P100.h5",
+        "results/raw/18_pbme_phase_space_P100.json",
+        "results/raw/07g_gh_coefficient_propagation_P100.json"
+      ]
+    },
+    "seed": null,
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "2.3.3",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "command_line": "scripts/19_phase_space_comparison.py --P0 100",
+    "wall_time_s": 32.573168,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "phase.node_alignment",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "note": "nodes of the coefficient propagation against the grid on which the quantum field was evaluated"
+    },
+    {
+      "name": "phase.grid_node_offset_is_half_cell",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "note": "node offset of the four-field solver recorded by scripts/10b against half a cell"
+    },
+    {
+      "name": "phase.grid_solver_agrees",
+      "value": 0.003566537922188818,
+      "tolerance": 0.01,
+      "passed": true,
+      "note": "four-field grid solution against the coefficient propagation, largest pointwise difference over the peak of the density"
+    },
+    {
+      "name": "phase.rk4_asymptotic_gap",
+      "value": 1.8007226992708234e-34,
+      "tolerance": 1e-12,
+      "passed": true,
+      "note": "the diabatic gap is the same at both edges of the box and the coupling vanishes there, so free flight is the asymptotic motion"
+    },
+    {
+      "name": "phase.rk4_whole_steps",
+      "value": 0.0,
+      "tolerance": 1e-09,
+      "passed": true,
+      "note": "final time of the four-field run against a whole number of its steps"
+    },
+    {
+      "name": "phase.cell_average_exactness",
+      "value": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true,
+      "note": "Fourier cell averages of a resolved Gaussian against erf"
+    },
+    {
+      "name": "phase.qcle_field_population",
+      "value": 1.5654144647214707e-14,
+      "tolerance": 1e-09,
+      "passed": true,
+      "note": "integrals of the QCLE field against the archived final populations and coherence of the coefficient propagation"
+    },
+    {
+      "name": "phase.quantum_trace",
+      "value": 3.1756819396377978e-12,
+      "tolerance": 1e-08,
+      "passed": true,
+      "note": "integral of the quantum Wigner field"
+    },
+    {
+      "name": "phase.qcle_fields_resolved",
+      "value": 6.334156515515506e-10,
+      "tolerance": 0.0001,
+      "passed": true,
+      "note": "root spectral power of the QCLE fields beyond 3/4 of Nyquist"
+    },
+    {
+      "name": "phase.quantum_fields_resolved",
+      "value": 2.6200870586012798e-11,
+      "tolerance": 0.0001,
+      "passed": true,
+      "note": "root spectral power of the quantum fields beyond 3/4 of Nyquist"
+    },
+    {
+      "name": "phase.qcle_solvers_agree",
+      "value": 1.6937901761695654e-05,
+      "tolerance": 0.0001,
+      "passed": true,
+      "note": "coefficient propagation against the Strang solution of the subsystem QCLE at the step of scripts/10b, whole fields"
+    },
+    {
+      "name": "phase.cells_hold_density",
+      "value": 1.438997243949522e-06,
+      "tolerance": 0.001,
+      "passed": true,
+      "note": "fraction of |rho| of the quantum and QCLE fields outside the cells"
+    },
+    {
+      "name": "phase.pbme_cells_hold_trajectories",
+      "value": 0.0,
+      "tolerance": 0.01,
+      "passed": true,
+      "note": "sum of |w c| over the PBME trajectories outside the cells, in units of the exact population of the state: the most by which they can change D_a"
+    },
+    {
+      "name": "phase.cell_reduction_integral",
+      "value": 8.038496555062835e-07,
+      "tolerance": 0.001,
+      "passed": true,
+      "note": "cell averages times cell area against the integral over the whole grid; they differ by the density outside the cells"
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "P0": 100.0,
+    "solvers": {
+      "grid_step": 0.25,
+      "strang_step": 0.25,
+      "density_peak": 0.22576101450287664,
+      "note": "max_over_peak is max |X - coefficient propagation| over the largest |value| of any component of the latter",
+      "grid": {
+        "A": {
+          "rel_l2": 0.009903682115327248,
+          "max_over_peak": 0.003566537922188818
+        },
+        "C": {
+          "rel_l2": 0.001340643752950395,
+          "max_over_peak": 0.0015444436978501992
+        },
+        "bR": {
+          "rel_l2": 0.00287043473048036,
+          "max_over_peak": 0.0015091787120365416
+        },
+        "bI": {
+          "rel_l2": 0.0050089668105492095,
+          "max_over_peak": 0.0019228022723516115
+        }
+      },
+      "strang": {
+        "A": {
+          "rel_l2": 1.6937901761695654e-05,
+          "max_over_peak": 6.2238378488873844e-06
+        },
+        "C": {
+          "rel_l2": 5.3530334160048225e-06,
+          "max_over_peak": 6.375600272200772e-06
+        },
+        "bR": {
+          "rel_l2": 8.152691781574376e-06,
+          "max_over_peak": 3.150790710035739e-06
+        },
+        "bI": {
+          "rel_l2": 9.81732756968479e-06,
+          "max_over_peak": 3.0180107041236787e-06
+        }
+      },
+      "grid_rk4_free_flight": {
+        "n_steps": 2400,
+        "step": 0.25,
+        "mass": 2000.0,
+        "hbar": 1.0,
+        "gap": 0.05,
+        "components": {
+          "A": {
+            "measured_max_over_peak": 0.003566537922188818,
+            "predicted_max_over_peak": 0.0035665381731150732,
+            "residual_rel_l2": 3.98114426330645e-06,
+            "corrected_max_over_peak": 1.6458531769985167e-08
+          },
+          "C": {
+            "measured_max_over_peak": 0.0015444436978501992,
+            "predicted_max_over_peak": 0.0015444440370712472,
+            "residual_rel_l2": 8.619617660466783e-06,
+            "corrected_max_over_peak": 1.641098059301175e-08
+          },
+          "bR": {
+            "measured_max_over_peak": 0.0015091787120365416,
+            "predicted_max_over_peak": 0.00150917999913109,
+            "residual_rel_l2": 1.2685609485939999e-05,
+            "corrected_max_over_peak": 1.8159007424994116e-08
+          },
+          "bI": {
+            "measured_max_over_peak": 0.0019228022723516115,
+            "predicted_max_over_peak": 0.0019228025701684985,
+            "residual_rel_l2": 2.0419824074462105e-06,
+            "corrected_max_over_peak": 3.559142306545845e-09
+          }
+        },
+        "note": "predicted = F^-1{[G(z)^N e^{-Nz} - 1] F(coefficient density)} along R, z = -i k P dt/M (+ i g dt/hbar for rho^12), G the degree-4 Taylor polynomial; residual_rel_l2 = ||measured - predicted|| / ||measured||; corrected = max |measured - predicted| over the density peak"
+      }
+    },
+    "grid": {
+      "n_R": 2048,
+      "n_P": 1024,
+      "dR": 0.0341796875,
+      "dP": 0.078125
+    },
+    "cells": {
+      "n_R": 27,
+      "n_P": 40,
+      "dR": 0.546875,
+      "dP": 1.25,
+      "R_lo": 7.451171875,
+      "P_lo": 74.140625,
+      "coarsen_block": 16,
+      "index_origin": [
+        1242,
+        181
+      ],
+      "index_end": [
+        1674,
+        821
+      ],
+      "grid": {
+        "R_min": -35.0,
+        "R_max": 35.0,
+        "n_R": 2048,
+        "P_min": 60.0,
+        "P_max": 140.0,
+        "n_P": 1024
+      },
+      "edges": "cell k spans [R_lo + k dR, R_lo + (k+1) dR), likewise in P; R_lo and P_lo are coefficient nodes",
+      "source": "scripts/10b focused-PBME window"
+    },
+    "populations": {
+      "quantum": [
+        0.14817834613800296,
+        0.8518216538651727
+      ],
+      "qcle": [
+        0.14817179014360488,
+        0.8518282089917278
+      ]
+    },
+    "full_resolution": {
+      "A": {
+        "rel_l2_qcle_quantum": 0.8701811754418795,
+        "rel_l2_strang_qcle": 1.6937901761695654e-05,
+        "spectral_tail_qcle": 2.985989781955079e-11,
+        "spectral_tail_quantum": 2.6200870586012798e-11,
+        "peak_quantum": 0.04711674741155584,
+        "peak_qcle": 0.09128205793497512,
+        "negative_volume_grid": 0.04367090081684552,
+        "momentum_l1_grid": 0.016314406822950073,
+        "negative_volume_quantum": 7.793897301330482e-09,
+        "negative_volume_qcle": 0.043644233324401184,
+        "momentum_l1_qcle": 0.016314406520855782,
+        "position_l1_qcle": 0.004047095238969842,
+        "momentum_min_quantum": -3.057626081872964e-16,
+        "momentum_min_qcle": -2.8137342035090037e-16,
+        "momentum_peak_quantum": 0.011560494070545907,
+        "momentum_peak_qcle": 0.011758671376125027,
+        "momentum_negative_mass_qcle": 3.848636377153428e-17,
+        "momentum_mean_quantum": 99.18176026173713,
+        "momentum_mean_qcle": 99.18871120704654
+      },
+      "C": {
+        "rel_l2_qcle_quantum": 0.172782121216543,
+        "rel_l2_strang_qcle": 5.3530334160048225e-06,
+        "spectral_tail_qcle": 6.334156515515506e-10,
+        "spectral_tail_quantum": 1.3728351181023417e-11,
+        "peak_quantum": 0.27105761576288595,
+        "peak_qcle": 0.22576101450287664,
+        "negative_volume_grid": 0.0028547727524678218,
+        "momentum_l1_grid": 0.002875419562119184,
+        "negative_volume_quantum": 1.8158681972073416e-09,
+        "negative_volume_qcle": 0.002867871445876788,
+        "momentum_l1_qcle": 0.002875419857155045,
+        "position_l1_qcle": 0.0007231895617676719,
+        "momentum_min_quantum": -5.510832559330391e-16,
+        "momentum_min_qcle": 1.4860666768420373e-15,
+        "momentum_peak_quantum": 0.06772318346890868,
+        "momentum_peak_qcle": 0.0675350279175281,
+        "momentum_negative_mass_qcle": 0.0,
+        "momentum_mean_quantum": 99.13618155727076,
+        "momentum_mean_qcle": 99.13492827693024
+      },
+      "bR": {
+        "rel_l2_qcle_quantum": 0.2319495021256186,
+        "rel_l2_strang_qcle": 8.152691781574376e-06,
+        "spectral_tail_qcle": 7.923364099351016e-11,
+        "spectral_tail_quantum": 1.613728563183588e-11,
+        "peak_quantum": 0.11179952175206435,
+        "peak_qcle": 0.12820799480882691
+      },
+      "bI": {
+        "rel_l2_qcle_quantum": 0.33228814563059894,
+        "rel_l2_strang_qcle": 9.81732756968479e-06,
+        "spectral_tail_qcle": 4.449583177538138e-11,
+        "spectral_tail_quantum": 2.5200214096658166e-11,
+        "peak_quantum": 0.07031580290690016,
+        "peak_qcle": 0.06691338006263328
+      }
+    },
+    "cells_comparison": {
+      "A": {
+        "rel_l2_grid_quantum": 0.1755977982295052,
+        "rel_l2_qcle_quantum": 0.17558640492855176,
+        "rel_l2_pbme_quantum": 0.5499788703158847,
+        "rel_l2_pbme_qcle": 0.5126484157149043,
+        "rel_l2_focused_quantum": 0.34433662613792687,
+        "pbme_noise_floor_vs_quantum": 0.02380999705790354,
+        "pbme_noise_floor_vs_qcle": 0.021423075251056745,
+        "momentum_negative_mass_quantum": 0.0,
+        "momentum_negative_mass_qcle": 0.0,
+        "momentum_negative_mass_pbme": 3.0499631530187737e-05,
+        "momentum_negative_mass_pbme_noise_floor": 0.009413929582613648,
+        "momentum_min_qcle": 3.322476277892436e-08,
+        "momentum_argmin_qcle": 74.765625,
+        "momentum_min_pbme": -3.140187546107273e-06,
+        "momentum_argmin_pbme": 121.015625,
+        "momentum_peak_quantum_cells": 0.011450429306116814,
+        "momentum_argmax_quantum": 99.765625,
+        "momentum_mean_quantum": 99.18176363100991,
+        "momentum_std_quantum": 5.123232937479639,
+        "momentum_mean_qcle": 99.18871685799309,
+        "momentum_std_qcle": 5.041151715973116,
+        "momentum_mean_pbme": 100.5612233610573,
+        "momentum_std_pbme": 5.140552529464125,
+        "momentum_mean_pbme_sem": 0.029030873947860948,
+        "momentum_std_pbme_sem": 0.01767594088084869,
+        "momentum_l1_qcle": 0.016210373854456193,
+        "momentum_l1_grid": 0.01621037391850923,
+        "momentum_l1_pbme": 0.2286572258378299,
+        "momentum_l1_focused": 0.07536467894478684,
+        "momentum_l1_pbme_noise_floor": 0.018827859165227296,
+        "negative_volume_quantum": 6.412019080617399e-11,
+        "negative_volume_qcle": 0.003592217191047091,
+        "negative_volume_pbme": 0.018150251780481214,
+        "negative_volume_focused": 0.017955070369204316,
+        "pbme_population_in_cells": 0.14974180088332387
+      },
+      "C": {
+        "rel_l2_grid_quantum": 0.031798211586082696,
+        "rel_l2_qcle_quantum": 0.031783752119446354,
+        "rel_l2_pbme_quantum": 0.16249312015041562,
+        "rel_l2_pbme_qcle": 0.14504923849712872,
+        "rel_l2_focused_quantum": 0.06837208715072182,
+        "pbme_noise_floor_vs_quantum": 0.006180743707483897,
+        "pbme_noise_floor_vs_qcle": 0.006286537276405815,
+        "momentum_negative_mass_quantum": 0.0,
+        "momentum_negative_mass_qcle": 0.0,
+        "momentum_negative_mass_pbme": 0.0,
+        "momentum_negative_mass_pbme_noise_floor": 0.0024307591019484313,
+        "momentum_min_qcle": 3.950662102909648e-07,
+        "momentum_argmin_qcle": 123.515625,
+        "momentum_min_pbme": 0.0,
+        "momentum_argmin_pbme": 123.515625,
+        "momentum_peak_quantum_cells": 0.06704003139178645,
+        "momentum_argmax_quantum": 98.515625,
+        "momentum_mean_quantum": 99.13617569856136,
+        "momentum_std_quantum": 5.030320433916694,
+        "momentum_mean_qcle": 99.1349246293716,
+        "momentum_std_qcle": 5.045432109193128,
+        "momentum_mean_pbme": 98.89642779071671,
+        "momentum_std_pbme": 5.119398168877818,
+        "momentum_mean_pbme_sem": 0.006902694955271161,
+        "momentum_std_pbme_sem": 0.005086057152938599,
+        "momentum_l1_qcle": 0.002866838733126569,
+        "momentum_l1_grid": 0.0028668385497097617,
+        "momentum_l1_pbme": 0.04071003233926951,
+        "momentum_l1_focused": 0.01384516848041509,
+        "momentum_l1_pbme_noise_floor": 0.0048615182038968625,
+        "negative_volume_quantum": 2.2851629748711197e-11,
+        "negative_volume_qcle": 0.00011509983361207615,
+        "negative_volume_pbme": 6.531733767952364e-05,
+        "negative_volume_focused": 0.0,
+        "pbme_population_in_cells": 0.8489963344273679
+      },
+      "bR": {
+        "rel_l2_grid_quantum": 0.07742215407584188,
+        "rel_l2_qcle_quantum": 0.07742382824326177,
+        "rel_l2_pbme_quantum": 0.17957283519869774,
+        "rel_l2_pbme_qcle": 0.2331401388189714,
+        "rel_l2_focused_quantum": 0.10910704367937828,
+        "pbme_noise_floor_vs_quantum": 0.010659649779724245,
+        "pbme_noise_floor_vs_qcle": 0.010199877382869092
+      },
+      "bI": {
+        "rel_l2_grid_quantum": 0.07868847946759157,
+        "rel_l2_qcle_quantum": 0.07870704084625657,
+        "rel_l2_pbme_quantum": 0.20058278942354418,
+        "rel_l2_pbme_qcle": 0.23555468299432158,
+        "rel_l2_focused_quantum": 0.12063002798868931,
+        "pbme_noise_floor_vs_quantum": 0.01504712887512943,
+        "pbme_noise_floor_vs_qcle": 0.014591267868820637
+      }
+    },
+    "window": {
+      "fraction_abs_density_outside_cells": 1.438997243949522e-06,
+      "pbme_outside_abs_integrals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pbme_outside_signed_integrals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pbme_outside_abs_over_population": [
+        0.0,
+        0.0
+      ]
+    },
+    "focused_field": "on the PBME cells",
+    "map_stride": 2,
+    "n_pbme_blocks": 120
+  }
+}

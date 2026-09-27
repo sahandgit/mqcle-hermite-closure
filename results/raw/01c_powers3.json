@@ -1,0 +1,319 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-20T23:00:28Z",
+    "script": "01_polynomial_closure.py",
+    "config": {
+      "powers": 3,
+      "budget_seconds": 900.0,
+      "extra_cases": false
+    },
+    "seed": null,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.5-fc-v20-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/01_polynomial_closure.py --powers 3 --budget-seconds 900 --out results/raw/01c_powers3.json",
+    "wall_time_s": 1254.264591,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "N2_Nb1_traceless.initial_polynomial_degrees_are_0_2",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_traceless.full_generator_closure_as_expected",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "full generator must preserve degree <= 2"
+    },
+    {
+      "name": "N2_Nb1_full.initial_polynomial_degrees_are_0_2",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_full.full_generator_closure_as_expected",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "full generator must preserve degree <= 2"
+    },
+    {
+      "name": "N2_Nb1_full_mixed.initial_polynomial_degrees_are_0_2",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "N2_Nb1_full_mixed.full_generator_closure_as_expected",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "mixed convention must break closure"
+    },
+    {
+      "name": "pbme_top_degree_closed_form_residual_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "cases": [
+      {
+        "nstates": 2,
+        "nbath": 1,
+        "convention": "traceless",
+        "mixed_convention": false,
+        "initial_polynomial_degrees": [
+          0,
+          2
+        ],
+        "operators": {
+          "pbme": [
+            {
+              "power": 1,
+              "degrees": [
+                0,
+                2,
+                4
+              ],
+              "max_degree": 4,
+              "n_ops": 6231,
+              "seconds": 3.4
+            },
+            {
+              "power": 2,
+              "degrees": [
+                0,
+                2,
+                4,
+                6
+              ],
+              "max_degree": 6,
+              "n_ops": 63347,
+              "seconds": 53.22
+            },
+            {
+              "power": 3,
+              "degrees": [
+                0,
+                2,
+                4,
+                6,
+                8
+              ],
+              "max_degree": 8,
+              "n_ops": 523023,
+              "seconds": 460.04
+            }
+          ],
+          "excess": [
+            {
+              "power": 1,
+              "degrees": [
+                0,
+                2,
+                4
+              ],
+              "max_degree": 4,
+              "n_ops": 4489,
+              "seconds": 3.7
+            }
+          ],
+          "full": [
+            {
+              "power": 1,
+              "degrees": [
+                0,
+                2
+              ],
+              "max_degree": 2,
+              "n_ops": 2581,
+              "seconds": 1.95
+            },
+            {
+              "power": 2,
+              "degrees": [
+                0,
+                2
+              ],
+              "max_degree": 2,
+              "n_ops": 15795,
+              "seconds": 29.68
+            },
+            {
+              "power": 3,
+              "degrees": [
+                0,
+                2
+              ],
+              "max_degree": 2,
+              "n_ops": 81475,
+              "seconds": 194.33
+            }
+          ]
+        },
+        "pbme_top_degree_closed_form": {
+          "residual_is_zero": true,
+          "residual": "0"
+        }
+      },
+      {
+        "nstates": 2,
+        "nbath": 1,
+        "convention": "full",
+        "mixed_convention": false,
+        "initial_polynomial_degrees": [
+          0,
+          2
+        ],
+        "operators": {
+          "pbme": [
+            {
+              "power": 1,
+              "degrees": [
+                0,
+                2,
+                4
+              ],
+              "max_degree": 4,
+              "n_ops": 4649,
+              "seconds": 2.25
+            },
+            {
+              "power": 2,
+              "degrees": [
+                0,
+                2,
+                4,
+                6
+              ],
+              "max_degree": 6,
+              "n_ops": 43053,
+              "seconds": 32.75
+            },
+            {
+              "power": 3,
+              "degrees": [
+                0,
+                2,
+                4,
+                6,
+                8
+              ],
+              "max_degree": 8,
+              "n_ops": 329575,
+              "seconds": 282.18
+            }
+          ],
+          "excess": [
+            {
+              "power": 1,
+              "degrees": [
+                0,
+                2,
+                4
+              ],
+              "max_degree": 4,
+              "n_ops": 3381,
+              "seconds": 1.94
+            }
+          ],
+          "full": [
+            {
+              "power": 1,
+              "degrees": [
+                0,
+                2
+              ],
+              "max_degree": 2,
+              "n_ops": 2581,
+              "seconds": 1.34
+            },
+            {
+              "power": 2,
+              "degrees": [
+                0,
+                2
+              ],
+              "max_degree": 2,
+              "n_ops": 15795,
+              "seconds": 11.14
+            },
+            {
+              "power": 3,
+              "degrees": [
+                0,
+                2
+              ],
+              "max_degree": 2,
+              "n_ops": 81475,
+              "seconds": 69.12
+            }
+          ]
+        }
+      },
+      {
+        "nstates": 2,
+        "nbath": 1,
+        "convention": "full",
+        "mixed_convention": true,
+        "initial_polynomial_degrees": [
+          0,
+          2
+        ],
+        "operators": {
+          "full": [
+            {
+              "power": 1,
+              "degrees": [
+                0,
+                2,
+                4
+              ],
+              "max_degree": 4,
+              "n_ops": 5765,
+              "seconds": 3.22
+            }
+          ]
+        }
+      }
+    ],
+    "decision_tree": {
+      "question": "Does original MMST already give practical Hermite closure?",
+      "answer": "yes",
+      "full_generator_max_degrees": [
+        2,
+        2,
+        2
+      ],
+      "pbme_only_max_degrees": [
+        4,
+        6,
+        8
+      ],
+      "consequence": "The full generator preserves ordinary mapping-polynomial degree <= 2 under repeated application, hence stays in V_2. Whether it also stays in the N^2-dimensional physical frame is a separate question, settled in 04_physical_frame.json. Dropping the excess term raises the ordinary degree by two per application."
+    }
+  }
+}

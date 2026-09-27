@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-09-10T20:43:09Z",
+    "script": "10b_qcle_grid_crosscheck.py",
+    "config": {
+      "units": "atomic",
+      "hbar": 1.0,
+      "dtype": "float64",
+      "trace_convention": "traceless",
+      "seed": 20260819,
+      "nstates": 2,
+      "nbath": 1,
+      "mass": 2000.0,
+      "output_root": "results",
+      "model": {
+        "name": "tully_dual_avoided_crossing",
+        "A": 0.1,
+        "B": 0.28,
+        "C": 0.015,
+        "D": 0.06,
+        "E0": 0.05
+      },
+      "initial_conditions": {
+        "R0": -15.0,
+        "P0": 40.0,
+        "sigma_R": 0.25,
+        "init_state": 0
+      },
+      "mapping_sampling": {
+        "scheme": "focused",
+        "n_samples": 20000
+      },
+      "propagation": {
+        "dt": 0.5,
+        "n_steps": 200
+      },
+      "P0": 10.0,
+      "R0": -15.0,
+      "sigma_R": 1.0,
+      "T": 6000.0,
+      "dt": 0.5,
+      "n_R": 2048,
+      "n_P": 1024,
+      "R_box": [
+        -45.0,
+        45.0
+      ],
+      "P_box": [
+        -30.0,
+        50.0
+      ],
+      "coefficient_archive": "results\\raw\\07_coefficient_propagation_P10.json",
+      "quick": false,
+      "comparison_role": "independent numerical implementation of the same QCLE"
+    },
+    "seed": 20260819,
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "2.4.0",
+      "scipy": "1.16.3",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.8",
+      "pandas": "2.3.3",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "2.9.1+cpu"
+    },
+    "dtype": "float64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 190 Stepping 0, GenuineIntel",
+    "command_line": "scripts\\10b_qcle_grid_crosscheck.py --P0 10 --grid-scale 2 --refinements coarse-only --coefficient-refinement double --accept-archive-exceptions",
+    "wall_time_s": 87014.144755,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "qcle_grid.operator_rhs_identity",
+      "value": 1.0453589979417046e-15,
+      "tolerance": 1e-12,
+      "passed": true,
+      "note": "independent four-real-field RHS versus complex coefficient RHS"
+    },
+    {
+      "name": "qcle_grid.initial_normalisation",
+      "value": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "qcle_grid.trace_conservation",
+      "value": 6.661338147750939e-16,
+      "tolerance": 1e-09,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "qcle_grid.energy_conservation",
+      "value": 0.0005768984899885459,
+      "tolerance": 1e-07,
+      "passed": false,
+      "note": ""
+    },
+    {
+      "name": "qcle_grid.boundary_mass_R",
+      "value": 0.0005871619936203743,
+      "tolerance": 1e-08,
+      "passed": false,
+      "note": ""
+    },
+    {
+      "name": "qcle_grid.boundary_mass_P",
+      "value": 0.0005193014710350731,
+      "tolerance": 1e-08,
+      "passed": false,
+      "note": ""
+    },
+    {
+      "name": "qcle_grid.spatial_refinement",
+      "value": 0.0013499708039200753,
+      "tolerance": 5e-05,
+      "passed": false,
+      "note": ""
+    },
+    {
+      "name": "qcle_grid.rk4_measured_order",
+      "value": 0.046263197728766414,
+      "tolerance": 0.4,
+      "passed": true,
+      "note": "fitted=4.0463, expected=4"
+    },
+    {
+      "name": "qcle_grid.cross_code_population_agreement",
+      "value": 4.412190809199856e-05,
+      "tolerance": 0.006750389887980787,
+      "passed": true,
+      "note": "threshold is five times the sum of the measured discretisation errors of BOTH solvers -- the independent grid solver's time and space refinement changes and the coefficient solver's Richardson temporal error -- with a 1e-6 floor"
+    },
+    {
+      "name": "qcle_grid.cross_code_difference_is_discretisation",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "not asserted: the independent solver's convergence floor was not measured in this run (--refinements coarse-only), so there is nothing to judge the cross-code difference 5.232e-05 against"
+    }
+  ],
+  "all_passed": false,
+  "results": {
+    "interpretation": {
+      "same_equation": true,
+      "independent_physical_reference": false,
+      "statement": "The real-component grid solver and the closed coefficient solver integrate the same subsystem QCLE with independent state representations, derivative paths, and time integrators."
+    },
+    "operator_rhs_relative_l2": 1.0453589979417046e-15,
+    "runs": {
+      "production": {
+        "grid": {
+          "R_min": -45.0,
+          "R_max": 45.0,
+          "n_R": 2048,
+          "dR": 0.0439453125,
+          "P_min": -30.0,
+          "P_max": 50.0,
+          "n_P": 1024,
+          "dP": 0.078125,
+          "placement": "cell-centred, endpoint excluded"
+        },
+        "dt": 0.5,
+        "T": 6000.0,
+        "n_steps": 12000,
+        "wall_time_s": 53457.569,
+        "stability": {
+          "advection": 1.785820890640598,
+          "force": 1.8293146955046609,
+          "electronic": 0.05829748107862681,
+          "spectral_radius": 3.6734330672238857,
+          "max_dt_rk4": 0.7699683301657951
+        },
+        "initial_trace_error": 2.220446049250313e-16,
+        "max_trace_drift": 4.440892098500626e-16,
+        "max_relative_energy_drift": 0.0005768984899885459,
+        "max_boundary_mass_R": 0.0005871619936203743,
+        "max_boundary_mass_P": 0.0005193014710350731,
+        "final_populations": [
+          0.9829661560565506,
+          0.017033843943449548
+        ],
+        "final_adiabatic_populations": [
+          0.9776811017506384,
+          0.022318898249361726
+        ],
+        "final_coherence": [
+          0.005149737749162784,
+          0.00018886723898156227
+        ]
+      },
+      "dt_half": null,
+      "coarse_grid": {
+        "grid": {
+          "R_min": -45.0,
+          "R_max": 45.0,
+          "n_R": 1024,
+          "dR": 0.087890625,
+          "P_min": -30.0,
+          "P_max": 50.0,
+          "n_P": 512,
+          "dP": 0.15625,
+          "placement": "cell-centred, endpoint excluded"
+        },
+        "dt": 0.5,
+        "T": 6000.0,
+        "n_steps": 12000,
+        "wall_time_s": 3716.729,
+        "stability": {
+          "advection": 0.8922123136195013,
+          "force": 0.9143764536651237,
+          "electronic": 0.05826138091619819,
+          "spectral_radius": 1.864850148200823,
+          "max_dt_rk4": 1.516704775166525
+        },
+        "initial_trace_error": 2.220446049250313e-16,
+        "max_trace_drift": 6.661338147750939e-16,
+        "max_relative_energy_drift": 0.005484566616161765,
+        "max_boundary_mass_R": 0.002289471352100956,
+        "max_boundary_mass_P": 0.002766365919893467,
+        "final_populations": [
+          0.9831752650662888,
+          0.016824734933711026
+        ],
+        "final_adiabatic_populations": [
+          0.9735187968673168,
+          0.026481203132683217
+        ],
+        "final_coherence": [
+          0.008300612300989408,
+          0.0005723108922078518
+        ]
+      }
+    },
+    "coefficient_vs_independent_grid_qcle": {
+      "final_population_linf": 2.6532175137039538e-05,
+      "max_population_linf_over_time": 4.412190809199856e-05,
+      "population_rms_over_time": 9.287929186236716e-06,
+      "final_coherence_abs": 1.0872699914508868e-05,
+      "max_coherence_abs_over_time": 1.581982325694388e-05,
+      "final_adiabatic_population_linf": 7.680703602463979e-06,
+      "max_adiabatic_population_linf_over_time": 7.680703602463979e-06,
+      "final_mean_R_abs": 0.0007717796565067658,
+      "max_mean_R_abs_over_time": 0.0007859488324601926,
+      "final_mean_P_abs": 0.00013955566520706952,
+      "max_mean_P_abs_over_time": 0.0026356694280575965,
+      "final_trace_abs": 6.838973831690964e-13,
+      "max_trace_abs_over_time": 6.838973831690964e-13
+    },
+    "independent_temporal_refinement": null,
+    "independent_spatial_refinement": {
+      "final_population_linf": 0.00020910900973852148,
+      "max_population_linf_over_time": 0.0013499708039200753,
+      "population_rms_over_time": 0.0004132868402622894,
+      "final_coherence_abs": 0.003174120268129132,
+      "max_coherence_abs_over_time": 0.0031741202681291316
+    },
+    "refinements": {
+      "requested": "coarse-only",
+      "temporal_measured": false,
+      "spatial_measured": true,
+      "budget_terms_included": [
+        "coefficient_temporal",
+        "grid_spatial"
+      ],
+      "note": "a skipped refinement is not estimated from elsewhere.  Its term is absent from the error budget, which makes the cross-code gate stricter rather than weaker, and its own gate is not evaluated."
+    },
+    "comparison_grid": {
+      "n_R": 2048,
+      "n_P": 1024,
+      "grid_scale": 2,
+      "points_per_sigma_R": 22.755555555555556,
+      "points_per_sigma_P": 6.4,
+      "archive_n_R": 4096,
+      "archive_n_P": 2048,
+      "R_box": [
+        -45.0,
+        45.0
+      ],
+      "P_box": [
+        -30.0,
+        50.0
+      ],
+      "note": "the independent solver and the coefficient runs made here share this grid; the archived production run is on the finer grid named above, and the populations compared against it are integrals"
+    },
+    "coefficient_refinement": {
+      "direction": "double",
+      "production_step": 0.5,
+      "refinement_step": 1.0,
+      "richardson_factor": 0.3333333333333333
+    },
+    "coefficient_archive_failures": [
+      {
+        "name": "gateL.boundary_mass_R",
+        "value": 1.0920938854095625e-05,
+        "tolerance": 1e-09
+      },
+      {
+        "name": "gateL.boundary_mass_P",
+        "value": 1.571741787536653e-05,
+        "tolerance": 1e-09
+      }
+    ],
+    "cross_check_window": {
+      "T_used": 6000.0,
+      "T_archive": 6000.0,
+      "partial": false
+    },
+    "independent_final_field_temporal_error": {
+      "field_frobenius_l2": 0.0,
+      "field_relative_l2": 0.0,
+      "field_max_abs": 0.0,
+      "trace_density_l1": 0.0,
+      "population_difference": [
+        0.0,
+        0.0
+      ],
+      "population_linf": 0.0,
+      "coherence_integral_abs": 0.0
+    },
+    "short_rk4_order_study": {
+      "grid": {
+        "R_min": -20.0,
+        "R_max": 20.0,
+        "n_R": 512,
+        "P_min": -30.0,
+        "P_max": 50.0,
+        "n_P": 128
+      },
+      "R0": -3.0,
+      "P0": 10.0,
+      "T": 300.0,
+      "reference_dt": 0.125,
+      "dt": [
+        1.0,
+        0.5,
+        0.25
+      ],
+      "errors": [
+        4.4014303860806333e-07,
+        2.74116790060717e-08,
+        1.6125034467582567e-09
+      ],
+      "pairwise_orders": [
+        4.005109846813617,
+        4.087416548643918
+      ],
+      "fitted_order": 4.046263197728766,
+      "wall_time_s": {
+        "1.0": 9.265,
+        "0.5": 18.276,
+        "0.25": 37.112,
+        "0.125": 73.407
+      }
+    },
+    "coefficient_temporal_error": {
+      "production_dt": 0.5,
+      "refined_dt": 0.25,
+      "refined_steps": 6000,
+      "final_populations_production_dt": [
+        0.9830070885972094,
+        0.016992911403628835
+      ],
+      "final_populations_refined_dt": [
+        0.983006850335645,
+        0.016993149664806775
+      ],
+      "richardson_error_at_production_dt": 1.0717367608196562e-07,
+      "cross_code_linf_production_dt": 5.231884428824607e-05,
+      "cross_code_linf_refined_dt": 5.215665955260462e-05,
+      "cross_code_measured_order": 0.004479199298807175,
+      "cross_code_order_is_resolvable": false,
+      "independent_grid_convergence_floor": 0.0013499708039200753,
+      "production_step_reference": "propagated here on the 2048x1024 comparison grid",
+      "note": "the independent grid solver is converged far below this, so the cross-code difference is a direct measurement of the coefficient solver's own discretisation error"
+    },
+    "cross_code_population_error_budget": 0.006750389887980787,
+    "time_steps": {
+      "coefficient_production": 0.5,
+      "coefficient_refined": 0.25,
+      "independent_grid": 0.5,
+      "independent_grid_refined": 0.25,
+      "rk4_stability_limit": 0.7699683301657951,
+      "rk4_safety_factor": 0.9,
+      "note": "the independent solver's RK4 is conditionally stable and takes the step its spectral radius allows; the coefficient solver's Strang splitting is unconditionally stable and keeps the production step.  Each side's temporal error is measured separately and enters the cross-code budget."
+    },
+    "terminal_field_comparison": {
+      "components": {
+        "A": {
+          "max_abs_difference": 0.5806163208816836,
+          "grid_peak": 0.2981441548781313,
+          "density_peak": 0.2981441548781313,
+          "max_difference_relative_to_peak": 1.9474348612301824,
+          "max_abs_difference_unregistered": 0.3252377947749495
+        },
+        "C": {
+          "max_abs_difference": 0.17556660465709173,
+          "grid_peak": 0.09093444151221224,
+          "density_peak": 0.2981441548781313,
+          "max_difference_relative_to_peak": 0.5888648218807305,
+          "max_abs_difference_unregistered": 0.13654717362844238
+        },
+        "bR": {
+          "max_abs_difference": 0.10151175462917536,
+          "grid_peak": 0.051948452611886284,
+          "density_peak": 0.2981441548781313,
+          "max_difference_relative_to_peak": 0.34047876830142476,
+          "max_abs_difference_unregistered": 0.05489883359493977
+        },
+        "bI": {
+          "max_abs_difference": 0.059122804995535384,
+          "grid_peak": 0.028981534624736918,
+          "density_peak": 0.2981441548781313,
+          "max_difference_relative_to_peak": 0.19830274727237998,
+          "max_abs_difference_unregistered": 0.04917722069732107
+        }
+      },
+      "max_abs_difference_any_component": 0.5806163208816836,
+      "max_relative_difference_any_component": 1.9474348612301824,
+      "node_offset_R": 0.02197265625,
+      "node_offset_P": 0.0390625,
+      "node_offset_in_cells": [
+        0.5,
+        0.5
+      ],
+      "coefficient_step": 0.25,
+      "grid_step": 0.5,
+      "note": "closed coefficient field at dt/2 against the independent grid solver at dt, at t = T, after removing the half-cell node offset between the two conventions by exact Fourier translation"
+    },
+    "other_method_fields": {
+      "quantum_field": {
+        "se_n_R": 8192,
+        "se_dt": 0.125,
+        "norm_drift": 2.5599300457201934e-11,
+        "wigner_s_window_fraction_of_box": 0.25,
+        "trace_integral": 1.000000000025599,
+        "wall_time_s": 105.13264270033687,
+        "note": "partial Wigner transform of the converged full quantum wavefunction at t = T, on the coefficient nodes; this is the object the QCLE approximates"
+      },
+      "pbme_field": {
+        "n_samples": 200000,
+        "coarsen_block": 8,
+        "index_origin": [
+          1148,
+          451
+        ],
+        "index_end": [
+          1740,
+          595
+        ],
+        "n_R": 74,
+        "n_P": 18,
+        "mean_trajectories_per_cell": 150.15015015015015,
+        "fraction_outside_window": 0.0,
+        "binned_populations": [
+          1.0945813552281354,
+          -0.09458135522800382
+        ],
+        "integrated_populations": [
+          1.0945813552281467,
+          -0.09458135522800397
+        ],
+        "wall_time_s": 2592.7426171000116,
+        "note": "focused PBME, the same estimator as the time series, resolved by phase-space cell instead of summed; the window is a block of coefficient cells so any grid field reduces onto it by block averaging"
+      }
+    }
+  }
+}

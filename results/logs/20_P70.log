@@ -1,0 +1,5 @@
+[20] P0=70: 200,000 focused trajectories, 271 s; wrote 20_focused_pbme_observables_P70.json; checks all passed: True
+  PASS  focused.same_saved_times                     0.000e+00  (tol 0.0e+00)
+  PASS  focused.reproduces_archived_populations      4.441e-16  (tol 1.0e-12)
+  PASS  focused.trace_conserved                      2.317e-12  (tol 1.0e-10)
+  PASS  focused.adiabatic_trace                      3.042e-14  (tol 1.0e-10)

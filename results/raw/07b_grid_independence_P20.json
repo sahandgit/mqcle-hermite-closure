@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-21T18:58:54Z",
+    "script": "07b_grid_independence.py",
+    "config": {
+      "P0": 20.0,
+      "R0": -15.0,
+      "sigma_R": 0.5,
+      "T": 3000.0,
+      "dt": 0.5,
+      "n_R": 512,
+      "n_P_list": [
+        256,
+        512,
+        1024
+      ],
+      "R_half": 45.0,
+      "P_half": 20.0,
+      "trace_convention": "traceless"
+    },
+    "seed": 20260819,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.44-fc-v21-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/07b_grid_independence.py --P0 20 --n-R 512 --n-P 256 512 1024 --reported-error 5.394377e-03",
+    "wall_time_s": 4324.004349,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "gateL.observable_grid_independence",
+      "value": 0.00019932085336590665,
+      "tolerance": 0.01,
+      "passed": true,
+      "note": "grid motion 1.075e-06 against the reported error 5.394e-03; the comparison is only meaningful if this ratio is small"
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "rows": [
+      {
+        "n_P": 256,
+        "dP": 0.15625,
+        "populations": [
+          0.9370151361667703,
+          0.06298486383364194
+        ],
+        "boundary_mass_P": 0.000173048951722479,
+        "boundary_mass_R": 3.6018768000619236e-05,
+        "wall_time_s": 624.5062595690015
+      },
+      {
+        "n_P": 512,
+        "dP": 0.078125,
+        "populations": [
+          0.9370147788815826,
+          0.06298522111884158
+        ],
+        "boundary_mass_P": 8.903277175182889e-05,
+        "boundary_mass_R": 3.594293512489187e-05,
+        "wall_time_s": 1232.262694518
+      },
+      {
+        "n_P": 1024,
+        "dP": 0.0390625,
+        "populations": [
+          0.9370140609549433,
+          0.06298593904546718
+        ],
+        "boundary_mass_P": 3.909827387674608e-05,
+        "boundary_mass_R": 3.578865747035259e-05,
+        "wall_time_s": 2466.8329256089983
+      }
+    ],
+    "observable_spread": 1.0752118270174194e-06,
+    "note": "max |population(n_P) - population(finest)| over the refinement; this is the quantity the boundary sentinel is a proxy for",
+    "reported_error": 0.005394377,
+    "spread_over_reported_error": 0.00019932085336590665
+  }
+}

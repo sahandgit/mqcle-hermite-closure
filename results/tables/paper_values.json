@@ -1,0 +1,4602 @@
+{
+ "rows": {
+  "10": {
+   "gh_grid": [
+    4096,
+    2048
+   ],
+   "T": 6000.0,
+   "gh_pop2": 0.017007264420577123,
+   "gh_adpop2": 0.02231120603394478,
+   "frame": 7.788948620838764e-12,
+   "trace": 2.924707365181689e-09,
+   "parity": 0.0,
+   "herm": 0.0,
+   "gh_wall_h": 107.85142224733333,
+   "krylov_m": 8,
+   "krylov_tol": 1e-10,
+   "substeps": 7761,
+   "applications": 62088,
+   "n_modes": 11,
+   "q_pop2": 0.01843607296382442,
+   "q_unc": 4.7871546420861986e-11,
+   "q_adpop2": 0.0290381197657704,
+   "q_nr_ref": 24576,
+   "q_dt_ref": 0.03125,
+   "q_nr_prod": 8192,
+   "q_dt_prod": 0.125,
+   "q_order": 1.9907562088556172,
+   "q_norm_drift": 1.0186140819712364e-10,
+   "e_qcle": 0.001428808543247298,
+   "e_qcle_max": 0.0075584862647766135,
+   "pb_pop2": -0.0876659224001244,
+   "pb_sem": 0.0003399849947238398,
+   "pb_adpop2": -0.08397945156111711,
+   "pb_adsem": 0.00033821666110328395,
+   "foc_pop2": -0.09411777706592575,
+   "pb_n": 1200000,
+   "pb_seeds": 6,
+   "pb_blocks": 240,
+   "pb_block_size": 5000,
+   "pb_sem_seed": 0.00025702058360233286,
+   "pb_negfrac": 0.14911,
+   "pb_slope": -0.4244814540920937,
+   "foc_n": 200000,
+   "e_pbme": 0.10467318682070152,
+   "ratio": 73.25907121384331,
+   "grid_same": false,
+   "grid_pop2": 0.017033843943449548,
+   "grid_dt": 0.5,
+   "grid_wall_h": 14.849324722222223,
+   "e_grid": 2.657952287242471e-05,
+   "e_grid_max": 4.41684015992979e-05,
+   "e_grid_n": 41,
+   "grid_dthalf": null,
+   "grid_spatial": 0.00020910900973852148,
+   "grid_bmass": 0.0005871619936203743,
+   "strang_linf": 5.231884428824607e-05,
+   "strang_linf_half": 5.215665955260462e-05,
+   "strang_resolvable": false,
+   "grid_common": false,
+   "e_grid_c": null,
+   "e_grid_c_max": null,
+   "strang_pop2": 0.017007311769055237,
+   "strang_cfl": 3.6442903456194853,
+   "strang_dt": 0.5,
+   "e_strang": 4.7348478113967696e-08,
+   "e_strang_max": 1.0521251736506088e-07,
+   "coh_qcle": 0.007421030287599451,
+   "coh_gh_rk4": 1.4779061948493199e-05,
+   "coh_pbme": 0.05965020572674281,
+   "coh_pbme_over_sem": 67.2206933735106,
+   "coh_rms_pre": [
+    1.326811533340219,
+    56
+   ],
+   "coh_sem_pre": [
+    0.0009402268363213803,
+    0.0009402435197440298
+   ],
+   "foc_repro": 2.220446049250313e-15,
+   "coh_foc": 0.0498087829473649,
+   "coh_peak": 0.3168551204585773,
+   "coh_T": 0.01136989563274795,
+   "u_num": 1.4400365585087727e-05,
+   "ratio_t_min": 8.42101884307561,
+   "ratio_t_n": 33
+  },
+  "20": {
+   "gh_grid": [
+    4096,
+    1024
+   ],
+   "T": 3000.0,
+   "gh_pop2": 0.06299660015573073,
+   "gh_adpop2": 0.06299074307876762,
+   "frame": 1.5660154974388822e-10,
+   "trace": 4.953403243135313e-10,
+   "parity": 0.0,
+   "herm": 0.0,
+   "gh_wall_h": 13.427004006444443,
+   "krylov_m": 12,
+   "krylov_tol": 1e-10,
+   "substeps": 1925,
+   "applications": 23100,
+   "n_modes": 11,
+   "q_pop2": 0.057593689006962524,
+   "q_unc": 3.4299790846872903e-09,
+   "q_adpop2": 0.05759417110630082,
+   "q_nr_ref": 24576,
+   "q_dt_ref": 0.03125,
+   "q_nr_prod": 8192,
+   "q_dt_prod": 0.125,
+   "q_order": 1.9998614144909446,
+   "q_norm_drift": 2.8678392993697344e-11,
+   "e_qcle": 0.005402911148768209,
+   "e_qcle_max": 0.005812003610766267,
+   "pb_pop2": 0.011641389946843826,
+   "pb_sem": 0.0004605980684023706,
+   "pb_adpop2": 0.012897100530763175,
+   "pb_adsem": 0.00046364124046904045,
+   "foc_pop2": 0.04631938560778501,
+   "pb_n": 1000000,
+   "pb_seeds": 5,
+   "pb_blocks": 200,
+   "pb_block_size": 5000,
+   "pb_sem_seed": 0.00025142203929786526,
+   "pb_negfrac": 0.14911,
+   "pb_slope": -0.5029279810760802,
+   "foc_n": 200000,
+   "e_pbme": 0.051355210208886906,
+   "ratio": 9.505099897968005,
+   "grid_same": true,
+   "grid_pop2": 0.06299660018716116,
+   "grid_dt": 0.25,
+   "grid_wall_h": 16.053448888888887,
+   "e_grid": 3.143042770492599e-11,
+   "e_grid_max": 1.1726752902063708e-10,
+   "e_grid_n": 21,
+   "grid_dthalf": 8.297529330292264e-14,
+   "grid_spatial": 1.5339396419733475e-10,
+   "grid_bmass": 5.806734823237737e-10,
+   "strang_linf": 9.581882196574298e-07,
+   "strang_linf_half": 2.395486944362091e-07,
+   "strang_resolvable": true,
+   "grid_common": true,
+   "e_grid_c": 3.143042770492599e-11,
+   "e_grid_c_max": 1.1726752902063708e-10,
+   "strang_pop2": 0.06299564239322589,
+   "strang_cfl": 3.085680165273998,
+   "strang_dt": 0.5,
+   "e_strang": 9.577625048468041e-07,
+   "e_strang_max": 9.581438404626663e-07,
+   "coh_qcle": 0.0031670366629027126,
+   "coh_gh_rk4": 8.232306193984531e-11,
+   "coh_pbme": 0.02317889100096375,
+   "coh_pbme_over_sem": 22.57996287831921,
+   "coh_rms_pre": [
+    1.373852613883122,
+    38
+   ],
+   "coh_sem_pre": [
+    0.0010045516359884787,
+    0.0010446967153159366
+   ],
+   "foc_repro": 1.4432899320127035e-15,
+   "coh_foc": 0.016845658545489875,
+   "coh_peak": 0.31418245764235037,
+   "coh_T": 0.00014708132801000446,
+   "u_num": 1.5339396419733475e-10,
+   "ratio_t_min": 4.231781432257699,
+   "ratio_t_n": 29,
+   "ps_shift": 5.857864376269049,
+   "ps_l2_qcle_A": 0.2213099360311081,
+   "ps_l2_pbme_A": 0.40156307271804637,
+   "ps_l2_qcle_C": 3.594254721364707,
+   "ps_l2_pbme_C": 2.5280064782011724,
+   "ps_l2_qcle_bR": 1.9588823835892175,
+   "ps_l2_pbme_bR": 1.0604822694833336,
+   "ps_l2_qcle_bI": 1.958772491539965,
+   "ps_l2_pbme_bI": 1.051350326224627,
+   "ps_mom_qcle_A": 0.17641905388896406,
+   "ps_mom_pbme_A": 0.4488805707939345,
+   "ps_mom_floor_A": 0.006183483897578169,
+   "ps_neg_qcle_A": 0.06763645769604795,
+   "ps_neg_q_A": 0.0005112456714345701,
+   "ps_mom_qcle_C": 2.9798340543663904,
+   "ps_mom_pbme_C": 3.60637685831093,
+   "ps_mom_floor_C": 0.06395492940119464,
+   "ps_neg_qcle_C": 0.18961351656499068,
+   "ps_neg_q_C": 0.0018573906960668335,
+   "ps_width_pbme_A": 2.8075133630187272,
+   "ps_width_qcle_A": 1.0776471911645302,
+   "ps_grid_peak": 5.506931877464197e-07,
+   "ps_grid_corr": 5.5040047030966e-07,
+   "ps_rk_resid": 1.0197660051067874,
+   "ps_rk_pred": 2.343537755707331e-07,
+   "ps_min_qcle_C": -0.03785253756025596,
+   "ps_peak_q_C": 0.019286200627634097
+  },
+  "30": {
+   "gh_grid": [
+    1024,
+    512
+   ],
+   "T": 2000.0,
+   "gh_pop2": 0.6413185475045236,
+   "gh_adpop2": 0.6413183713243862,
+   "frame": 3.205885493809174e-10,
+   "trace": 9.599518957514874e-10,
+   "parity": 0.0,
+   "herm": 0.0,
+   "gh_wall_h": 0.5009284703333267,
+   "krylov_m": 12,
+   "krylov_tol": 1e-10,
+   "substeps": 699,
+   "applications": 8388,
+   "n_modes": 11,
+   "q_pop2": 0.6404179515624644,
+   "q_unc": 3.097179744098107e-09,
+   "q_adpop2": 0.6404178823175769,
+   "q_nr_ref": 24576,
+   "q_dt_ref": 0.03125,
+   "q_nr_prod": 8192,
+   "q_dt_prod": 0.125,
+   "q_order": 1.9990225584219914,
+   "q_norm_drift": 2.3436363960627205e-11,
+   "e_qcle": 0.0009005959420591569,
+   "e_qcle_max": 0.0009032921924950754,
+   "pb_pop2": 0.6091397216885356,
+   "pb_sem": 0.0008432242061610672,
+   "pb_adpop2": 0.6091404752997245,
+   "pb_adsem": 0.0008432195535647085,
+   "foc_pop2": 0.6227565899497568,
+   "pb_n": 1200000,
+   "pb_seeds": 6,
+   "pb_blocks": 240,
+   "pb_block_size": 5000,
+   "pb_sem_seed": 0.0008956365079961175,
+   "pb_negfrac": 0.14911,
+   "pb_slope": -0.5000655741281729,
+   "foc_n": 200000,
+   "e_pbme": 0.032178825815987966,
+   "ratio": 35.73059161516215,
+   "grid_same": true,
+   "grid_pop2": 0.6413185481202065,
+   "grid_dt": 0.5,
+   "grid_wall_h": 0.38165472222222224,
+   "e_grid": 6.156829490677751e-10,
+   "e_grid_max": 1.963377016522827e-09,
+   "e_grid_n": 41,
+   "grid_dthalf": 3.552713678800501e-14,
+   "grid_spatial": 9.98252591699611e-11,
+   "grid_bmass": 1.9302706232645916e-11,
+   "strang_linf": 9.601620182819737e-07,
+   "strang_linf_half": 2.386627173667222e-07,
+   "strang_resolvable": true,
+   "grid_common": true,
+   "e_grid_c": 6.156829490677751e-10,
+   "e_grid_c_max": 1.963377016522827e-09,
+   "strang_pop2": 0.6413177942547847,
+   "strang_cfl": 1.32437912319669,
+   "strang_dt": 0.5,
+   "e_strang": 7.532497388051951e-07,
+   "e_strang_max": 9.575517866400318e-07,
+   "coh_qcle": 0.0019071217507450834,
+   "coh_gh_rk4": 5.272637618613425e-09,
+   "coh_pbme": 0.01583343440404107,
+   "coh_pbme_over_sem": 15.468931646291464,
+   "coh_rms_pre": [
+    1.3268124438924556,
+    23
+   ],
+   "coh_sem_pre": [
+    0.0009402321499914521,
+    0.0009402369508089078
+   ],
+   "foc_repro": 6.661338147750939e-16,
+   "coh_foc": 0.01928860906618444,
+   "coh_peak": 0.3047675106040242,
+   "coh_T": 0.016247450694392013,
+   "u_num": 6.156829490677751e-10,
+   "ratio_t_min": 34.62830916026701,
+   "ratio_t_n": 28,
+   "ps_shift": 2.361657926236063,
+   "ps_l2_qcle_A": 0.4661231218461046,
+   "ps_l2_pbme_A": 0.6669595996381125,
+   "ps_l2_qcle_C": 0.31670624402440695,
+   "ps_l2_pbme_C": 0.6711550420998357,
+   "ps_l2_qcle_bR": 0.9248974323891757,
+   "ps_l2_pbme_bR": 0.7586126472412592,
+   "ps_l2_qcle_bI": 0.9239165593230505,
+   "ps_l2_pbme_bI": 0.7588388335124001,
+   "ps_mom_qcle_A": 0.10315491788017658,
+   "ps_mom_pbme_A": 0.7087352160065191,
+   "ps_mom_floor_A": 0.015115851295316696,
+   "ps_neg_qcle_A": 0.09746541323344964,
+   "ps_neg_q_A": 5.5482518611491515e-05,
+   "ps_mom_qcle_C": 0.07042274458368929,
+   "ps_mom_pbme_C": 0.49976678862513635,
+   "ps_mom_floor_C": 0.008488266169572533,
+   "ps_neg_qcle_C": 0.07815130031604892,
+   "ps_neg_q_C": 2.4925429901430234e-06,
+   "ps_width_pbme_A": 2.1354171727067555,
+   "ps_width_qcle_A": 1.0265929807191851,
+   "ps_width_pbme_C": 1.5827063214951622,
+   "ps_width_qcle_C": 0.9909882232552476,
+   "ps_split_quantum": 3.189172689018637,
+   "ps_split_qcle": 3.373806900565647,
+   "ps_split_pbme": 4.039141929141294,
+   "ps_grid_peak": 9.978309096159151e-07,
+   "ps_grid_corr": 1.7204414637596029e-09,
+   "ps_rk_resid": 0.0030035986601923,
+   "ps_rk_pred": 9.9771838207476e-07,
+   "ps_min_qcle_C": -0.0007375464486302526,
+   "ps_peak_q_C": 0.15686732613802032
+  },
+  "40": {
+   "gh_grid": [
+    1024,
+    512
+   ],
+   "T": 1500.0,
+   "gh_pop2": 0.29956302449246347,
+   "gh_adpop2": 0.2995633709828354,
+   "frame": 9.465012269647816e-12,
+   "trace": 6.08247674449558e-10,
+   "parity": 0.0,
+   "herm": 0.0,
+   "gh_wall_h": 0.4501775573888962,
+   "krylov_m": 12,
+   "krylov_tol": 1e-10,
+   "substeps": 618,
+   "applications": 7416,
+   "n_modes": 11,
+   "q_pop2": 0.29872805905721306,
+   "q_unc": 2.4228797199927843e-08,
+   "q_adpop2": 0.29872850398723516,
+   "q_nr_ref": 24576,
+   "q_dt_ref": 0.03125,
+   "q_nr_prod": 8192,
+   "q_dt_prod": 0.125,
+   "q_order": 1.999934295173566,
+   "q_norm_drift": 2.7608804131773468e-11,
+   "e_qcle": 0.0008349654352504121,
+   "e_qcle_max": 0.001059498868834663,
+   "pb_pop2": 0.3298274410643221,
+   "pb_sem": 0.0007053406974941017,
+   "pb_adpop2": 0.32982902128807556,
+   "pb_adsem": 0.0007053409694001843,
+   "foc_pop2": 0.31128675028369307,
+   "pb_n": 1200000,
+   "pb_seeds": 6,
+   "pb_blocks": 240,
+   "pb_block_size": 5000,
+   "pb_sem_seed": 0.0004700936875546557,
+   "pb_negfrac": 0.14911,
+   "pb_slope": -0.4688536722554272,
+   "foc_n": 200000,
+   "e_pbme": 0.030264416571858632,
+   "ratio": 36.24631067845595,
+   "grid_same": true,
+   "grid_pop2": 0.29956302467451656,
+   "grid_dt": 0.5,
+   "grid_wall_h": 0.296645,
+   "e_grid": 1.8205309482155485e-10,
+   "e_grid_max": 4.5801891168650855e-09,
+   "e_grid_n": 11,
+   "grid_dthalf": 1.4865886299730846e-13,
+   "grid_spatial": 4.36233271727815e-11,
+   "grid_bmass": 2.034450755506398e-11,
+   "strang_linf": 6.2632756523406385e-06,
+   "strang_linf_half": 1.5662661541071543e-06,
+   "strang_resolvable": true,
+   "grid_common": true,
+   "e_grid_c": 1.8205309482155485e-10,
+   "e_grid_c_max": 4.5801891168650855e-09,
+   "strang_pop2": 0.29955680520638805,
+   "strang_cfl": 1.4137399808987996,
+   "strang_dt": 0.5,
+   "e_strang": 6.219286075415109e-06,
+   "e_strang_max": 6.219310971444791e-06,
+   "coh_qcle": 0.0007014381717260627,
+   "coh_gh_rk4": 1.2040890525852016e-08,
+   "coh_pbme": 0.016156108093300647,
+   "coh_pbme_over_sem": 17.761351499457337,
+   "coh_rms_pre": [
+    1.326822239154535,
+    18
+   ],
+   "coh_sem_pre": [
+    0.0009402343611094274,
+    0.0009402384655182282
+   ],
+   "foc_repro": 6.661338147750939e-16,
+   "coh_foc": 0.013678799822751386,
+   "coh_peak": 0.38385006455821774,
+   "coh_T": 0.049335559839606156,
+   "u_num": 1.8205309482155485e-10,
+   "ratio_t_min": 28.85698439134857,
+   "ratio_t_n": 15
+  },
+  "70": {
+   "gh_grid": [
+    2048,
+    1024
+   ],
+   "T": 857.5,
+   "gh_pop2": 0.43313439965571354,
+   "gh_adpop2": 0.43313283370714645,
+   "frame": 2.8849085754292894e-12,
+   "trace": 8.676919183159271e-10,
+   "parity": 0.0,
+   "herm": 0.0,
+   "gh_wall_h": 2.7821232405277745,
+   "krylov_m": 12,
+   "krylov_tol": 1e-10,
+   "substeps": 906,
+   "applications": 10872,
+   "n_modes": 11,
+   "q_pop2": 0.4332313273441595,
+   "q_unc": 4.7405494126712336e-08,
+   "q_adpop2": 0.43322973448006047,
+   "q_nr_ref": 49152,
+   "q_dt_ref": 0.03125,
+   "q_nr_prod": 16384,
+   "q_dt_prod": 0.125,
+   "q_order": 1.9999527794133354,
+   "q_norm_drift": 2.0199397710030098e-11,
+   "e_qcle": 9.69276884459358e-05,
+   "e_qcle_max": 0.00011199886503471257,
+   "pb_pop2": 0.4224372169835047,
+   "pb_sem": 0.000761752891091605,
+   "pb_adpop2": 0.42243538726450874,
+   "pb_adsem": 0.0007617499241943246,
+   "foc_pop2": 0.4354220423460977,
+   "pb_n": 1200000,
+   "pb_seeds": 6,
+   "pb_blocks": 240,
+   "pb_block_size": 5000,
+   "pb_sem_seed": 0.0009209451107928677,
+   "pb_negfrac": 0.14911,
+   "pb_slope": -0.576249813864668,
+   "foc_n": 200000,
+   "e_pbme": 0.010697182672208816,
+   "ratio": 110.36250676890408,
+   "grid_same": true,
+   "grid_pop2": 0.4331344000315871,
+   "grid_dt": 0.25,
+   "grid_wall_h": 2.1277416666666666,
+   "e_grid": 3.758735545034142e-10,
+   "e_grid_max": 3.758735545034142e-10,
+   "e_grid_n": 2,
+   "grid_dthalf": 3.980149543281186e-14,
+   "grid_spatial": 5.551115123125783e-17,
+   "grid_bmass": 1.7031112155036342e-16,
+   "strang_linf": 1.2162429065376568e-05,
+   "strang_linf_half": 3.040621513905606e-06,
+   "strang_resolvable": true,
+   "grid_common": true,
+   "e_grid_c": 3.758735545034142e-10,
+   "e_grid_c_max": 3.758735545034142e-10,
+   "strang_pop2": 0.43314653757763466,
+   "strang_cfl": 3.5148291356190513,
+   "strang_dt": 0.5,
+   "e_strang": 1.2137921921118178e-05,
+   "e_strang_max": 1.2137921921118178e-05,
+   "coh_qcle": 8.110314530627751e-05,
+   "coh_gh_rk4": 2.046990381946654e-09,
+   "coh_pbme": 0.00989449276658144,
+   "coh_pbme_over_sem": 11.069346144432874,
+   "coh_rms_pre": [
+    1.326781650036019,
+    11
+   ],
+   "coh_sem_pre": [
+    0.0009402344733550952,
+    0.0009402362505073097
+   ],
+   "foc_repro": 4.440892098500626e-16,
+   "coh_foc": 0.004341839723903399,
+   "coh_peak": 0.4255919822189106,
+   "coh_T": 0.23378742779590808,
+   "u_num": 3.758735545034142e-10,
+   "ratio_t_min": 111.36250676890408,
+   "ratio_t_n": 1,
+   "ps_shift": 0.41241542742558784,
+   "ps_l2_qcle_A": 0.21183049652309982,
+   "ps_l2_pbme_A": 0.35799973418401027,
+   "ps_l2_qcle_C": 0.2988830965303826,
+   "ps_l2_pbme_C": 0.22135986902488358,
+   "ps_l2_qcle_bR": 0.27275502133893254,
+   "ps_l2_pbme_bR": 0.32781089877358766,
+   "ps_l2_qcle_bI": 0.23210409743073857,
+   "ps_l2_pbme_bI": 0.32681184095090055,
+   "ps_mom_qcle_A": 0.015780369704698205,
+   "ps_mom_pbme_A": 0.08050648949928291,
+   "ps_mom_floor_A": 0.008842713792421191,
+   "ps_neg_qcle_A": 0.04937787166124466,
+   "ps_neg_q_A": 2.8485501495844102e-08,
+   "ps_mom_qcle_C": 0.021148680387391275,
+   "ps_mom_pbme_C": 0.07897915763213044,
+   "ps_mom_floor_C": 0.009865732968785158,
+   "ps_neg_qcle_C": 0.005484913828187589,
+   "ps_neg_q_C": 3.656558846198195e-08,
+   "ps_width_pbme_A": 1.0663385164077275,
+   "ps_width_qcle_A": 0.983962460977948,
+   "ps_width_pbme_C": 1.0072010624986916,
+   "ps_width_qcle_C": 1.0215514559637293,
+   "ps_split_quantum": 0.17988075782723456,
+   "ps_split_qcle": 0.1732340035455593,
+   "ps_split_pbme": 0.7805807111643759,
+   "ps_grid_peak": 0.00013400649366084375,
+   "ps_grid_corr": 2.104390416852581e-09,
+   "ps_rk_resid": 3.327316951600082e-05,
+   "ps_rk_pred": 0.0001340065011983936,
+   "ps_min_qcle_C": -1.1913484907858267e-17,
+   "ps_peak_q_C": 0.04978639911877703
+  },
+  "100": {
+   "gh_grid": [
+    2048,
+    1024
+   ],
+   "T": 600.0,
+   "gh_pop2": 0.8518282089917122,
+   "gh_adpop2": 0.8518256218432321,
+   "frame": 8.865039736472109e-11,
+   "trace": 8.646680038637555e-10,
+   "parity": 0.0,
+   "herm": 0.0,
+   "gh_wall_h": 3.76355327255555,
+   "krylov_m": 12,
+   "krylov_tol": 1e-10,
+   "substeps": 1147,
+   "applications": 13764,
+   "n_modes": 11,
+   "q_pop2": 0.8518208905010604,
+   "q_unc": 5.0891770095146095e-08,
+   "q_adpop2": 0.8518183054513508,
+   "q_nr_ref": 49152,
+   "q_dt_ref": 0.03125,
+   "q_nr_prod": 16384,
+   "q_dt_prod": 0.125,
+   "q_order": 1.9999906046928868,
+   "q_norm_drift": 1.2786660619212853e-11,
+   "e_qcle": 7.318490651830878e-06,
+   "e_qcle_max": 8.581657332751291e-06,
+   "pb_pop2": 0.8483701839568751,
+   "pb_sem": 0.0010127763571657815,
+   "pb_adpop2": 0.8483673061873512,
+   "pb_adsem": 0.001012776459190823,
+   "foc_pop2": 0.8531206742759687,
+   "pb_n": 1200000,
+   "pb_seeds": 6,
+   "pb_blocks": 240,
+   "pb_block_size": 5000,
+   "pb_sem_seed": 0.0012878619742148264,
+   "pb_negfrac": 0.14911,
+   "pb_slope": -0.5039431497350415,
+   "foc_n": 200000,
+   "e_pbme": 0.0034580250348370534,
+   "ratio": 472.50521990787183,
+   "grid_same": true,
+   "grid_pop2": 0.8518282097281792,
+   "grid_dt": 0.25,
+   "grid_wall_h": 1.9045072222222221,
+   "e_grid": 7.364669984966099e-10,
+   "e_grid_max": 1.2329691712054114e-09,
+   "e_grid_n": 21,
+   "grid_dthalf": 8.981704269217516e-14,
+   "grid_spatial": 5.551115123125783e-17,
+   "grid_bmass": 2.5587194693838314e-15,
+   "strang_linf": 1.614178613984496e-05,
+   "strang_linf_half": 4.035714960770598e-06,
+   "strang_resolvable": true,
+   "grid_common": true,
+   "e_grid_c": 7.364669984966099e-10,
+   "e_grid_c_max": 1.2329691712054114e-09,
+   "strang_pop2": 0.8518412381963596,
+   "strang_cfl": 4.158992755850743,
+   "strang_dt": 0.5,
+   "e_strang": 1.3029204647407866e-05,
+   "e_strang_max": 1.6141815121439862e-05,
+   "coh_qcle": 1.701531567452305e-05,
+   "coh_gh_rk4": 3.546195934963756e-09,
+   "coh_pbme": 0.006224223914042772,
+   "coh_pbme_over_sem": 6.817593705303416,
+   "coh_rms_pre": [
+    1.3268168745254005,
+    8
+   ],
+   "coh_sem_pre": [
+    0.0009402315030696616,
+    0.0009402361198154812
+   ],
+   "foc_repro": 4.440892098500626e-16,
+   "coh_foc": 0.0022951546445882745,
+   "coh_peak": 0.4440435750338292,
+   "coh_T": 0.21323398627945717,
+   "u_num": 7.364669984966099e-10,
+   "ratio_t_min": 402.73678512622644,
+   "ratio_t_n": 22,
+   "ps_shift": 0.20101012677666857,
+   "ps_l2_qcle_A": 0.17558640492855176,
+   "ps_l2_pbme_A": 0.5499788703158847,
+   "ps_l2_qcle_C": 0.031783752119446354,
+   "ps_l2_pbme_C": 0.16249312015041562,
+   "ps_l2_qcle_bR": 0.07742382824326177,
+   "ps_l2_pbme_bR": 0.17957283519869774,
+   "ps_l2_qcle_bI": 0.07870704084625657,
+   "ps_l2_pbme_bI": 0.20058278942354418,
+   "ps_mom_qcle_A": 0.016210373854456193,
+   "ps_mom_pbme_A": 0.2286572258378299,
+   "ps_mom_floor_A": 0.018827859165227296,
+   "ps_neg_qcle_A": 0.043644233324401184,
+   "ps_neg_q_A": 7.793897301330482e-09,
+   "ps_mom_qcle_C": 0.002866838733126569,
+   "ps_mom_pbme_C": 0.04071003233926951,
+   "ps_mom_floor_C": 0.0048615182038968625,
+   "ps_neg_qcle_C": 0.002867871445876788,
+   "ps_neg_q_C": 1.8158681972073416e-09,
+   "ps_width_pbme_A": 1.0033805981878714,
+   "ps_width_qcle_A": 0.9839786278492145,
+   "ps_width_pbme_C": 1.0177081631540847,
+   "ps_width_qcle_C": 1.003004117824094,
+   "ps_split_quantum": 0.04558793244855508,
+   "ps_split_qcle": 0.05379222862148936,
+   "ps_split_pbme": 1.664795570340587,
+   "ps_grid_peak": 0.003566537922188818,
+   "ps_grid_corr": 1.8159007424994116e-08,
+   "ps_rk_resid": 1.2685609485939999e-05,
+   "ps_rk_pred": 0.0035665381731150732,
+   "ps_min_qcle_C": 1.4860666768420373e-15,
+   "ps_peak_q_C": 0.06772318346890868
+  }
+ },
+ "macros": {
+  "TTPTen": {
+   "tex": "6000",
+   "value": 6000.0,
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": "final time"
+  },
+  "sigRPTen": {
+   "tex": "1",
+   "value": 1.0,
+   "source": "config: sigma_R = 10/P0",
+   "note": ""
+  },
+  "ghGridPTen": {
+   "tex": "4096\\times2048",
+   "value": [
+    4096,
+    2048
+   ],
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": ""
+  },
+  "ghRboxPTen": {
+   "tex": "[-45,45]",
+   "value": [
+    -45.0,
+    45.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": ""
+  },
+  "ghPboxPTen": {
+   "tex": "[-30,50]",
+   "value": [
+    -30.0,
+    50.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": ""
+  },
+  "ghHoursPTen": {
+   "tex": "108",
+   "value": 107.85142224733333,
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": "hours"
+  },
+  "ghMPTen": {
+   "tex": "8",
+   "value": 8,
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": ""
+  },
+  "ghSubstepsPTen": {
+   "tex": "7761",
+   "value": 7761,
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": ""
+  },
+  "ghFramePTen": {
+   "tex": "7.8\\times10^{-12}",
+   "value": 7.788948620838764e-12,
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": "max_t W-norm frame residual"
+  },
+  "ghTracePTen": {
+   "tex": "2.9\\times10^{-9}",
+   "value": 2.924707365181689e-09,
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": "max_t |Tr rho_W - 1|"
+  },
+  "ghPopPTen": {
+   "tex": "0.017007",
+   "value": 0.017007264420577123,
+   "source": "07g_gh_coefficient_propagation_P10.json",
+   "note": "rho_W^22(T)"
+  },
+  "qPopPTen": {
+   "tex": "0.018436",
+   "value": 0.01843607296382442,
+   "source": "10_schrodinger_convergence_P10.json",
+   "note": "finest run, rho^22(T)"
+  },
+  "qUncPTen": {
+   "tex": "5\\times10^{-11}",
+   "value": 4.7871546420861986e-11,
+   "source": "10_schrodinger_convergence_P10.json",
+   "note": "max(Richardson remainder at dt/4, grid x2 and box differences)"
+  },
+  "qNRPTen": {
+   "tex": "24576",
+   "value": 24576,
+   "source": "10_schrodinger_convergence_P10.json",
+   "note": ""
+  },
+  "qDtPTen": {
+   "tex": "0.03125",
+   "value": 0.03125,
+   "source": "10_schrodinger_convergence_P10.json",
+   "note": ""
+  },
+  "qNRProdPTen": {
+   "tex": "8192",
+   "value": 8192,
+   "source": "10_schrodinger_convergence_P10.json",
+   "note": "production run"
+  },
+  "eQclePTen": {
+   "tex": "0.0014",
+   "value": 0.001428808543247298,
+   "source": "07g_gh_coefficient_propagation_P10.json; 10_schrodinger_convergence_P10.json",
+   "note": "|GH - quantum| at T"
+  },
+  "eQcleMaxPTen": {
+   "tex": "0.0076",
+   "value": 0.0075584862647766135,
+   "source": "07g_gh_coefficient_propagation_P10.json; 10_schrodinger_convergence_P10.json",
+   "note": "max over 41 common instants"
+  },
+  "pbPopPTen": {
+   "tex": "-0.0877",
+   "value": -0.0876659224001244,
+   "source": "11_pbme_projected_P10.json",
+   "note": "control-variate estimate"
+  },
+  "pbSemPTen": {
+   "tex": "0.0003",
+   "value": 0.0003399849947238398,
+   "source": "11_pbme_projected_P10.json",
+   "note": "one standard error over blocks"
+  },
+  "pbSemDigitsPTen": {
+   "tex": "3",
+   "value": 0.0003399849947238398,
+   "source": "11_pbme_projected_P10.json",
+   "note": "standard error in units of the last quoted digit (1e-4)"
+  },
+  "focPopPTen": {
+   "tex": "-0.0941",
+   "value": -0.09411777706592575,
+   "source": "11_pbme_projected_P10.json",
+   "note": "focused PBME"
+  },
+  "ePbmePTen": {
+   "tex": "0.10",
+   "value": 0.10467318682070152,
+   "source": "11_pbme_projected_P10.json; 07g_gh_coefficient_propagation_P10.json",
+   "note": "|proj PBME - GH| at T"
+  },
+  "ePbmeSemPTen": {
+   "tex": "3\\times10^{-4}",
+   "value": 0.0003399849947238398,
+   "source": "11_pbme_projected_P10.json",
+   "note": ""
+  },
+  "ratioPTen": {
+   "tex": "73",
+   "value": 73.25907121384331,
+   "source": "derived",
+   "note": "E_PBME / E_QCLE"
+  },
+  "pbPopTabPTen": {
+   "tex": "-0.0877(3)",
+   "value": -0.0876659224001244,
+   "source": "11_pbme_projected_P10.json",
+   "note": "table form: value(standard error in units of 1e-4)"
+  },
+  "focPopTabPTen": {
+   "tex": "-0.0941",
+   "value": -0.09411777706592575,
+   "source": "11_pbme_projected_P10.json",
+   "note": "table form"
+  },
+  "eQcleTabPTen": {
+   "tex": "1.4\\times10^{-3}",
+   "value": 0.001428808543247298,
+   "source": "07g_gh_coefficient_propagation_P10.json; 10_schrodinger_convergence_P10.json",
+   "note": "table form of |GH - quantum| at T"
+  },
+  "ePbmeTabPTen": {
+   "tex": "1.047(3)\\times10^{-1}",
+   "value": 0.10467318682070152,
+   "source": "11_pbme_projected_P10.json; 07g_gh_coefficient_propagation_P10.json",
+   "note": "table form of |proj PBME - GH| at T with one standard error"
+  },
+  "gridGridPTen": {
+   "tex": "2048\\times1024",
+   "value": [
+    2048,
+    1024
+   ],
+   "source": "10b_qcle_grid_crosscheck_P10.json",
+   "note": ""
+  },
+  "gridDtPTen": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "10b_qcle_grid_crosscheck_P10.json",
+   "note": ""
+  },
+  "eGridPTen": {
+   "tex": "2.7\\times10^{-5}",
+   "value": 2.657952287242471e-05,
+   "source": "07g_gh_coefficient_propagation_P10.json; 10b_qcle_grid_crosscheck_P10.json",
+   "note": "|GH - grid QCLE| at T (DIFFERENT bath grids)"
+  },
+  "eGridMaxPTen": {
+   "tex": "4.4\\times10^{-5}",
+   "value": 4.41684015992979e-05,
+   "source": "07g_gh_coefficient_propagation_P10.json; 10b_qcle_grid_crosscheck_P10.json",
+   "note": "max over 41 common instants"
+  },
+  "eStrangPTen": {
+   "tex": "4.7\\times10^{-8}",
+   "value": 4.7348478113967696e-08,
+   "source": "07g_gh_coefficient_propagation_P10.json; 07_coefficient_propagation_P10.json",
+   "note": "|GH - Strang| at T"
+  },
+  "eStrangMaxPTen": {
+   "tex": "1.1\\times10^{-7}",
+   "value": 1.0521251736506088e-07,
+   "source": "07g_gh_coefficient_propagation_P10.json; 07_coefficient_propagation_P10.json",
+   "note": "max over 41 common instants"
+  },
+  "strangCflPTen": {
+   "tex": "3.6",
+   "value": 3.6442903456194853,
+   "source": "07_coefficient_propagation_P10.json",
+   "note": ""
+  },
+  "strangDtPTen": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "07_coefficient_propagation_P10.json",
+   "note": ""
+  },
+  "cohQclePTen": {
+   "tex": "0.0074",
+   "value": 0.007421030287599451,
+   "source": "07g_gh_coefficient_propagation_P10.json; 10b_*; 07_coefficient_propagation_P10.json; 11_pbme_projected_P10.json; 20_focused_pbme_observables_P10.json",
+   "note": "max over the three QCLE solvers and their instants shared with the quantum run of |rho12 - rho12_quantum|; coefficient propagation: 7.414e-03 (41 instants); four-field RK4: 7.420e-03 (601 instants); Strang: 7.421e-03 (601 instants)"
+  },
+  "cohPbmePTen": {
+   "tex": "0.060",
+   "value": 0.05965020572674281,
+   "source": "07g_gh_coefficient_propagation_P10.json; 10b_*; 07_coefficient_propagation_P10.json; 11_pbme_projected_P10.json; 20_focused_pbme_observables_P10.json",
+   "note": "max |rho12_PBME - rho12_quantum|, 67.2 standard errors"
+  },
+  "cohFocPTen": {
+   "tex": "0.050",
+   "value": 0.0498087829473649,
+   "source": "07g_gh_coefficient_propagation_P10.json; 10b_*; 07_coefficient_propagation_P10.json; 11_pbme_projected_P10.json; 20_focused_pbme_observables_P10.json",
+   "note": "max |rho12_focused - rho12_quantum|"
+  },
+  "cohTPTen": {
+   "tex": "0.011",
+   "value": 0.01136989563274795,
+   "source": "07_coefficient_propagation_P10.h5",
+   "note": "|rho12_quantum(T)|"
+  },
+  "TTPTwenty": {
+   "tex": "3000",
+   "value": 3000.0,
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": "final time"
+  },
+  "sigRPTwenty": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "config: sigma_R = 10/P0",
+   "note": ""
+  },
+  "ghGridPTwenty": {
+   "tex": "4096\\times1024",
+   "value": [
+    4096,
+    1024
+   ],
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": ""
+  },
+  "ghRboxPTwenty": {
+   "tex": "[-45,45]",
+   "value": [
+    -45.0,
+    45.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": ""
+  },
+  "ghPboxPTwenty": {
+   "tex": "[-20,60]",
+   "value": [
+    -20.0,
+    60.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": ""
+  },
+  "ghHoursPTwenty": {
+   "tex": "13",
+   "value": 13.427004006444443,
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": "hours"
+  },
+  "ghMPTwenty": {
+   "tex": "12",
+   "value": 12,
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": ""
+  },
+  "ghSubstepsPTwenty": {
+   "tex": "1925",
+   "value": 1925,
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": ""
+  },
+  "ghFramePTwenty": {
+   "tex": "1.6\\times10^{-10}",
+   "value": 1.5660154974388822e-10,
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": "max_t W-norm frame residual"
+  },
+  "ghTracePTwenty": {
+   "tex": "5.0\\times10^{-10}",
+   "value": 4.953403243135313e-10,
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": "max_t |Tr rho_W - 1|"
+  },
+  "ghPopPTwenty": {
+   "tex": "0.062997",
+   "value": 0.06299660015573073,
+   "source": "07g_gh_coefficient_propagation_P20.json",
+   "note": "rho_W^22(T)"
+  },
+  "qPopPTwenty": {
+   "tex": "0.057594",
+   "value": 0.057593689006962524,
+   "source": "10_schrodinger_convergence_P20.json",
+   "note": "finest run, rho^22(T)"
+  },
+  "qUncPTwenty": {
+   "tex": "3\\times10^{-9}",
+   "value": 3.4299790846872903e-09,
+   "source": "10_schrodinger_convergence_P20.json",
+   "note": "max(Richardson remainder at dt/4, grid x2 and box differences)"
+  },
+  "qNRPTwenty": {
+   "tex": "24576",
+   "value": 24576,
+   "source": "10_schrodinger_convergence_P20.json",
+   "note": ""
+  },
+  "qDtPTwenty": {
+   "tex": "0.03125",
+   "value": 0.03125,
+   "source": "10_schrodinger_convergence_P20.json",
+   "note": ""
+  },
+  "qNRProdPTwenty": {
+   "tex": "8192",
+   "value": 8192,
+   "source": "10_schrodinger_convergence_P20.json",
+   "note": "production run"
+  },
+  "eQclePTwenty": {
+   "tex": "0.0054",
+   "value": 0.005402911148768209,
+   "source": "07g_gh_coefficient_propagation_P20.json; 10_schrodinger_convergence_P20.json",
+   "note": "|GH - quantum| at T"
+  },
+  "eQcleMaxPTwenty": {
+   "tex": "0.0058",
+   "value": 0.005812003610766267,
+   "source": "07g_gh_coefficient_propagation_P20.json; 10_schrodinger_convergence_P20.json",
+   "note": "max over 41 common instants"
+  },
+  "pbPopPTwenty": {
+   "tex": "0.0116",
+   "value": 0.011641389946843826,
+   "source": "11_pbme_projected_P20.json",
+   "note": "control-variate estimate"
+  },
+  "pbSemPTwenty": {
+   "tex": "0.0005",
+   "value": 0.0004605980684023706,
+   "source": "11_pbme_projected_P20.json",
+   "note": "one standard error over blocks"
+  },
+  "pbSemDigitsPTwenty": {
+   "tex": "5",
+   "value": 0.0004605980684023706,
+   "source": "11_pbme_projected_P20.json",
+   "note": "standard error in units of the last quoted digit (1e-4)"
+  },
+  "focPopPTwenty": {
+   "tex": "0.0463",
+   "value": 0.04631938560778501,
+   "source": "11_pbme_projected_P20.json",
+   "note": "focused PBME"
+  },
+  "ePbmePTwenty": {
+   "tex": "0.051",
+   "value": 0.051355210208886906,
+   "source": "11_pbme_projected_P20.json; 07g_gh_coefficient_propagation_P20.json",
+   "note": "|proj PBME - GH| at T"
+  },
+  "ePbmeSemPTwenty": {
+   "tex": "5\\times10^{-4}",
+   "value": 0.0004605980684023706,
+   "source": "11_pbme_projected_P20.json",
+   "note": ""
+  },
+  "ratioPTwenty": {
+   "tex": "9.5",
+   "value": 9.505099897968005,
+   "source": "derived",
+   "note": "E_PBME / E_QCLE"
+  },
+  "pbPopTabPTwenty": {
+   "tex": "\\phantom{-}0.0116(5)",
+   "value": 0.011641389946843826,
+   "source": "11_pbme_projected_P20.json",
+   "note": "table form: value(standard error in units of 1e-4)"
+  },
+  "focPopTabPTwenty": {
+   "tex": "\\phantom{-}0.0463",
+   "value": 0.04631938560778501,
+   "source": "11_pbme_projected_P20.json",
+   "note": "table form"
+  },
+  "eQcleTabPTwenty": {
+   "tex": "5.4\\times10^{-3}",
+   "value": 0.005402911148768209,
+   "source": "07g_gh_coefficient_propagation_P20.json; 10_schrodinger_convergence_P20.json",
+   "note": "table form of |GH - quantum| at T"
+  },
+  "ePbmeTabPTwenty": {
+   "tex": "5.14(5)\\times10^{-2}",
+   "value": 0.051355210208886906,
+   "source": "11_pbme_projected_P20.json; 07g_gh_coefficient_propagation_P20.json",
+   "note": "table form of |proj PBME - GH| at T with one standard error"
+  },
+  "gridGridPTwenty": {
+   "tex": "4096\\times1024",
+   "value": [
+    4096,
+    1024
+   ],
+   "source": "10b_qcle_grid_crosscheck_P20.json",
+   "note": ""
+  },
+  "gridDtPTwenty": {
+   "tex": "0.25",
+   "value": 0.25,
+   "source": "10b_qcle_grid_crosscheck_P20.json",
+   "note": ""
+  },
+  "eGridPTwenty": {
+   "tex": "3.1\\times10^{-11}",
+   "value": 3.143042770492599e-11,
+   "source": "07g_gh_coefficient_propagation_P20.json; 10b_qcle_grid_crosscheck_P20.json",
+   "note": "|GH - grid QCLE| at T"
+  },
+  "eGridMaxPTwenty": {
+   "tex": "1.2\\times10^{-10}",
+   "value": 1.1726752902063708e-10,
+   "source": "07g_gh_coefficient_propagation_P20.json; 10b_qcle_grid_crosscheck_P20.json",
+   "note": "max over 21 common instants"
+  },
+  "gridDtHalfPTwenty": {
+   "tex": "8\\times10^{-14}",
+   "value": 8.297529330292264e-14,
+   "source": "10b_qcle_grid_crosscheck_P20.json",
+   "note": "|pop2(dt/2) - pop2(dt)| of the grid QCLE"
+  },
+  "ghOverGridPTwenty": {
+   "tex": "0.8",
+   "value": 0.8363937306791258,
+   "source": "07g_gh_coefficient_propagation_P20.json; 10b_qcle_grid_crosscheck_P20.json",
+   "note": "wall-time ratio, same machine and grid"
+  },
+  "eStrangPTwenty": {
+   "tex": "9.6\\times10^{-7}",
+   "value": 9.577625048468041e-07,
+   "source": "07g_gh_coefficient_propagation_P20.json; 13_P20_wide_momentum_box.json",
+   "note": "|GH - Strang| at T"
+  },
+  "eStrangMaxPTwenty": {
+   "tex": "9.6\\times10^{-7}",
+   "value": 9.581438404626663e-07,
+   "source": "07g_gh_coefficient_propagation_P20.json; 13_P20_wide_momentum_box.json",
+   "note": "max over 21 common instants"
+  },
+  "strangCflPTwenty": {
+   "tex": "3.1",
+   "value": 3.085680165273998,
+   "source": "13_P20_wide_momentum_box.json",
+   "note": ""
+  },
+  "strangDtPTwenty": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "13_P20_wide_momentum_box.json",
+   "note": ""
+  },
+  "cohQclePTwenty": {
+   "tex": "0.0032",
+   "value": 0.0031670366629027126,
+   "source": "07g_gh_coefficient_propagation_P20.json; 10b_*; 13_P20_wide_momentum_box.json; 11_pbme_projected_P20.json; 20_focused_pbme_observables_P20.json",
+   "note": "max over the three QCLE solvers and their instants shared with the quantum run of |rho12 - rho12_quantum|; coefficient propagation: 3.153e-03 (21 instants); four-field RK4: 3.165e-03 (301 instants); Strang: 3.167e-03 (301 instants)"
+  },
+  "cohPbmePTwenty": {
+   "tex": "0.023",
+   "value": 0.02317889100096375,
+   "source": "07g_gh_coefficient_propagation_P20.json; 10b_*; 13_P20_wide_momentum_box.json; 11_pbme_projected_P20.json; 20_focused_pbme_observables_P20.json",
+   "note": "max |rho12_PBME - rho12_quantum|, 22.6 standard errors"
+  },
+  "cohFocPTwenty": {
+   "tex": "0.017",
+   "value": 0.016845658545489875,
+   "source": "07g_gh_coefficient_propagation_P20.json; 10b_*; 13_P20_wide_momentum_box.json; 11_pbme_projected_P20.json; 20_focused_pbme_observables_P20.json",
+   "note": "max |rho12_focused - rho12_quantum|"
+  },
+  "cohTPTwenty": {
+   "tex": "1.5\\times10^{-4}",
+   "value": 0.00014708132801000446,
+   "source": "13_P20_wide_momentum_box.h5",
+   "note": "|rho12_quantum(T)|"
+  },
+  "TTPThirty": {
+   "tex": "2000",
+   "value": 2000.0,
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": "final time"
+  },
+  "sigRPThirty": {
+   "tex": "0.333",
+   "value": 0.3333333333333333,
+   "source": "config: sigma_R = 10/P0",
+   "note": ""
+  },
+  "ghGridPThirty": {
+   "tex": "1024\\times512",
+   "value": [
+    1024,
+    512
+   ],
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": ""
+  },
+  "ghRboxPThirty": {
+   "tex": "[-45,45]",
+   "value": [
+    -45.0,
+    45.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": ""
+  },
+  "ghPboxPThirty": {
+   "tex": "[8,52]",
+   "value": [
+    8.0,
+    52.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": ""
+  },
+  "ghHoursPThirty": {
+   "tex": "0.5",
+   "value": 0.5009284703333267,
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": "hours"
+  },
+  "ghMPThirty": {
+   "tex": "12",
+   "value": 12,
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": ""
+  },
+  "ghSubstepsPThirty": {
+   "tex": "699",
+   "value": 699,
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": ""
+  },
+  "ghFramePThirty": {
+   "tex": "3.2\\times10^{-10}",
+   "value": 3.205885493809174e-10,
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": "max_t W-norm frame residual"
+  },
+  "ghTracePThirty": {
+   "tex": "9.6\\times10^{-10}",
+   "value": 9.599518957514874e-10,
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": "max_t |Tr rho_W - 1|"
+  },
+  "ghPopPThirty": {
+   "tex": "0.641319",
+   "value": 0.6413185475045236,
+   "source": "07g_gh_coefficient_propagation_P30.json",
+   "note": "rho_W^22(T)"
+  },
+  "qPopPThirty": {
+   "tex": "0.640418",
+   "value": 0.6404179515624644,
+   "source": "10_schrodinger_convergence_P30.json",
+   "note": "finest run, rho^22(T)"
+  },
+  "qUncPThirty": {
+   "tex": "3\\times10^{-9}",
+   "value": 3.097179744098107e-09,
+   "source": "10_schrodinger_convergence_P30.json",
+   "note": "max(Richardson remainder at dt/4, grid x2 and box differences)"
+  },
+  "qNRPThirty": {
+   "tex": "24576",
+   "value": 24576,
+   "source": "10_schrodinger_convergence_P30.json",
+   "note": ""
+  },
+  "qDtPThirty": {
+   "tex": "0.03125",
+   "value": 0.03125,
+   "source": "10_schrodinger_convergence_P30.json",
+   "note": ""
+  },
+  "qNRProdPThirty": {
+   "tex": "8192",
+   "value": 8192,
+   "source": "10_schrodinger_convergence_P30.json",
+   "note": "production run"
+  },
+  "eQclePThirty": {
+   "tex": "9.0\\times10^{-4}",
+   "value": 0.0009005959420591569,
+   "source": "07g_gh_coefficient_propagation_P30.json; 10_schrodinger_convergence_P30.json",
+   "note": "|GH - quantum| at T"
+  },
+  "eQcleMaxPThirty": {
+   "tex": "9.0\\times10^{-4}",
+   "value": 0.0009032921924950754,
+   "source": "07g_gh_coefficient_propagation_P30.json; 10_schrodinger_convergence_P30.json",
+   "note": "max over 41 common instants"
+  },
+  "pbPopPThirty": {
+   "tex": "0.6091",
+   "value": 0.6091397216885356,
+   "source": "11_pbme_projected_P30.json",
+   "note": "control-variate estimate"
+  },
+  "pbSemPThirty": {
+   "tex": "0.0008",
+   "value": 0.0008432242061610672,
+   "source": "11_pbme_projected_P30.json",
+   "note": "one standard error over blocks"
+  },
+  "pbSemDigitsPThirty": {
+   "tex": "8",
+   "value": 0.0008432242061610672,
+   "source": "11_pbme_projected_P30.json",
+   "note": "standard error in units of the last quoted digit (1e-4)"
+  },
+  "focPopPThirty": {
+   "tex": "0.6228",
+   "value": 0.6227565899497568,
+   "source": "11_pbme_projected_P30.json",
+   "note": "focused PBME"
+  },
+  "ePbmePThirty": {
+   "tex": "0.032",
+   "value": 0.032178825815987966,
+   "source": "11_pbme_projected_P30.json; 07g_gh_coefficient_propagation_P30.json",
+   "note": "|proj PBME - GH| at T"
+  },
+  "ePbmeSemPThirty": {
+   "tex": "8\\times10^{-4}",
+   "value": 0.0008432242061610672,
+   "source": "11_pbme_projected_P30.json",
+   "note": ""
+  },
+  "ratioPThirty": {
+   "tex": "36",
+   "value": 35.73059161516215,
+   "source": "derived",
+   "note": "E_PBME / E_QCLE"
+  },
+  "pbPopTabPThirty": {
+   "tex": "\\phantom{-}0.6091(8)",
+   "value": 0.6091397216885356,
+   "source": "11_pbme_projected_P30.json",
+   "note": "table form: value(standard error in units of 1e-4)"
+  },
+  "focPopTabPThirty": {
+   "tex": "\\phantom{-}0.6228",
+   "value": 0.6227565899497568,
+   "source": "11_pbme_projected_P30.json",
+   "note": "table form"
+  },
+  "eQcleTabPThirty": {
+   "tex": "9.0\\times10^{-4}",
+   "value": 0.0009005959420591569,
+   "source": "07g_gh_coefficient_propagation_P30.json; 10_schrodinger_convergence_P30.json",
+   "note": "table form of |GH - quantum| at T"
+  },
+  "ePbmeTabPThirty": {
+   "tex": "3.22(8)\\times10^{-2}",
+   "value": 0.032178825815987966,
+   "source": "11_pbme_projected_P30.json; 07g_gh_coefficient_propagation_P30.json",
+   "note": "table form of |proj PBME - GH| at T with one standard error"
+  },
+  "gridGridPThirty": {
+   "tex": "1024\\times512",
+   "value": [
+    1024,
+    512
+   ],
+   "source": "10b_qcle_grid_crosscheck_P30.json",
+   "note": ""
+  },
+  "gridDtPThirty": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "10b_qcle_grid_crosscheck_P30.json",
+   "note": ""
+  },
+  "eGridPThirty": {
+   "tex": "6.2\\times10^{-10}",
+   "value": 6.156829490677751e-10,
+   "source": "07g_gh_coefficient_propagation_P30.json; 10b_qcle_grid_crosscheck_P30.json",
+   "note": "|GH - grid QCLE| at T"
+  },
+  "eGridMaxPThirty": {
+   "tex": "2.0\\times10^{-9}",
+   "value": 1.963377016522827e-09,
+   "source": "07g_gh_coefficient_propagation_P30.json; 10b_qcle_grid_crosscheck_P30.json",
+   "note": "max over 41 common instants"
+  },
+  "gridDtHalfPThirty": {
+   "tex": "4\\times10^{-14}",
+   "value": 3.552713678800501e-14,
+   "source": "10b_qcle_grid_crosscheck_P30.json",
+   "note": "|pop2(dt/2) - pop2(dt)| of the grid QCLE"
+  },
+  "ghOverGridPThirty": {
+   "tex": "1.3",
+   "value": 1.3125174173572942,
+   "source": "07g_gh_coefficient_propagation_P30.json; 10b_qcle_grid_crosscheck_P30.json",
+   "note": "wall-time ratio, same machine and grid"
+  },
+  "eStrangPThirty": {
+   "tex": "7.5\\times10^{-7}",
+   "value": 7.532497388051951e-07,
+   "source": "07g_gh_coefficient_propagation_P30.json; 07_coefficient_propagation_P30.json",
+   "note": "|GH - Strang| at T"
+  },
+  "eStrangMaxPThirty": {
+   "tex": "9.6\\times10^{-7}",
+   "value": 9.575517866400318e-07,
+   "source": "07g_gh_coefficient_propagation_P30.json; 07_coefficient_propagation_P30.json",
+   "note": "max over 41 common instants"
+  },
+  "strangCflPThirty": {
+   "tex": "1.3",
+   "value": 1.32437912319669,
+   "source": "07_coefficient_propagation_P30.json",
+   "note": ""
+  },
+  "strangDtPThirty": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "07_coefficient_propagation_P30.json",
+   "note": ""
+  },
+  "cohQclePThirty": {
+   "tex": "0.0019",
+   "value": 0.0019071217507450834,
+   "source": "07g_gh_coefficient_propagation_P30.json; 10b_*; 07_coefficient_propagation_P30.json; 11_pbme_projected_P30.json; 20_focused_pbme_observables_P30.json",
+   "note": "max over the three QCLE solvers and their instants shared with the quantum run of |rho12 - rho12_quantum|; coefficient propagation: 1.814e-03 (41 instants); four-field RK4: 1.907e-03 (201 instants); Strang: 1.903e-03 (201 instants)"
+  },
+  "cohPbmePThirty": {
+   "tex": "0.016",
+   "value": 0.01583343440404107,
+   "source": "07g_gh_coefficient_propagation_P30.json; 10b_*; 07_coefficient_propagation_P30.json; 11_pbme_projected_P30.json; 20_focused_pbme_observables_P30.json",
+   "note": "max |rho12_PBME - rho12_quantum|, 15.5 standard errors"
+  },
+  "cohFocPThirty": {
+   "tex": "0.019",
+   "value": 0.01928860906618444,
+   "source": "07g_gh_coefficient_propagation_P30.json; 10b_*; 07_coefficient_propagation_P30.json; 11_pbme_projected_P30.json; 20_focused_pbme_observables_P30.json",
+   "note": "max |rho12_focused - rho12_quantum|"
+  },
+  "cohTPThirty": {
+   "tex": "0.016",
+   "value": 0.016247450694392013,
+   "source": "07_coefficient_propagation_P30.h5",
+   "note": "|rho12_quantum(T)|"
+  },
+  "TTPForty": {
+   "tex": "1500",
+   "value": 1500.0,
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": "final time"
+  },
+  "sigRPForty": {
+   "tex": "0.25",
+   "value": 0.25,
+   "source": "config: sigma_R = 10/P0",
+   "note": ""
+  },
+  "ghGridPForty": {
+   "tex": "1024\\times512",
+   "value": [
+    1024,
+    512
+   ],
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": ""
+  },
+  "ghRboxPForty": {
+   "tex": "[-45,45]",
+   "value": [
+    -45.0,
+    45.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": ""
+  },
+  "ghPboxPForty": {
+   "tex": "[18,62]",
+   "value": [
+    18.0,
+    62.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": ""
+  },
+  "ghHoursPForty": {
+   "tex": "0.45",
+   "value": 0.4501775573888962,
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": "hours"
+  },
+  "ghMPForty": {
+   "tex": "12",
+   "value": 12,
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": ""
+  },
+  "ghSubstepsPForty": {
+   "tex": "618",
+   "value": 618,
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": ""
+  },
+  "ghFramePForty": {
+   "tex": "9.5\\times10^{-12}",
+   "value": 9.465012269647816e-12,
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": "max_t W-norm frame residual"
+  },
+  "ghTracePForty": {
+   "tex": "6.1\\times10^{-10}",
+   "value": 6.08247674449558e-10,
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": "max_t |Tr rho_W - 1|"
+  },
+  "ghPopPForty": {
+   "tex": "0.299563",
+   "value": 0.29956302449246347,
+   "source": "07g_gh_coefficient_propagation_P40.json",
+   "note": "rho_W^22(T)"
+  },
+  "qPopPForty": {
+   "tex": "0.298728",
+   "value": 0.29872805905721306,
+   "source": "10_schrodinger_convergence_P40.json",
+   "note": "finest run, rho^22(T)"
+  },
+  "qUncPForty": {
+   "tex": "2\\times10^{-8}",
+   "value": 2.4228797199927843e-08,
+   "source": "10_schrodinger_convergence_P40.json",
+   "note": "max(Richardson remainder at dt/4, grid x2 and box differences)"
+  },
+  "qNRPForty": {
+   "tex": "24576",
+   "value": 24576,
+   "source": "10_schrodinger_convergence_P40.json",
+   "note": ""
+  },
+  "qDtPForty": {
+   "tex": "0.03125",
+   "value": 0.03125,
+   "source": "10_schrodinger_convergence_P40.json",
+   "note": ""
+  },
+  "qNRProdPForty": {
+   "tex": "8192",
+   "value": 8192,
+   "source": "10_schrodinger_convergence_P40.json",
+   "note": "production run"
+  },
+  "eQclePForty": {
+   "tex": "8.3\\times10^{-4}",
+   "value": 0.0008349654352504121,
+   "source": "07g_gh_coefficient_propagation_P40.json; 10_schrodinger_convergence_P40.json",
+   "note": "|GH - quantum| at T"
+  },
+  "eQcleMaxPForty": {
+   "tex": "0.0011",
+   "value": 0.001059498868834663,
+   "source": "07g_gh_coefficient_propagation_P40.json; 10_schrodinger_convergence_P40.json",
+   "note": "max over 41 common instants"
+  },
+  "pbPopPForty": {
+   "tex": "0.3298",
+   "value": 0.3298274410643221,
+   "source": "11_pbme_projected_P40.json",
+   "note": "control-variate estimate"
+  },
+  "pbSemPForty": {
+   "tex": "0.0007",
+   "value": 0.0007053406974941017,
+   "source": "11_pbme_projected_P40.json",
+   "note": "one standard error over blocks"
+  },
+  "pbSemDigitsPForty": {
+   "tex": "7",
+   "value": 0.0007053406974941017,
+   "source": "11_pbme_projected_P40.json",
+   "note": "standard error in units of the last quoted digit (1e-4)"
+  },
+  "focPopPForty": {
+   "tex": "0.3113",
+   "value": 0.31128675028369307,
+   "source": "11_pbme_projected_P40.json",
+   "note": "focused PBME"
+  },
+  "ePbmePForty": {
+   "tex": "0.030",
+   "value": 0.030264416571858632,
+   "source": "11_pbme_projected_P40.json; 07g_gh_coefficient_propagation_P40.json",
+   "note": "|proj PBME - GH| at T"
+  },
+  "ePbmeSemPForty": {
+   "tex": "7\\times10^{-4}",
+   "value": 0.0007053406974941017,
+   "source": "11_pbme_projected_P40.json",
+   "note": ""
+  },
+  "ratioPForty": {
+   "tex": "36",
+   "value": 36.24631067845595,
+   "source": "derived",
+   "note": "E_PBME / E_QCLE"
+  },
+  "pbPopTabPForty": {
+   "tex": "\\phantom{-}0.3298(7)",
+   "value": 0.3298274410643221,
+   "source": "11_pbme_projected_P40.json",
+   "note": "table form: value(standard error in units of 1e-4)"
+  },
+  "focPopTabPForty": {
+   "tex": "\\phantom{-}0.3113",
+   "value": 0.31128675028369307,
+   "source": "11_pbme_projected_P40.json",
+   "note": "table form"
+  },
+  "eQcleTabPForty": {
+   "tex": "8.3\\times10^{-4}",
+   "value": 0.0008349654352504121,
+   "source": "07g_gh_coefficient_propagation_P40.json; 10_schrodinger_convergence_P40.json",
+   "note": "table form of |GH - quantum| at T"
+  },
+  "ePbmeTabPForty": {
+   "tex": "3.03(7)\\times10^{-2}",
+   "value": 0.030264416571858632,
+   "source": "11_pbme_projected_P40.json; 07g_gh_coefficient_propagation_P40.json",
+   "note": "table form of |proj PBME - GH| at T with one standard error"
+  },
+  "gridGridPForty": {
+   "tex": "1024\\times512",
+   "value": [
+    1024,
+    512
+   ],
+   "source": "10b_qcle_grid_crosscheck_P40.json",
+   "note": ""
+  },
+  "gridDtPForty": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "10b_qcle_grid_crosscheck_P40.json",
+   "note": ""
+  },
+  "eGridPForty": {
+   "tex": "1.8\\times10^{-10}",
+   "value": 1.8205309482155485e-10,
+   "source": "07g_gh_coefficient_propagation_P40.json; 10b_qcle_grid_crosscheck_P40.json",
+   "note": "|GH - grid QCLE| at T"
+  },
+  "eGridMaxPForty": {
+   "tex": "4.6\\times10^{-9}",
+   "value": 4.5801891168650855e-09,
+   "source": "07g_gh_coefficient_propagation_P40.json; 10b_qcle_grid_crosscheck_P40.json",
+   "note": "max over 11 common instants"
+  },
+  "gridDtHalfPForty": {
+   "tex": "1\\times10^{-13}",
+   "value": 1.4865886299730846e-13,
+   "source": "10b_qcle_grid_crosscheck_P40.json",
+   "note": "|pop2(dt/2) - pop2(dt)| of the grid QCLE"
+  },
+  "ghOverGridPForty": {
+   "tex": "1.5",
+   "value": 1.5175632739095424,
+   "source": "07g_gh_coefficient_propagation_P40.json; 10b_qcle_grid_crosscheck_P40.json",
+   "note": "wall-time ratio, same machine and grid"
+  },
+  "eStrangPForty": {
+   "tex": "6.2\\times10^{-6}",
+   "value": 6.219286075415109e-06,
+   "source": "07g_gh_coefficient_propagation_P40.json; 07_coefficient_propagation_P40.json",
+   "note": "|GH - Strang| at T"
+  },
+  "eStrangMaxPForty": {
+   "tex": "6.2\\times10^{-6}",
+   "value": 6.219310971444791e-06,
+   "source": "07g_gh_coefficient_propagation_P40.json; 07_coefficient_propagation_P40.json",
+   "note": "max over 11 common instants"
+  },
+  "strangCflPForty": {
+   "tex": "1.4",
+   "value": 1.4137399808987996,
+   "source": "07_coefficient_propagation_P40.json",
+   "note": ""
+  },
+  "strangDtPForty": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "07_coefficient_propagation_P40.json",
+   "note": ""
+  },
+  "cohQclePForty": {
+   "tex": "7.0\\times10^{-4}",
+   "value": 0.0007014381717260627,
+   "source": "07g_gh_coefficient_propagation_P40.json; 10b_*; 07_coefficient_propagation_P40.json; 11_pbme_projected_P40.json; 20_focused_pbme_observables_P40.json",
+   "note": "max over the three QCLE solvers and their instants shared with the quantum run of |rho12 - rho12_quantum|; coefficient propagation: 4.719e-04 (11 instants); four-field RK4: 6.965e-04 (151 instants); Strang: 7.014e-04 (151 instants)"
+  },
+  "cohPbmePForty": {
+   "tex": "0.016",
+   "value": 0.016156108093300647,
+   "source": "07g_gh_coefficient_propagation_P40.json; 10b_*; 07_coefficient_propagation_P40.json; 11_pbme_projected_P40.json; 20_focused_pbme_observables_P40.json",
+   "note": "max |rho12_PBME - rho12_quantum|, 17.8 standard errors"
+  },
+  "cohFocPForty": {
+   "tex": "0.014",
+   "value": 0.013678799822751386,
+   "source": "07g_gh_coefficient_propagation_P40.json; 10b_*; 07_coefficient_propagation_P40.json; 11_pbme_projected_P40.json; 20_focused_pbme_observables_P40.json",
+   "note": "max |rho12_focused - rho12_quantum|"
+  },
+  "cohTPForty": {
+   "tex": "0.049",
+   "value": 0.049335559839606156,
+   "source": "07_coefficient_propagation_P40.h5",
+   "note": "|rho12_quantum(T)|"
+  },
+  "TTPSeventy": {
+   "tex": "857.5",
+   "value": 857.5,
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": "final time"
+  },
+  "sigRPSeventy": {
+   "tex": "0.143",
+   "value": 0.14285714285714285,
+   "source": "config: sigma_R = 10/P0",
+   "note": ""
+  },
+  "ghGridPSeventy": {
+   "tex": "2048\\times1024",
+   "value": [
+    2048,
+    1024
+   ],
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": ""
+  },
+  "ghRboxPSeventy": {
+   "tex": "[-35,35]",
+   "value": [
+    -35.0,
+    35.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": ""
+  },
+  "ghPboxPSeventy": {
+   "tex": "[38,102]",
+   "value": [
+    38.0,
+    102.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": ""
+  },
+  "ghHoursPSeventy": {
+   "tex": "2.8",
+   "value": 2.7821232405277745,
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": "hours"
+  },
+  "ghMPSeventy": {
+   "tex": "12",
+   "value": 12,
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": ""
+  },
+  "ghSubstepsPSeventy": {
+   "tex": "906",
+   "value": 906,
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": ""
+  },
+  "ghFramePSeventy": {
+   "tex": "2.9\\times10^{-12}",
+   "value": 2.8849085754292894e-12,
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": "max_t W-norm frame residual"
+  },
+  "ghTracePSeventy": {
+   "tex": "8.7\\times10^{-10}",
+   "value": 8.676919183159271e-10,
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": "max_t |Tr rho_W - 1|"
+  },
+  "ghPopPSeventy": {
+   "tex": "0.433134",
+   "value": 0.43313439965571354,
+   "source": "07g_gh_coefficient_propagation_P70.json",
+   "note": "rho_W^22(T)"
+  },
+  "qPopPSeventy": {
+   "tex": "0.433231",
+   "value": 0.4332313273441595,
+   "source": "10_schrodinger_convergence_P70.json",
+   "note": "finest run, rho^22(T)"
+  },
+  "qUncPSeventy": {
+   "tex": "5\\times10^{-8}",
+   "value": 4.7405494126712336e-08,
+   "source": "10_schrodinger_convergence_P70.json",
+   "note": "max(Richardson remainder at dt/4, grid x2 and box differences)"
+  },
+  "qNRPSeventy": {
+   "tex": "49152",
+   "value": 49152,
+   "source": "10_schrodinger_convergence_P70.json",
+   "note": ""
+  },
+  "qDtPSeventy": {
+   "tex": "0.03125",
+   "value": 0.03125,
+   "source": "10_schrodinger_convergence_P70.json",
+   "note": ""
+  },
+  "qNRProdPSeventy": {
+   "tex": "16384",
+   "value": 16384,
+   "source": "10_schrodinger_convergence_P70.json",
+   "note": "production run"
+  },
+  "eQclePSeventy": {
+   "tex": "9.7\\times10^{-5}",
+   "value": 9.69276884459358e-05,
+   "source": "07g_gh_coefficient_propagation_P70.json; 10_schrodinger_convergence_P70.json",
+   "note": "|GH - quantum| at T"
+  },
+  "eQcleMaxPSeventy": {
+   "tex": "1.1\\times10^{-4}",
+   "value": 0.00011199886503471257,
+   "source": "07g_gh_coefficient_propagation_P70.json; 10_schrodinger_convergence_P70.json",
+   "note": "max over 41 common instants"
+  },
+  "pbPopPSeventy": {
+   "tex": "0.4224",
+   "value": 0.4224372169835047,
+   "source": "11_pbme_projected_P70.json",
+   "note": "control-variate estimate"
+  },
+  "pbSemPSeventy": {
+   "tex": "0.0008",
+   "value": 0.000761752891091605,
+   "source": "11_pbme_projected_P70.json",
+   "note": "one standard error over blocks"
+  },
+  "pbSemDigitsPSeventy": {
+   "tex": "8",
+   "value": 0.000761752891091605,
+   "source": "11_pbme_projected_P70.json",
+   "note": "standard error in units of the last quoted digit (1e-4)"
+  },
+  "focPopPSeventy": {
+   "tex": "0.4354",
+   "value": 0.4354220423460977,
+   "source": "11_pbme_projected_P70.json",
+   "note": "focused PBME"
+  },
+  "ePbmePSeventy": {
+   "tex": "0.011",
+   "value": 0.010697182672208816,
+   "source": "11_pbme_projected_P70.json; 07g_gh_coefficient_propagation_P70.json",
+   "note": "|proj PBME - GH| at T"
+  },
+  "ePbmeSemPSeventy": {
+   "tex": "8\\times10^{-4}",
+   "value": 0.000761752891091605,
+   "source": "11_pbme_projected_P70.json",
+   "note": ""
+  },
+  "ratioPSeventy": {
+   "tex": "110",
+   "value": 110.36250676890408,
+   "source": "derived",
+   "note": "E_PBME / E_QCLE"
+  },
+  "pbPopTabPSeventy": {
+   "tex": "\\phantom{-}0.4224(8)",
+   "value": 0.4224372169835047,
+   "source": "11_pbme_projected_P70.json",
+   "note": "table form: value(standard error in units of 1e-4)"
+  },
+  "focPopTabPSeventy": {
+   "tex": "\\phantom{-}0.4354",
+   "value": 0.4354220423460977,
+   "source": "11_pbme_projected_P70.json",
+   "note": "table form"
+  },
+  "eQcleTabPSeventy": {
+   "tex": "9.7\\times10^{-5}",
+   "value": 9.69276884459358e-05,
+   "source": "07g_gh_coefficient_propagation_P70.json; 10_schrodinger_convergence_P70.json",
+   "note": "table form of |GH - quantum| at T"
+  },
+  "ePbmeTabPSeventy": {
+   "tex": "1.07(8)\\times10^{-2}",
+   "value": 0.010697182672208816,
+   "source": "11_pbme_projected_P70.json; 07g_gh_coefficient_propagation_P70.json",
+   "note": "table form of |proj PBME - GH| at T with one standard error"
+  },
+  "gridGridPSeventy": {
+   "tex": "2048\\times1024",
+   "value": [
+    2048,
+    1024
+   ],
+   "source": "10b_qcle_grid_crosscheck_P70.json",
+   "note": ""
+  },
+  "gridDtPSeventy": {
+   "tex": "0.25",
+   "value": 0.25,
+   "source": "10b_qcle_grid_crosscheck_P70.json",
+   "note": ""
+  },
+  "eGridPSeventy": {
+   "tex": "3.8\\times10^{-10}",
+   "value": 3.758735545034142e-10,
+   "source": "07g_gh_coefficient_propagation_P70.json; 10b_qcle_grid_crosscheck_P70.json",
+   "note": "|GH - grid QCLE| at T"
+  },
+  "eGridMaxPSeventy": {
+   "tex": "3.8\\times10^{-10}",
+   "value": 3.758735545034142e-10,
+   "source": "07g_gh_coefficient_propagation_P70.json; 10b_qcle_grid_crosscheck_P70.json",
+   "note": "max over 2 common instants"
+  },
+  "gridDtHalfPSeventy": {
+   "tex": "4\\times10^{-14}",
+   "value": 3.980149543281186e-14,
+   "source": "10b_qcle_grid_crosscheck_P70.json",
+   "note": "|pop2(dt/2) - pop2(dt)| of the grid QCLE"
+  },
+  "ghOverGridPSeventy": {
+   "tex": "1.3",
+   "value": 1.3075474735080346,
+   "source": "07g_gh_coefficient_propagation_P70.json; 10b_qcle_grid_crosscheck_P70.json",
+   "note": "wall-time ratio, same machine and grid"
+  },
+  "eStrangPSeventy": {
+   "tex": "1.2\\times10^{-5}",
+   "value": 1.2137921921118178e-05,
+   "source": "07g_gh_coefficient_propagation_P70.json; 07_coefficient_propagation_P70.json",
+   "note": "|GH - Strang| at T"
+  },
+  "eStrangMaxPSeventy": {
+   "tex": "1.2\\times10^{-5}",
+   "value": 1.2137921921118178e-05,
+   "source": "07g_gh_coefficient_propagation_P70.json; 07_coefficient_propagation_P70.json",
+   "note": "max over 2 common instants"
+  },
+  "strangCflPSeventy": {
+   "tex": "3.5",
+   "value": 3.5148291356190513,
+   "source": "07_coefficient_propagation_P70.json",
+   "note": ""
+  },
+  "strangDtPSeventy": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "07_coefficient_propagation_P70.json",
+   "note": ""
+  },
+  "cohQclePSeventy": {
+   "tex": "8.1\\times10^{-5}",
+   "value": 8.110314530627751e-05,
+   "source": "07g_gh_coefficient_propagation_P70.json; 10b_*; 07_coefficient_propagation_P70.json; 11_pbme_projected_P70.json; 20_focused_pbme_observables_P70.json",
+   "note": "max over the three QCLE solvers and their instants shared with the quantum run of |rho12 - rho12_quantum|; coefficient propagation: 7.354e-05 (2 instants); four-field RK4: 8.110e-05 (87 instants); Strang: 7.799e-05 (87 instants)"
+  },
+  "cohPbmePSeventy": {
+   "tex": "0.0099",
+   "value": 0.00989449276658144,
+   "source": "07g_gh_coefficient_propagation_P70.json; 10b_*; 07_coefficient_propagation_P70.json; 11_pbme_projected_P70.json; 20_focused_pbme_observables_P70.json",
+   "note": "max |rho12_PBME - rho12_quantum|, 11.1 standard errors"
+  },
+  "cohFocPSeventy": {
+   "tex": "0.0043",
+   "value": 0.004341839723903399,
+   "source": "07g_gh_coefficient_propagation_P70.json; 10b_*; 07_coefficient_propagation_P70.json; 11_pbme_projected_P70.json; 20_focused_pbme_observables_P70.json",
+   "note": "max |rho12_focused - rho12_quantum|"
+  },
+  "cohTPSeventy": {
+   "tex": "0.23",
+   "value": 0.23378742779590808,
+   "source": "07_coefficient_propagation_P70.h5",
+   "note": "|rho12_quantum(T)|"
+  },
+  "TTPOneHundred": {
+   "tex": "600",
+   "value": 600.0,
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": "final time"
+  },
+  "sigRPOneHundred": {
+   "tex": "0.1",
+   "value": 0.1,
+   "source": "config: sigma_R = 10/P0",
+   "note": ""
+  },
+  "ghGridPOneHundred": {
+   "tex": "2048\\times1024",
+   "value": [
+    2048,
+    1024
+   ],
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": ""
+  },
+  "ghRboxPOneHundred": {
+   "tex": "[-35,35]",
+   "value": [
+    -35.0,
+    35.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": ""
+  },
+  "ghPboxPOneHundred": {
+   "tex": "[60,140]",
+   "value": [
+    60.0,
+    140.0
+   ],
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": ""
+  },
+  "ghHoursPOneHundred": {
+   "tex": "3.8",
+   "value": 3.76355327255555,
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": "hours"
+  },
+  "ghMPOneHundred": {
+   "tex": "12",
+   "value": 12,
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": ""
+  },
+  "ghSubstepsPOneHundred": {
+   "tex": "1147",
+   "value": 1147,
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": ""
+  },
+  "ghFramePOneHundred": {
+   "tex": "8.9\\times10^{-11}",
+   "value": 8.865039736472109e-11,
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": "max_t W-norm frame residual"
+  },
+  "ghTracePOneHundred": {
+   "tex": "8.6\\times10^{-10}",
+   "value": 8.646680038637555e-10,
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": "max_t |Tr rho_W - 1|"
+  },
+  "ghPopPOneHundred": {
+   "tex": "0.851828",
+   "value": 0.8518282089917122,
+   "source": "07g_gh_coefficient_propagation_P100.json",
+   "note": "rho_W^22(T)"
+  },
+  "qPopPOneHundred": {
+   "tex": "0.851821",
+   "value": 0.8518208905010604,
+   "source": "10_schrodinger_convergence_P100.json",
+   "note": "finest run, rho^22(T)"
+  },
+  "qUncPOneHundred": {
+   "tex": "5\\times10^{-8}",
+   "value": 5.0891770095146095e-08,
+   "source": "10_schrodinger_convergence_P100.json",
+   "note": "max(Richardson remainder at dt/4, grid x2 and box differences)"
+  },
+  "qNRPOneHundred": {
+   "tex": "49152",
+   "value": 49152,
+   "source": "10_schrodinger_convergence_P100.json",
+   "note": ""
+  },
+  "qDtPOneHundred": {
+   "tex": "0.03125",
+   "value": 0.03125,
+   "source": "10_schrodinger_convergence_P100.json",
+   "note": ""
+  },
+  "qNRProdPOneHundred": {
+   "tex": "16384",
+   "value": 16384,
+   "source": "10_schrodinger_convergence_P100.json",
+   "note": "production run"
+  },
+  "eQclePOneHundred": {
+   "tex": "7.3\\times10^{-6}",
+   "value": 7.318490651830878e-06,
+   "source": "07g_gh_coefficient_propagation_P100.json; 10_schrodinger_convergence_P100.json",
+   "note": "|GH - quantum| at T"
+  },
+  "eQcleMaxPOneHundred": {
+   "tex": "8.6\\times10^{-6}",
+   "value": 8.581657332751291e-06,
+   "source": "07g_gh_coefficient_propagation_P100.json; 10_schrodinger_convergence_P100.json",
+   "note": "max over 41 common instants"
+  },
+  "pbPopPOneHundred": {
+   "tex": "0.8484",
+   "value": 0.8483701839568751,
+   "source": "11_pbme_projected_P100.json",
+   "note": "control-variate estimate"
+  },
+  "pbSemPOneHundred": {
+   "tex": "0.0010",
+   "value": 0.0010127763571657815,
+   "source": "11_pbme_projected_P100.json",
+   "note": "one standard error over blocks"
+  },
+  "pbSemDigitsPOneHundred": {
+   "tex": "10",
+   "value": 0.0010127763571657815,
+   "source": "11_pbme_projected_P100.json",
+   "note": "standard error in units of the last quoted digit (1e-4)"
+  },
+  "focPopPOneHundred": {
+   "tex": "0.8531",
+   "value": 0.8531206742759687,
+   "source": "11_pbme_projected_P100.json",
+   "note": "focused PBME"
+  },
+  "ePbmePOneHundred": {
+   "tex": "0.0035",
+   "value": 0.0034580250348370534,
+   "source": "11_pbme_projected_P100.json; 07g_gh_coefficient_propagation_P100.json",
+   "note": "|proj PBME - GH| at T"
+  },
+  "ePbmeSemPOneHundred": {
+   "tex": "0.001",
+   "value": 0.0010127763571657815,
+   "source": "11_pbme_projected_P100.json",
+   "note": ""
+  },
+  "ratioPOneHundred": {
+   "tex": "470",
+   "value": 472.50521990787183,
+   "source": "derived",
+   "note": "E_PBME / E_QCLE"
+  },
+  "pbPopTabPOneHundred": {
+   "tex": "\\phantom{-}0.8484(10)",
+   "value": 0.8483701839568751,
+   "source": "11_pbme_projected_P100.json",
+   "note": "table form: value(standard error in units of 1e-4)"
+  },
+  "focPopTabPOneHundred": {
+   "tex": "\\phantom{-}0.8531",
+   "value": 0.8531206742759687,
+   "source": "11_pbme_projected_P100.json",
+   "note": "table form"
+  },
+  "eQcleTabPOneHundred": {
+   "tex": "7.3\\times10^{-6}",
+   "value": 7.318490651830878e-06,
+   "source": "07g_gh_coefficient_propagation_P100.json; 10_schrodinger_convergence_P100.json",
+   "note": "table form of |GH - quantum| at T"
+  },
+  "ePbmeTabPOneHundred": {
+   "tex": "3.5(10)\\times10^{-3}",
+   "value": 0.0034580250348370534,
+   "source": "11_pbme_projected_P100.json; 07g_gh_coefficient_propagation_P100.json",
+   "note": "table form of |proj PBME - GH| at T with one standard error"
+  },
+  "gridGridPOneHundred": {
+   "tex": "2048\\times1024",
+   "value": [
+    2048,
+    1024
+   ],
+   "source": "10b_qcle_grid_crosscheck_P100.json",
+   "note": ""
+  },
+  "gridDtPOneHundred": {
+   "tex": "0.25",
+   "value": 0.25,
+   "source": "10b_qcle_grid_crosscheck_P100.json",
+   "note": ""
+  },
+  "eGridPOneHundred": {
+   "tex": "7.4\\times10^{-10}",
+   "value": 7.364669984966099e-10,
+   "source": "07g_gh_coefficient_propagation_P100.json; 10b_qcle_grid_crosscheck_P100.json",
+   "note": "|GH - grid QCLE| at T"
+  },
+  "eGridMaxPOneHundred": {
+   "tex": "1.2\\times10^{-9}",
+   "value": 1.2329691712054114e-09,
+   "source": "07g_gh_coefficient_propagation_P100.json; 10b_qcle_grid_crosscheck_P100.json",
+   "note": "max over 21 common instants"
+  },
+  "gridDtHalfPOneHundred": {
+   "tex": "9\\times10^{-14}",
+   "value": 8.981704269217516e-14,
+   "source": "10b_qcle_grid_crosscheck_P100.json",
+   "note": "|pop2(dt/2) - pop2(dt)| of the grid QCLE"
+  },
+  "ghOverGridPOneHundred": {
+   "tex": "2.0",
+   "value": 1.9761296930993788,
+   "source": "07g_gh_coefficient_propagation_P100.json; 10b_qcle_grid_crosscheck_P100.json",
+   "note": "wall-time ratio, same machine and grid"
+  },
+  "eStrangPOneHundred": {
+   "tex": "1.3\\times10^{-5}",
+   "value": 1.3029204647407866e-05,
+   "source": "07g_gh_coefficient_propagation_P100.json; 07_coefficient_propagation_P100.json",
+   "note": "|GH - Strang| at T"
+  },
+  "eStrangMaxPOneHundred": {
+   "tex": "1.6\\times10^{-5}",
+   "value": 1.6141815121439862e-05,
+   "source": "07g_gh_coefficient_propagation_P100.json; 07_coefficient_propagation_P100.json",
+   "note": "max over 21 common instants"
+  },
+  "strangCflPOneHundred": {
+   "tex": "4.2",
+   "value": 4.158992755850743,
+   "source": "07_coefficient_propagation_P100.json",
+   "note": ""
+  },
+  "strangDtPOneHundred": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "07_coefficient_propagation_P100.json",
+   "note": ""
+  },
+  "cohQclePOneHundred": {
+   "tex": "1.7\\times10^{-5}",
+   "value": 1.701531567452305e-05,
+   "source": "07g_gh_coefficient_propagation_P100.json; 10b_*; 07_coefficient_propagation_P100.json; 11_pbme_projected_P100.json; 20_focused_pbme_observables_P100.json",
+   "note": "max over the three QCLE solvers and their instants shared with the quantum run of |rho12 - rho12_quantum|; coefficient propagation: 1.702e-05 (21 instants); four-field RK4: 1.701e-05 (61 instants); Strang: 1.608e-05 (61 instants)"
+  },
+  "cohPbmePOneHundred": {
+   "tex": "0.0062",
+   "value": 0.006224223914042772,
+   "source": "07g_gh_coefficient_propagation_P100.json; 10b_*; 07_coefficient_propagation_P100.json; 11_pbme_projected_P100.json; 20_focused_pbme_observables_P100.json",
+   "note": "max |rho12_PBME - rho12_quantum|, 6.8 standard errors"
+  },
+  "cohFocPOneHundred": {
+   "tex": "0.0023",
+   "value": 0.0022951546445882745,
+   "source": "07g_gh_coefficient_propagation_P100.json; 10b_*; 07_coefficient_propagation_P100.json; 11_pbme_projected_P100.json; 20_focused_pbme_observables_P100.json",
+   "note": "max |rho12_focused - rho12_quantum|"
+  },
+  "cohTPOneHundred": {
+   "tex": "0.21",
+   "value": 0.21323398627945717,
+   "source": "07_coefficient_propagation_P100.h5",
+   "note": "|rho12_quantum(T)|"
+  },
+  "ghFrameMax": {
+   "tex": "3.3\\times10^{-10}",
+   "value": 3.205885493809174e-10,
+   "source": "07g_*",
+   "note": "max over regimes and time (upper bound)"
+  },
+  "ghTraceMax": {
+   "tex": "3.0\\times10^{-9}",
+   "value": 2.924707365181689e-09,
+   "source": "07g_*",
+   "note": "upper bound"
+  },
+  "eGridMaxAll": {
+   "tex": "4.6\\times10^{-9}",
+   "value": 4.5801891168650855e-09,
+   "source": "07g_*; 10b_*",
+   "note": "max over the regimes compared on a common grid and their common instants (upper bound)"
+  },
+  "gridSameList": {
+   "tex": "20, 30, 40, 70, 100",
+   "value": [
+    20,
+    30,
+    40,
+    70,
+    100
+   ],
+   "source": "10b_*",
+   "note": ""
+  },
+  "gridDiffList": {
+   "tex": "10",
+   "value": [
+    10
+   ],
+   "source": "10b_*",
+   "note": ""
+  },
+  "eStrangMin": {
+   "tex": "4.7\\times10^{-8}",
+   "value": 4.7348478113967696e-08,
+   "source": "07g_*; 07_*",
+   "note": ""
+  },
+  "eStrangMax": {
+   "tex": "1.4\\times10^{-5}",
+   "value": 1.3029204647407866e-05,
+   "source": "07g_*; 07_*",
+   "note": ""
+  },
+  "eQcleMin": {
+   "tex": "7.3\\times10^{-6}",
+   "value": 7.318490651830878e-06,
+   "source": "derived",
+   "note": ""
+  },
+  "eQcleMaxAll": {
+   "tex": "0.0055",
+   "value": 0.005402911148768209,
+   "source": "derived",
+   "note": ""
+  },
+  "ePbmeMin": {
+   "tex": "0.0034",
+   "value": 0.0034580250348370534,
+   "source": "derived",
+   "note": ""
+  },
+  "ePbmeMaxAll": {
+   "tex": "0.11",
+   "value": 0.10467318682070152,
+   "source": "derived",
+   "note": ""
+  },
+  "ratioMin": {
+   "tex": "9.5",
+   "value": 9.505099897968005,
+   "source": "derived",
+   "note": "lower bound"
+  },
+  "ratioMax": {
+   "tex": "480",
+   "value": 472.50521990787183,
+   "source": "derived",
+   "note": "upper bound"
+  },
+  "eGridFinMax": {
+   "tex": "7.4\\times10^{-10}",
+   "value": 7.364669984966099e-10,
+   "source": "07g_*; 10b_*",
+   "note": "max over the regimes compared on a common grid, at T (upper bound)"
+  },
+  "cohPeakMin": {
+   "tex": "0.30",
+   "value": 0.3047675106040242,
+   "source": "07_*; 13_P20_*",
+   "note": "min over regimes of max_t |rho12_quantum|"
+  },
+  "cohPeakMax": {
+   "tex": "0.45",
+   "value": 0.4440435750338292,
+   "source": "07_*; 13_P20_*",
+   "note": "max over regimes of max_t |rho12_quantum|"
+  },
+  "cohRatioMin": {
+   "tex": "7.3",
+   "value": 7.3187946551017795,
+   "source": "derived",
+   "note": "min over regimes of max_t|rho12_PBME - Q| / max_t|rho12_QCLE - Q| (lower bound)"
+  },
+  "cohRatioMax": {
+   "tex": "370",
+   "value": 365.8012600590345,
+   "source": "derived",
+   "note": "upper bound"
+  },
+  "cohPbmeOverSemMin": {
+   "tex": "6.8",
+   "value": 6.817593705303416,
+   "source": "11_*",
+   "note": "min over regimes of the largest PBME coherence deviation in units of its standard error"
+  },
+  "cohQcleMaxAll": {
+   "tex": "0.0075",
+   "value": 0.007421030287599451,
+   "source": "derived",
+   "note": "max over regimes (upper bound)"
+  },
+  "cohGridMax": {
+   "tex": "1.3\\times10^{-8}",
+   "value": 1.2040890525852016e-08,
+   "source": "07g_*; 10b_*",
+   "note": "max over the same-grid regimes and their common instants of |rho12_GH - rho12_RK4|"
+  },
+  "focReproMax": {
+   "tex": "3\\times10^{-15}",
+   "value": 2.220446049250313e-15,
+   "source": "20_*",
+   "note": "focused ensemble propagated again: largest change of its diabatic populations"
+  },
+  "cohFocMin": {
+   "tex": "0.0022",
+   "value": 0.0022951546445882745,
+   "source": "20_*; 07_*; 13_P20_*",
+   "note": "min over regimes of max_t |focused - Q|"
+  },
+  "cohFocMax": {
+   "tex": "0.050",
+   "value": 0.0498087829473649,
+   "source": "20_*; 07_*; 13_P20_*",
+   "note": "max over regimes of max_t |focused - Q|"
+  },
+  "cohSemMin": {
+   "tex": "9.4\\times10^{-4}",
+   "value": 0.0009402268363213803,
+   "source": "11_*",
+   "note": "PBME coherence standard error before the coherence forms; rms |dev|/sem there: P10 1.33 (56), P20 1.37 (38), P30 1.33 (23), P40 1.33 (18), P70 1.33 (11), P100 1.33 (8)"
+  },
+  "cohSemMax": {
+   "tex": "0.0011",
+   "value": 0.0010446967153159366,
+   "source": "11_*",
+   "note": "PBME coherence standard error before the coherence forms"
+  },
+  "ghOverGridMin": {
+   "tex": "0.8",
+   "value": 0.8363937306791258,
+   "source": "07g_*; 10b_*",
+   "note": ""
+  },
+  "ghOverGridMax": {
+   "tex": "2.0",
+   "value": 1.9761296930993788,
+   "source": "07g_*; 10b_*",
+   "note": ""
+  },
+  "strangHalveMin": {
+   "tex": "3.99",
+   "value": 3.998857816033828,
+   "source": "10b_*: Strang re-run at dt/2",
+   "note": ""
+  },
+  "strangHalveMax": {
+   "tex": "4.03",
+   "value": 4.023091787757602,
+   "source": "10b_*: Strang re-run at dt/2",
+   "note": ""
+  },
+  "qUncMax": {
+   "tex": "5.1\\times10^{-8}",
+   "value": 5.0891770095146095e-08,
+   "source": "10_*",
+   "note": "upper bound"
+  },
+  "pbNSamples": {
+   "tex": "1\\,200\\,000",
+   "value": 1200000,
+   "source": "11_*",
+   "note": ""
+  },
+  "pbNSeeds": {
+   "tex": "6",
+   "value": 6,
+   "source": "11_*",
+   "note": ""
+  },
+  "pbNSamplesMin": {
+   "tex": "1\\,000\\,000",
+   "value": 1000000,
+   "source": "11_*",
+   "note": ""
+  },
+  "focNSamples": {
+   "tex": "200\\,000",
+   "value": 200000,
+   "source": "11_*",
+   "note": ""
+  },
+  "nModesGH": {
+   "tex": "11",
+   "value": 11,
+   "source": "07g_*",
+   "note": ""
+  },
+  "krylovTol": {
+   "tex": "1\\times10^{-10}",
+   "value": 1e-10,
+   "source": "07g_*",
+   "note": ""
+  },
+  "strangOverQclePOneHundred": {
+   "tex": "1.8",
+   "value": 1.7803130819260293,
+   "source": "derived",
+   "note": ""
+  },
+  "focDiffMin": {
+   "tex": "0.0047",
+   "value": 0.004750490319093581,
+   "source": "11_*",
+   "note": "min |focused - projected| in rho22(T)"
+  },
+  "focDiffMax": {
+   "tex": "0.0347",
+   "value": 0.03467799566094118,
+   "source": "11_*",
+   "note": "max |focused - projected| in rho22(T)"
+  },
+  "focCloserCount": {
+   "tex": "five",
+   "value": 5,
+   "source": "11_*; 10_*",
+   "note": "regimes where focused is closer to quantum, as a word for the running text"
+  },
+  "pbPopNegSigmaPTen": {
+   "tex": "258",
+   "value": 257.8523280750462,
+   "source": "11_pbme_projected_P10.json",
+   "note": ""
+  },
+  "pbAdPopPTen": {
+   "tex": "-0.0840",
+   "value": -0.08397945156111711,
+   "source": "11_pbme_projected_P10.json",
+   "note": ""
+  },
+  "pbAdSemPTen": {
+   "tex": "0.0003",
+   "value": 0.00033821666110328395,
+   "source": "11_pbme_projected_P10.json",
+   "note": ""
+  },
+  "ghAdPopPTen": {
+   "tex": "0.0223",
+   "value": 0.02231120603394478,
+   "source": "07g_*P10.json",
+   "note": ""
+  },
+  "qAdPopPTen": {
+   "tex": "0.0290",
+   "value": 0.0290381197657704,
+   "source": "10_*P10.json",
+   "note": ""
+  },
+  "clModes": {
+   "tex": "46",
+   "value": 46,
+   "source": "07k",
+   "note": ""
+  },
+  "clModesFour": {
+   "tex": "35",
+   "value": 35,
+   "source": "07k",
+   "note": ""
+  },
+  "clEFourMax": {
+   "tex": "0",
+   "value": 0.0,
+   "source": "07k",
+   "note": ""
+  },
+  "clCtlEFour": {
+   "tex": "6.65",
+   "value": 6.648779445875411,
+   "source": "07k",
+   "note": ""
+  },
+  "clCtlETwo": {
+   "tex": "7.49",
+   "value": 7.485434587693149,
+   "source": "07k",
+   "note": ""
+  },
+  "clCtlT": {
+   "tex": "150",
+   "value": 150.0,
+   "source": "07k",
+   "note": ""
+  },
+  "parModes": {
+   "tex": "35",
+   "value": 35,
+   "source": "07k",
+   "note": ""
+  },
+  "parModesOdd": {
+   "tex": "24",
+   "value": 24,
+   "source": "07k",
+   "note": ""
+  },
+  "parEOddMax": {
+   "tex": "0",
+   "value": 0.0,
+   "source": "07k",
+   "note": ""
+  },
+  "parCtlEOdd": {
+   "tex": "2.73",
+   "value": 2.733751340569584,
+   "source": "07k",
+   "note": ""
+  },
+  "parCtlEOddFinal": {
+   "tex": "5.71",
+   "value": 5.709715115921144,
+   "source": "07k",
+   "note": ""
+  },
+  "clFrame": {
+   "tex": "8.3\\times10^{-11}",
+   "value": 8.227319301791097e-11,
+   "source": "07k",
+   "note": "upper bound"
+  },
+  "clGrid": {
+   "tex": "256\\times128",
+   "value": [
+    256,
+    128
+   ],
+   "source": "07k",
+   "note": ""
+  },
+  "clT": {
+   "tex": "1500",
+   "value": 1500.0,
+   "source": "07k",
+   "note": ""
+  },
+  "clPZero": {
+   "tex": "40",
+   "value": 40.0,
+   "source": "07k",
+   "note": ""
+  },
+  "dhPeakPTen": {
+   "tex": "0.12",
+   "value": 0.12438535249465056,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhMeanPTen": {
+   "tex": "0.036",
+   "value": 0.0363421100736411,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhPeakPTwenty": {
+   "tex": "0.026",
+   "value": 0.026105050576289587,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhMeanPTwenty": {
+   "tex": "0.0050",
+   "value": 0.005006469029817778,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhPeakPThirty": {
+   "tex": "0.024",
+   "value": 0.024192457822685993,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhMeanPThirty": {
+   "tex": "0.0046",
+   "value": 0.004617143342249016,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhPeakPForty": {
+   "tex": "0.022",
+   "value": 0.02210871283232973,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhMeanPForty": {
+   "tex": "0.0045",
+   "value": 0.0044680313492751,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhPeakPSeventy": {
+   "tex": "0.022",
+   "value": 0.021532948556582925,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhMeanPSeventy": {
+   "tex": "0.0043",
+   "value": 0.004252100658772831,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhPeakPOneHundred": {
+   "tex": "0.020",
+   "value": 0.01964303733038115,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhMeanPOneHundred": {
+   "tex": "0.0043",
+   "value": 0.0042596855600663475,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "dhPeakRangeLo": {
+   "tex": "0.019",
+   "value": 0.01964303733038115,
+   "source": "12_leakage_reanalysis.json",
+   "note": "smallest peak defect rate for P0 >= 20 (lower end of the range)"
+  },
+  "dhPeakRangeHi": {
+   "tex": "0.027",
+   "value": 0.026105050576289587,
+   "source": "12_leakage_reanalysis.json",
+   "note": "largest peak defect rate for P0 >= 20 (upper end of the range)"
+  },
+  "corrMomPearson": {
+   "tex": "0.91",
+   "value": 0.907562284768786,
+   "source": "derived: peak D_H vs E_PBME(GH)",
+   "note": ""
+  },
+  "corrMomSpearman": {
+   "tex": "1.00",
+   "value": 1.0,
+   "source": "derived",
+   "note": ""
+  },
+  "corrScanPearson": {
+   "tex": "-0.71",
+   "value": -0.7141443610234814,
+   "source": "derived: coupling scan, peak D_H vs E_discard(Strang)",
+   "note": ""
+  },
+  "corrScanSpearman": {
+   "tex": "-0.90",
+   "value": -0.8999999999999998,
+   "source": "derived",
+   "note": ""
+  },
+  "scanCList": {
+   "tex": "0.005, 0.0075, 0.015, 0.03, 0.06",
+   "value": [
+    0.005,
+    0.0075,
+    0.015,
+    0.03,
+    0.06
+   ],
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "scanPeakRange": {
+   "tex": "1.07",
+   "value": 1.072364190965712,
+   "source": "derived",
+   "note": ""
+  },
+  "scanRespMax": {
+   "tex": "0.030",
+   "value": 0.03027063585838019,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "scanRespMaxC": {
+   "tex": "0.015",
+   "value": 0.015,
+   "source": "derived",
+   "note": ""
+  },
+  "scanResolved": {
+   "tex": "4",
+   "value": 4,
+   "source": "derived: >= 3 SEM",
+   "note": ""
+  },
+  "scanPoints": {
+   "tex": "5",
+   "value": 5,
+   "source": "derived",
+   "note": ""
+  },
+  "scanBoundC": {
+   "tex": "0.06",
+   "value": 0.06,
+   "source": "derived",
+   "note": ""
+  },
+  "scanBound": {
+   "tex": "1.7\\times10^{-5}",
+   "value": 1.6853330364281202e-05,
+   "source": "derived: response + 2 SEM (upper bound)",
+   "note": ""
+  },
+  "dhRangeMom": {
+   "tex": "1.33",
+   "value": 1.3289722020694774,
+   "source": "derived, P0 >= 20",
+   "note": ""
+  },
+  "ePbmeRangeMom": {
+   "tex": "15",
+   "value": 14.851023255043273,
+   "source": "derived, P0 >= 20",
+   "note": ""
+  },
+  "scanGradSpan": {
+   "tex": "1.07",
+   "value": 1.0726357090574448,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "nQuarticModes": {
+   "tex": "31",
+   "value": 31,
+   "source": "12_leakage_reanalysis.json",
+   "note": ""
+  },
+  "strangScanErr": {
+   "tex": "6.2\\times10^{-6}",
+   "value": 6.219286075415109e-06,
+   "source": "Strang error at P0=40, context for the scan",
+   "note": ""
+  },
+  "numUncHigh": {
+   "tex": "7.4\\times10^{-10}",
+   "value": 7.364669984966099e-10,
+   "source": "07g_*; 10b_*",
+   "note": "max over P0>=20 of max(|GH-RK4|, grid halving, step halving) at T"
+  },
+  "numUncPTen": {
+   "tex": "1.5\\times10^{-5}",
+   "value": 1.4400365585087727e-05,
+   "source": "07c_p10_refinement_acceptance.json",
+   "note": "Strang 2048x1024 vs 4096x2048, max over time"
+  },
+  "numUncAll": {
+   "tex": "1.5\\times10^{-5}",
+   "value": 1.4400365585087727e-05,
+   "source": "07g_*; 10b_*; 07c_p10_refinement_acceptance.json",
+   "note": "max over all regimes (upper bound)"
+  },
+  "gridDtSmall": {
+   "tex": "0.25",
+   "value": 0.25,
+   "source": "10b_*",
+   "note": ""
+  },
+  "gridDtLarge": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "10b_*",
+   "note": ""
+  },
+  "gridDtSmallList": {
+   "tex": "20, 70\\text{ and }100",
+   "value": [
+    20,
+    70,
+    100
+   ],
+   "source": "10b_*",
+   "note": "regimes run at the smaller step"
+  },
+  "qcleOverNumMin": {
+   "tex": "99",
+   "value": 99.22029651295091,
+   "source": "derived",
+   "note": "min over regimes of E_QCLE / u_num"
+  },
+  "qcleOverNumPTen": {
+   "tex": "99",
+   "value": 99.22029651295091,
+   "source": "derived",
+   "note": "E_QCLE / u_num at P0 = 10"
+  },
+  "qcleOverQMin": {
+   "tex": "140",
+   "value": 143.80499318747204,
+   "source": "derived",
+   "note": "min over regimes of E_QCLE / quantum uncertainty"
+  },
+  "pTenBoundary": {
+   "tex": "1.6\\times10^{-5}",
+   "value": 1.571741787536653e-05,
+   "source": "07c_p10_refinement_acceptance.json",
+   "note": "fraction of the trace within one cell of the box edge, 4096x2048"
+  },
+  "pTenBoundaryCoarse": {
+   "tex": "5.9\\times10^{-4}",
+   "value": 0.0005909569887986236,
+   "source": "07c_p10_refinement_acceptance.json",
+   "note": ""
+  },
+  "gridSpatialMax": {
+   "tex": "1.6\\times10^{-10}",
+   "value": 1.5339396419733475e-10,
+   "source": "10b_*",
+   "note": "grid halved in each direction, at T, P0>=20"
+  },
+  "gridDtHalfMax": {
+   "tex": "1.5\\times10^{-13}",
+   "value": 1.4865886299730846e-13,
+   "source": "10b_*",
+   "note": ""
+  },
+  "gridBoundaryMax": {
+   "tex": "5.9\\times10^{-10}",
+   "value": 5.806734823237737e-10,
+   "source": "10b_*",
+   "note": "P0>=20, production grids"
+  },
+  "gridCoarsePTen": {
+   "tex": "2.1\\times10^{-4}",
+   "value": null,
+   "source": "10b_qcle_grid_crosscheck_P10.json",
+   "note": "1024x512 vs 2048x1024 at T"
+  },
+  "strangLinfPTen": {
+   "tex": "5.2\\times10^{-5}",
+   "value": 5.231884428824607e-05,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.5) - RK4| on the grid of the four-field run"
+  },
+  "strangLinfHalfPTen": {
+   "tex": "5.2\\times10^{-5}",
+   "value": 5.215665955260462e-05,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.25) - RK4| on the grid of the four-field run"
+  },
+  "strangLinfPTwenty": {
+   "tex": "9.6\\times10^{-7}",
+   "value": 9.581882196574298e-07,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.5) - RK4| on the grid of the four-field run"
+  },
+  "strangLinfHalfPTwenty": {
+   "tex": "2.4\\times10^{-7}",
+   "value": 2.395486944362091e-07,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.25) - RK4| on the grid of the four-field run"
+  },
+  "numUncPTwenty": {
+   "tex": "2\\times10^{-10}",
+   "value": 1.5339396419733475e-10,
+   "source": "derived",
+   "note": ""
+  },
+  "gridSpatialPTwenty": {
+   "tex": "2\\times10^{-10}",
+   "value": 1.5339396419733475e-10,
+   "source": "10b_*",
+   "note": ""
+  },
+  "strangLinfPThirty": {
+   "tex": "9.6\\times10^{-7}",
+   "value": 9.601620182819737e-07,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.5) - RK4| on the grid of the four-field run"
+  },
+  "strangLinfHalfPThirty": {
+   "tex": "2.4\\times10^{-7}",
+   "value": 2.386627173667222e-07,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.25) - RK4| on the grid of the four-field run"
+  },
+  "numUncPThirty": {
+   "tex": "6\\times10^{-10}",
+   "value": 6.156829490677751e-10,
+   "source": "derived",
+   "note": ""
+  },
+  "gridSpatialPThirty": {
+   "tex": "1\\times10^{-10}",
+   "value": 9.98252591699611e-11,
+   "source": "10b_*",
+   "note": ""
+  },
+  "strangLinfPForty": {
+   "tex": "6.3\\times10^{-6}",
+   "value": 6.2632756523406385e-06,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.5) - RK4| on the grid of the four-field run"
+  },
+  "strangLinfHalfPForty": {
+   "tex": "1.6\\times10^{-6}",
+   "value": 1.5662661541071543e-06,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.25) - RK4| on the grid of the four-field run"
+  },
+  "numUncPForty": {
+   "tex": "2\\times10^{-10}",
+   "value": 1.8205309482155485e-10,
+   "source": "derived",
+   "note": ""
+  },
+  "gridSpatialPForty": {
+   "tex": "4\\times10^{-11}",
+   "value": 4.36233271727815e-11,
+   "source": "10b_*",
+   "note": ""
+  },
+  "strangLinfPSeventy": {
+   "tex": "1.2\\times10^{-5}",
+   "value": 1.2162429065376568e-05,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.5) - RK4| on the grid of the four-field run"
+  },
+  "strangLinfHalfPSeventy": {
+   "tex": "3.0\\times10^{-6}",
+   "value": 3.040621513905606e-06,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.25) - RK4| on the grid of the four-field run"
+  },
+  "numUncPSeventy": {
+   "tex": "4\\times10^{-10}",
+   "value": 3.758735545034142e-10,
+   "source": "derived",
+   "note": ""
+  },
+  "gridSpatialPSeventy": {
+   "tex": "6\\times10^{-17}",
+   "value": 5.551115123125783e-17,
+   "source": "10b_*",
+   "note": ""
+  },
+  "strangLinfPOneHundred": {
+   "tex": "1.6\\times10^{-5}",
+   "value": 1.614178613984496e-05,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.5) - RK4| on the grid of the four-field run"
+  },
+  "strangLinfHalfPOneHundred": {
+   "tex": "4.0\\times10^{-6}",
+   "value": 4.035714960770598e-06,
+   "source": "10b_*",
+   "note": "max_t |Strang(0.25) - RK4| on the grid of the four-field run"
+  },
+  "numUncPOneHundred": {
+   "tex": "7\\times10^{-10}",
+   "value": 7.364669984966099e-10,
+   "source": "derived",
+   "note": ""
+  },
+  "gridSpatialPOneHundred": {
+   "tex": "6\\times10^{-17}",
+   "value": 5.551115123125783e-17,
+   "source": "10b_*",
+   "note": ""
+  },
+  "ghMHigh": {
+   "tex": "12",
+   "value": null,
+   "source": "07g_*",
+   "note": "P0 >= 20"
+  },
+  "ghMLow": {
+   "tex": "8",
+   "value": 8,
+   "source": "07g_*P10",
+   "note": ""
+  },
+  "dhDt": {
+   "tex": "1",
+   "value": 1.0,
+   "source": "08_leakage_*",
+   "note": "Strang step of the defect-rate runs"
+  },
+  "dhDtPSeventy": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "08_leakage_P70.json",
+   "note": ""
+  },
+  "dhSplitErr": {
+   "tex": "7\\times10^{-5}",
+   "value": 6.456726048575945e-05,
+   "source": "derived",
+   "note": "second-order scaling of max_t |GH - Strang(0.5)| to the step of the defect-rate run"
+  },
+  "ratioTimeMin": {
+   "tex": "4.2",
+   "value": 4.231781432257699,
+   "source": "07g_*; 10_*; 11_*",
+   "note": "min over regimes and resolved common instants of |PBME-Q| / |GH-Q|"
+  },
+  "qNRProdLow": {
+   "tex": "8192",
+   "value": 8192,
+   "source": "10_*",
+   "note": "P0 <= 40"
+  },
+  "qNRProdHigh": {
+   "tex": "16384",
+   "value": 16384,
+   "source": "10_*",
+   "note": "P0 >= 70"
+  },
+  "qNRRefLow": {
+   "tex": "24576",
+   "value": 24576,
+   "source": "10_*",
+   "note": "reference run, P0 <= 40"
+  },
+  "qNRRefHigh": {
+   "tex": "49152",
+   "value": 49152,
+   "source": "10_*",
+   "note": "reference run, P0 >= 70"
+  },
+  "qDtRef": {
+   "tex": "0.03125",
+   "value": 0.03125,
+   "source": "10_*",
+   "note": "reference run"
+  },
+  "qDtProd": {
+   "tex": "0.125",
+   "value": 0.125,
+   "source": "10_*",
+   "note": ""
+  },
+  "qOrderMin": {
+   "tex": "1.99",
+   "value": 1.9907562088556172,
+   "source": "10_*",
+   "note": ""
+  },
+  "qOrderMax": {
+   "tex": "2.00",
+   "value": 1.9999906046928868,
+   "source": "10_*",
+   "note": ""
+  },
+  "qNormDrift": {
+   "tex": "2\\times10^{-10}",
+   "value": 1.0186140819712364e-10,
+   "source": "10_*",
+   "note": ""
+  },
+  "pbNBlocks": {
+   "tex": "240",
+   "value": 240,
+   "source": "11_*",
+   "note": ""
+  },
+  "pbNBlocksMin": {
+   "tex": "200",
+   "value": 200,
+   "source": "11_*",
+   "note": ""
+  },
+  "pbBlockSize": {
+   "tex": "5\\,000",
+   "value": 5000,
+   "source": "11_*",
+   "note": ""
+  },
+  "pbNSeedsMin": {
+   "tex": "5",
+   "value": 5,
+   "source": "11_*",
+   "note": ""
+  },
+  "semRatioMin": {
+   "tex": "0.54",
+   "value": 0.5458599515407156,
+   "source": "11_*",
+   "note": "SEM over seed groups / SEM over blocks"
+  },
+  "semRatioMax": {
+   "tex": "1.28",
+   "value": 1.2716153621702448,
+   "source": "11_*",
+   "note": ""
+  },
+  "pbSlopeMin": {
+   "tex": "-0.58",
+   "value": -0.576249813864668,
+   "source": "11_*",
+   "note": "log-log slope of the block SEM, >= 4 blocks"
+  },
+  "pbSlopeMax": {
+   "tex": "-0.42",
+   "value": -0.4244814540920937,
+   "source": "11_*",
+   "note": ""
+  },
+  "pbNegFrac": {
+   "tex": "0.149",
+   "value": 0.14911,
+   "source": "11_*",
+   "note": "fraction of samples with negative weight"
+  },
+  "pbDtChange": {
+   "tex": "4.2\\times10^{-6}",
+   "value": 4.159081471182338e-06,
+   "source": "11c_pbme_timestep_convergence.json",
+   "note": "dt 0.5 -> 0.25, rho22(T)"
+  },
+  "pbDtOrder": {
+   "tex": "2.00",
+   "value": 1.9999969054434266,
+   "source": "11c_pbme_timestep_convergence.json",
+   "note": ""
+  },
+  "pbDtSamples": {
+   "tex": "50\\,000",
+   "value": 50000,
+   "source": "11c_pbme_timestep_convergence.json",
+   "note": ""
+  },
+  "pbDtOverSem": {
+   "tex": "0.006",
+   "value": 0.005896556778814139,
+   "source": "derived",
+   "note": ""
+  },
+  "kdeExpMin": {
+   "tex": "-0.22",
+   "value": -0.212501673224223,
+   "source": "08_leakage_*",
+   "note": ""
+  },
+  "kdeExpMax": {
+   "tex": "-0.11",
+   "value": -0.11324404788340459,
+   "source": "08_leakage_*",
+   "note": ""
+  },
+  "kdeRelFirstMin": {
+   "tex": "0.34",
+   "value": 0.3430792985076242,
+   "source": "08_leakage_*",
+   "note": ""
+  },
+  "kdeRelFirstMax": {
+   "tex": "0.46",
+   "value": 0.45513613227918803,
+   "source": "08_leakage_*",
+   "note": ""
+  },
+  "kdeRelLastMin": {
+   "tex": "0.15",
+   "value": 0.15891877726425624,
+   "source": "08_leakage_*",
+   "note": ""
+  },
+  "kdeRelLastMax": {
+   "tex": "0.21",
+   "value": 0.2038951016871619,
+   "source": "08_leakage_*",
+   "note": ""
+  },
+  "kdeNMin": {
+   "tex": "10^{3}",
+   "value": 1000,
+   "source": "08_leakage_*",
+   "note": ""
+  },
+  "kdeNMax": {
+   "tex": "10^{5}",
+   "value": 100000,
+   "source": "08_leakage_*",
+   "note": ""
+  },
+  "kdeSeeds": {
+   "tex": "5",
+   "value": null,
+   "source": "08_leakage_P40.json",
+   "note": ""
+  },
+  "ghRkOrder": {
+   "tex": "4.00",
+   "value": 3.9998772220124716,
+   "source": "09g_gh_convergence_P40.json",
+   "note": ""
+  },
+  "ghRkErr": {
+   "tex": "5.1\\times10^{-9}",
+   "value": 5.14186700647532e-09,
+   "source": "09g_gh_convergence_P40.json",
+   "note": "relative state difference RK4 - exponential at the smallest step"
+  },
+  "ghRkDt": {
+   "tex": "0.103",
+   "value": 0.1029512697323267,
+   "source": "09g_gh_convergence_P40.json",
+   "note": ""
+  },
+  "ghRkT": {
+   "tex": "300",
+   "value": 300.0,
+   "source": "09g_gh_convergence_P40.json",
+   "note": ""
+  },
+  "ghRkGrid": {
+   "tex": "512\\times256",
+   "value": [
+    512,
+    256
+   ],
+   "source": "09g_gh_convergence_P40.json",
+   "note": ""
+  },
+  "covNRot": {
+   "tex": "4",
+   "value": 4,
+   "source": "07cg",
+   "note": ""
+  },
+  "covNComplex": {
+   "tex": "2",
+   "value": 2,
+   "source": "07cg",
+   "note": ""
+  },
+  "covNRand": {
+   "tex": "16",
+   "value": 16,
+   "source": "07cg",
+   "note": ""
+  },
+  "covOrderMix": {
+   "tex": "4\\times10^{-16}",
+   "value": 3.191891195797325e-16,
+   "source": "07cg",
+   "note": "upper bound"
+  },
+  "covGroup": {
+   "tex": "2\\times10^{-15}",
+   "value": 1.2212453270876722e-15,
+   "source": "07cg",
+   "note": "upper bound"
+  },
+  "covFrame": {
+   "tex": "7\\times10^{-16}",
+   "value": 6.406631336828919e-16,
+   "source": "07cg",
+   "note": "upper bound"
+  },
+  "covOperator": {
+   "tex": "2\\times10^{-15}",
+   "value": 1.4100824195559691e-15,
+   "source": "07cg",
+   "note": "upper bound"
+  },
+  "covProp": {
+   "tex": "4\\times10^{-15}",
+   "value": 3.07104426398576e-15,
+   "source": "07cg",
+   "note": "upper bound"
+  },
+  "covSep": {
+   "tex": "0.31",
+   "value": 0.3097744924912977,
+   "source": "07cg",
+   "note": ""
+  },
+  "covSteps": {
+   "tex": "400",
+   "value": 400,
+   "source": "07cg",
+   "note": ""
+  },
+  "covT": {
+   "tex": "53.6",
+   "value": 53.575320645550576,
+   "source": "07cg",
+   "note": ""
+  },
+  "covGrid": {
+   "tex": "512\\times256",
+   "value": null,
+   "source": "07cg",
+   "note": ""
+  },
+  "symPowers": {
+   "tex": "3",
+   "value": 3,
+   "source": "01c_powers3.json",
+   "note": ""
+  },
+  "symVkMax": {
+   "tex": "6",
+   "value": 6,
+   "source": "02_*, 02c_*",
+   "note": ""
+  },
+  "symVkCount": {
+   "tex": "210",
+   "value": 210,
+   "source": "02_*, 02c_*",
+   "note": ""
+  },
+  "symTermsTop": {
+   "tex": "114",
+   "value": 114,
+   "source": "02_hermite_projection.json",
+   "note": ""
+  },
+  "symTermsHerm": {
+   "tex": "148",
+   "value": 148,
+   "source": "02_hermite_projection.json",
+   "note": ""
+  },
+  "symIdCases": {
+   "tex": "3360",
+   "value": 3360,
+   "source": "17_generator_structure.json",
+   "note": ""
+  },
+  "symIdOrder": {
+   "tex": "6",
+   "value": 6,
+   "source": "17_generator_structure.json",
+   "note": ""
+  },
+  "symOpBasis": {
+   "tex": "70",
+   "value": 70,
+   "source": "17_generator_structure.json",
+   "note": ""
+  },
+  "symOpOrder": {
+   "tex": "4",
+   "value": 4,
+   "source": "17_generator_structure.json",
+   "note": ""
+  },
+  "symOrderFourTotal": {
+   "tex": "35",
+   "value": 35,
+   "source": "17_generator_structure.json",
+   "note": ""
+  },
+  "psShiftPTwenty": {
+   "tex": "5.9",
+   "value": 5.857864376269049,
+   "source": "config",
+   "note": "asymptotic momentum difference of the two surfaces over sigma_P"
+  },
+  "psLtwoQcleOnePTwenty": {
+   "tex": "0.22",
+   "value": 0.2213099360311081,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeOnePTwenty": {
+   "tex": "0.40",
+   "value": 0.40156307271804637,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleOnePTwenty": {
+   "tex": "0.29",
+   "value": 0.29040866938148413,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullOnePTwenty": {
+   "tex": "0.25",
+   "value": 0.24708602118696116,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleTwoPTwenty": {
+   "tex": "3.59",
+   "value": 3.594254721364707,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeTwoPTwenty": {
+   "tex": "2.53",
+   "value": 2.5280064782011724,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleTwoPTwenty": {
+   "tex": "1.10",
+   "value": 1.103331966987957,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullTwoPTwenty": {
+   "tex": "4.05",
+   "value": 4.053423618035139,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleRePTwenty": {
+   "tex": "1.96",
+   "value": 1.9588823835892175,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeRePTwenty": {
+   "tex": "1.06",
+   "value": 1.0604822694833336,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleRePTwenty": {
+   "tex": "1.00",
+   "value": 1.0019388310897503,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullRePTwenty": {
+   "tex": "1.71",
+   "value": 1.7077772129059268,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleImPTwenty": {
+   "tex": "1.96",
+   "value": 1.958772491539965,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeImPTwenty": {
+   "tex": "1.05",
+   "value": 1.051350326224627,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleImPTwenty": {
+   "tex": "1.00",
+   "value": 0.9989629307638009,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullImPTwenty": {
+   "tex": "1.71",
+   "value": 1.7077798552927923,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psNegQOnePTwenty": {
+   "tex": "5.1\\times10^{-4}",
+   "value": 0.0005112456714345701,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "negative volume of the quantum diagonal density"
+  },
+  "psNegQcleOnePTwenty": {
+   "tex": "0.068",
+   "value": 0.06763645769604795,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "negative volume of the QCLE diagonal density"
+  },
+  "psMomQcleOnePTwenty": {
+   "tex": "0.18",
+   "value": 0.17641905388896406,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "L1 distance of the momentum distribution from the quantum one, / population, cells"
+  },
+  "psMomPbmeOnePTwenty": {
+   "tex": "0.45",
+   "value": 0.4488805707939345,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "same for the projected PBME"
+  },
+  "psMomFloorOnePTwenty": {
+   "tex": "0.007",
+   "value": 0.006183483897578169,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "expected L1 of the PBME noise alone (upper bound)"
+  },
+  "psNegQTwoPTwenty": {
+   "tex": "0.0019",
+   "value": 0.0018573906960668335,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "negative volume of the quantum diagonal density"
+  },
+  "psNegQcleTwoPTwenty": {
+   "tex": "0.19",
+   "value": 0.18961351656499068,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "negative volume of the QCLE diagonal density"
+  },
+  "psMomQcleTwoPTwenty": {
+   "tex": "3.0",
+   "value": 2.9798340543663904,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "L1 distance of the momentum distribution from the quantum one, / population, cells"
+  },
+  "psMomPbmeTwoPTwenty": {
+   "tex": "3.6",
+   "value": 3.60637685831093,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "same for the projected PBME"
+  },
+  "psMomFloorTwoPTwenty": {
+   "tex": "0.07",
+   "value": 0.06395492940119464,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "expected L1 of the PBME noise alone (upper bound)"
+  },
+  "psWidthPbmeOnePTwenty": {
+   "tex": "2.81",
+   "value": 2.8075133630187272,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "width of the PBME momentum distribution / exact width"
+  },
+  "psWidthQcleOnePTwenty": {
+   "tex": "1.08",
+   "value": 1.0776471911645302,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "width of the QCLE momentum distribution / exact width"
+  },
+  "psGridPeakPTwenty": {
+   "tex": "5.6\\times10^{-7}",
+   "value": 5.506931877464197e-07,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "largest |four-field - coefficient| over the peak density, any component"
+  },
+  "psGridLtwoPTwenty": {
+   "tex": "9.5\\times10^{-7}",
+   "value": 9.419022280569447e-07,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "largest relative L2 distance, four-field vs coefficient, any component"
+  },
+  "psStrangPeakPTwenty": {
+   "tex": "6.8\\times10^{-7}",
+   "value": 6.731157552364945e-07,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "largest |Strang - coefficient| over the peak density, any component"
+  },
+  "psStrangLtwoPTwenty": {
+   "tex": "3.3\\times10^{-6}",
+   "value": 3.2451477557954416e-06,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "largest relative L2 distance, Strang vs coefficient, any component"
+  },
+  "psGridCorrPTwenty": {
+   "tex": "5.6\\times10^{-7}",
+   "value": 5.5040047030966e-07,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "largest |four-field - coefficient - predicted Runge-Kutta error of free flight| over the peak density, any component"
+  },
+  "psCellRPTwenty": {
+   "tex": "0.176",
+   "value": 0.17578125,
+   "source": "18_pbme_phase_space_P20.json",
+   "note": ""
+  },
+  "psCellPPTwenty": {
+   "tex": "0.625",
+   "value": 0.625,
+   "source": "18_pbme_phase_space_P20.json",
+   "note": ""
+  },
+  "psShiftPThirty": {
+   "tex": "2.4",
+   "value": 2.361657926236063,
+   "source": "config",
+   "note": "asymptotic momentum difference of the two surfaces over sigma_P"
+  },
+  "psLtwoQcleOnePThirty": {
+   "tex": "0.47",
+   "value": 0.4661231218461046,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeOnePThirty": {
+   "tex": "0.67",
+   "value": 0.6669595996381125,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleOnePThirty": {
+   "tex": "0.76",
+   "value": 0.7628495588826999,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullOnePThirty": {
+   "tex": "0.51",
+   "value": 0.5137623946379798,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleTwoPThirty": {
+   "tex": "0.32",
+   "value": 0.31670624402440695,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeTwoPThirty": {
+   "tex": "0.67",
+   "value": 0.6711550420998357,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleTwoPThirty": {
+   "tex": "0.61",
+   "value": 0.6101930225599296,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullTwoPThirty": {
+   "tex": "0.35",
+   "value": 0.35451087712207857,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleRePThirty": {
+   "tex": "0.92",
+   "value": 0.9248974323891757,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeRePThirty": {
+   "tex": "0.76",
+   "value": 0.7586126472412592,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleRePThirty": {
+   "tex": "0.76",
+   "value": 0.762025656382585,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullRePThirty": {
+   "tex": "0.95",
+   "value": 0.9509274155078362,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleImPThirty": {
+   "tex": "0.92",
+   "value": 0.9239165593230505,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeImPThirty": {
+   "tex": "0.76",
+   "value": 0.7588388335124001,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleImPThirty": {
+   "tex": "0.76",
+   "value": 0.7621908672252229,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullImPThirty": {
+   "tex": "0.95",
+   "value": 0.9500553068286185,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psNegQOnePThirty": {
+   "tex": "5.5\\times10^{-5}",
+   "value": 5.5482518611491515e-05,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "negative volume of the quantum diagonal density"
+  },
+  "psNegQcleOnePThirty": {
+   "tex": "0.097",
+   "value": 0.09746541323344964,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "negative volume of the QCLE diagonal density"
+  },
+  "psMomQcleOnePThirty": {
+   "tex": "0.10",
+   "value": 0.10315491788017658,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "L1 distance of the momentum distribution from the quantum one, / population, cells"
+  },
+  "psMomPbmeOnePThirty": {
+   "tex": "0.71",
+   "value": 0.7087352160065191,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "same for the projected PBME"
+  },
+  "psMomFloorOnePThirty": {
+   "tex": "0.02",
+   "value": 0.015115851295316696,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "expected L1 of the PBME noise alone (upper bound)"
+  },
+  "psNegQTwoPThirty": {
+   "tex": "2.5\\times10^{-6}",
+   "value": 2.4925429901430234e-06,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "negative volume of the quantum diagonal density"
+  },
+  "psNegQcleTwoPThirty": {
+   "tex": "0.078",
+   "value": 0.07815130031604892,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "negative volume of the QCLE diagonal density"
+  },
+  "psMomQcleTwoPThirty": {
+   "tex": "0.070",
+   "value": 0.07042274458368929,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "L1 distance of the momentum distribution from the quantum one, / population, cells"
+  },
+  "psMomPbmeTwoPThirty": {
+   "tex": "0.50",
+   "value": 0.49976678862513635,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "same for the projected PBME"
+  },
+  "psMomFloorTwoPThirty": {
+   "tex": "0.009",
+   "value": 0.008488266169572533,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "expected L1 of the PBME noise alone (upper bound)"
+  },
+  "psWidthPbmeOnePThirty": {
+   "tex": "2.14",
+   "value": 2.1354171727067555,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "width of the PBME momentum distribution / exact width"
+  },
+  "psWidthQcleOnePThirty": {
+   "tex": "1.03",
+   "value": 1.0265929807191851,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "width of the QCLE momentum distribution / exact width"
+  },
+  "psWidthPbmeTwoPThirty": {
+   "tex": "1.58",
+   "value": 1.5827063214951622,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "width of the PBME momentum distribution / exact width"
+  },
+  "psWidthQcleTwoPThirty": {
+   "tex": "0.99",
+   "value": 0.9909882232552476,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "width of the QCLE momentum distribution / exact width"
+  },
+  "psSplitQPThirty": {
+   "tex": "3.19",
+   "value": 3.189172689018637,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "mean momentum of state 1 minus that of state 2"
+  },
+  "psSplitQclePThirty": {
+   "tex": "3.37",
+   "value": 3.373806900565647,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "mean momentum of state 1 minus that of state 2"
+  },
+  "psSplitPbmePThirty": {
+   "tex": "4.04",
+   "value": 4.039141929141294,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "mean momentum of state 1 minus that of state 2"
+  },
+  "psSplitPbmeSemPThirty": {
+   "tex": "0.02",
+   "value": 0.010977270934317617,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "jackknife over blocks"
+  },
+  "psGridPeakPThirty": {
+   "tex": "1.0\\times10^{-6}",
+   "value": 9.978309096159151e-07,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "largest |four-field - coefficient| over the peak density, any component"
+  },
+  "psGridLtwoPThirty": {
+   "tex": "1.3\\times10^{-6}",
+   "value": 1.2180603259319658e-06,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "largest relative L2 distance, four-field vs coefficient, any component"
+  },
+  "psStrangPeakPThirty": {
+   "tex": "2.3\\times10^{-6}",
+   "value": 2.211777479186176e-06,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "largest |Strang - coefficient| over the peak density, any component"
+  },
+  "psStrangLtwoPThirty": {
+   "tex": "4.4\\times10^{-6}",
+   "value": 4.386282627949608e-06,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "largest relative L2 distance, Strang vs coefficient, any component"
+  },
+  "psGridCorrPThirty": {
+   "tex": "1.8\\times10^{-9}",
+   "value": 1.7204414637596029e-09,
+   "source": "19_phase_space_comparison_P30.json",
+   "note": "largest |four-field - coefficient - predicted Runge-Kutta error of free flight| over the peak density, any component"
+  },
+  "psCellRPThirty": {
+   "tex": "0.352",
+   "value": 0.3515625,
+   "source": "18_pbme_phase_space_P30.json",
+   "note": ""
+  },
+  "psCellPPThirty": {
+   "tex": "0.344",
+   "value": 0.34375,
+   "source": "18_pbme_phase_space_P30.json",
+   "note": ""
+  },
+  "psShiftPSeventy": {
+   "tex": "0.41",
+   "value": 0.41241542742558784,
+   "source": "config",
+   "note": "asymptotic momentum difference of the two surfaces over sigma_P"
+  },
+  "psLtwoQcleOnePSeventy": {
+   "tex": "0.21",
+   "value": 0.21183049652309982,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeOnePSeventy": {
+   "tex": "0.36",
+   "value": 0.35799973418401027,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleOnePSeventy": {
+   "tex": "0.48",
+   "value": 0.48461767549004836,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullOnePSeventy": {
+   "tex": "0.27",
+   "value": 0.2701666121197412,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleTwoPSeventy": {
+   "tex": "0.30",
+   "value": 0.2988830965303826,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeTwoPSeventy": {
+   "tex": "0.22",
+   "value": 0.22135986902488358,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleTwoPSeventy": {
+   "tex": "0.22",
+   "value": 0.2195941280477424,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullTwoPSeventy": {
+   "tex": "0.39",
+   "value": 0.3913640753574116,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleRePSeventy": {
+   "tex": "0.27",
+   "value": 0.27275502133893254,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeRePSeventy": {
+   "tex": "0.33",
+   "value": 0.32781089877358766,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleRePSeventy": {
+   "tex": "0.34",
+   "value": 0.34333176364856355,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullRePSeventy": {
+   "tex": "0.36",
+   "value": 0.362243190312707,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleImPSeventy": {
+   "tex": "0.23",
+   "value": 0.23210409743073857,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeImPSeventy": {
+   "tex": "0.33",
+   "value": 0.32681184095090055,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleImPSeventy": {
+   "tex": "0.23",
+   "value": 0.22709367902399183,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullImPSeventy": {
+   "tex": "0.34",
+   "value": 0.3371656898420196,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psNegQOnePSeventy": {
+   "tex": "2.8\\times10^{-8}",
+   "value": 2.8485501495844102e-08,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "negative volume of the quantum diagonal density"
+  },
+  "psNegQcleOnePSeventy": {
+   "tex": "0.049",
+   "value": 0.04937787166124466,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "negative volume of the QCLE diagonal density"
+  },
+  "psMomQcleOnePSeventy": {
+   "tex": "0.016",
+   "value": 0.015780369704698205,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "L1 distance of the momentum distribution from the quantum one, / population, cells"
+  },
+  "psMomPbmeOnePSeventy": {
+   "tex": "0.081",
+   "value": 0.08050648949928291,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "same for the projected PBME"
+  },
+  "psMomFloorOnePSeventy": {
+   "tex": "0.009",
+   "value": 0.008842713792421191,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "expected L1 of the PBME noise alone (upper bound)"
+  },
+  "psNegQTwoPSeventy": {
+   "tex": "3.7\\times10^{-8}",
+   "value": 3.656558846198195e-08,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "negative volume of the quantum diagonal density"
+  },
+  "psNegQcleTwoPSeventy": {
+   "tex": "0.0055",
+   "value": 0.005484913828187589,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "negative volume of the QCLE diagonal density"
+  },
+  "psMomQcleTwoPSeventy": {
+   "tex": "0.021",
+   "value": 0.021148680387391275,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "L1 distance of the momentum distribution from the quantum one, / population, cells"
+  },
+  "psMomPbmeTwoPSeventy": {
+   "tex": "0.079",
+   "value": 0.07897915763213044,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "same for the projected PBME"
+  },
+  "psMomFloorTwoPSeventy": {
+   "tex": "0.01",
+   "value": 0.009865732968785158,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "expected L1 of the PBME noise alone (upper bound)"
+  },
+  "psWidthPbmeOnePSeventy": {
+   "tex": "1.07",
+   "value": 1.0663385164077275,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "width of the PBME momentum distribution / exact width"
+  },
+  "psWidthQcleOnePSeventy": {
+   "tex": "0.98",
+   "value": 0.983962460977948,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "width of the QCLE momentum distribution / exact width"
+  },
+  "psWidthPbmeTwoPSeventy": {
+   "tex": "1.01",
+   "value": 1.0072010624986916,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "width of the PBME momentum distribution / exact width"
+  },
+  "psWidthQcleTwoPSeventy": {
+   "tex": "1.02",
+   "value": 1.0215514559637293,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "width of the QCLE momentum distribution / exact width"
+  },
+  "psSplitQPSeventy": {
+   "tex": "0.18",
+   "value": 0.17988075782723456,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "mean momentum of state 1 minus that of state 2"
+  },
+  "psSplitQclePSeventy": {
+   "tex": "0.17",
+   "value": 0.1732340035455593,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "mean momentum of state 1 minus that of state 2"
+  },
+  "psSplitPbmePSeventy": {
+   "tex": "0.78",
+   "value": 0.7805807111643759,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "mean momentum of state 1 minus that of state 2"
+  },
+  "psSplitPbmeSemPSeventy": {
+   "tex": "0.02",
+   "value": 0.010135949329804644,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "jackknife over blocks"
+  },
+  "psGridPeakPSeventy": {
+   "tex": "1.4\\times10^{-4}",
+   "value": 0.00013400649366084375,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "largest |four-field - coefficient| over the peak density, any component"
+  },
+  "psGridLtwoPSeventy": {
+   "tex": "1.5\\times10^{-4}",
+   "value": 0.00014826997415459905,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "largest relative L2 distance, four-field vs coefficient, any component"
+  },
+  "psStrangPeakPSeventy": {
+   "tex": "4.0\\times10^{-6}",
+   "value": 3.9620886619469456e-06,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "largest |Strang - coefficient| over the peak density, any component"
+  },
+  "psStrangLtwoPSeventy": {
+   "tex": "8.9\\times10^{-6}",
+   "value": 8.800661011319728e-06,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "largest relative L2 distance, Strang vs coefficient, any component"
+  },
+  "psGridCorrPSeventy": {
+   "tex": "2.2\\times10^{-9}",
+   "value": 2.104390416852581e-09,
+   "source": "19_phase_space_comparison_P70.json",
+   "note": "largest |four-field - coefficient - predicted Runge-Kutta error of free flight| over the peak density, any component"
+  },
+  "psCellRPSeventy": {
+   "tex": "0.273",
+   "value": 0.2734375,
+   "source": "18_pbme_phase_space_P70.json",
+   "note": ""
+  },
+  "psCellPPSeventy": {
+   "tex": "0.5",
+   "value": 0.5,
+   "source": "18_pbme_phase_space_P70.json",
+   "note": ""
+  },
+  "psShiftPOneHundred": {
+   "tex": "0.20",
+   "value": 0.20101012677666857,
+   "source": "config",
+   "note": "asymptotic momentum difference of the two surfaces over sigma_P"
+  },
+  "psLtwoQcleOnePOneHundred": {
+   "tex": "0.18",
+   "value": 0.17558640492855176,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeOnePOneHundred": {
+   "tex": "0.55",
+   "value": 0.5499788703158847,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleOnePOneHundred": {
+   "tex": "0.51",
+   "value": 0.5126484157149043,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullOnePOneHundred": {
+   "tex": "0.87",
+   "value": 0.8701811754418795,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleTwoPOneHundred": {
+   "tex": "0.03",
+   "value": 0.031783752119446354,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeTwoPOneHundred": {
+   "tex": "0.16",
+   "value": 0.16249312015041562,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleTwoPOneHundred": {
+   "tex": "0.15",
+   "value": 0.14504923849712872,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullTwoPOneHundred": {
+   "tex": "0.17",
+   "value": 0.172782121216543,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleRePOneHundred": {
+   "tex": "0.08",
+   "value": 0.07742382824326177,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeRePOneHundred": {
+   "tex": "0.18",
+   "value": 0.17957283519869774,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleRePOneHundred": {
+   "tex": "0.23",
+   "value": 0.2331401388189714,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullRePOneHundred": {
+   "tex": "0.23",
+   "value": 0.2319495021256186,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psLtwoQcleImPOneHundred": {
+   "tex": "0.08",
+   "value": 0.07870704084625657,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, QCLE vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeImPOneHundred": {
+   "tex": "0.20",
+   "value": 0.20058278942354418,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, PBME vs quantum, on the PBME cells"
+  },
+  "psLtwoPbmeQcleImPOneHundred": {
+   "tex": "0.24",
+   "value": 0.23555468299432158,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, PBME vs QCLE, on the PBME cells"
+  },
+  "psLtwoFullImPOneHundred": {
+   "tex": "0.33",
+   "value": 0.33228814563059894,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "relative L2 distance, QCLE vs quantum, full grid"
+  },
+  "psNegQOnePOneHundred": {
+   "tex": "7.8\\times10^{-9}",
+   "value": 7.793897301330482e-09,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "negative volume of the quantum diagonal density"
+  },
+  "psNegQcleOnePOneHundred": {
+   "tex": "0.044",
+   "value": 0.043644233324401184,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "negative volume of the QCLE diagonal density"
+  },
+  "psMomQcleOnePOneHundred": {
+   "tex": "0.016",
+   "value": 0.016210373854456193,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "L1 distance of the momentum distribution from the quantum one, / population, cells"
+  },
+  "psMomPbmeOnePOneHundred": {
+   "tex": "0.23",
+   "value": 0.2286572258378299,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "same for the projected PBME"
+  },
+  "psMomFloorOnePOneHundred": {
+   "tex": "0.02",
+   "value": 0.018827859165227296,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "expected L1 of the PBME noise alone (upper bound)"
+  },
+  "psNegQTwoPOneHundred": {
+   "tex": "1.8\\times10^{-9}",
+   "value": 1.8158681972073416e-09,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "negative volume of the quantum diagonal density"
+  },
+  "psNegQcleTwoPOneHundred": {
+   "tex": "0.0029",
+   "value": 0.002867871445876788,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "negative volume of the QCLE diagonal density"
+  },
+  "psMomQcleTwoPOneHundred": {
+   "tex": "0.0029",
+   "value": 0.002866838733126569,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "L1 distance of the momentum distribution from the quantum one, / population, cells"
+  },
+  "psMomPbmeTwoPOneHundred": {
+   "tex": "0.041",
+   "value": 0.04071003233926951,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "same for the projected PBME"
+  },
+  "psMomFloorTwoPOneHundred": {
+   "tex": "0.005",
+   "value": 0.0048615182038968625,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "expected L1 of the PBME noise alone (upper bound)"
+  },
+  "psWidthPbmeOnePOneHundred": {
+   "tex": "1.00",
+   "value": 1.0033805981878714,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "width of the PBME momentum distribution / exact width"
+  },
+  "psWidthQcleOnePOneHundred": {
+   "tex": "0.98",
+   "value": 0.9839786278492145,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "width of the QCLE momentum distribution / exact width"
+  },
+  "psWidthPbmeTwoPOneHundred": {
+   "tex": "1.02",
+   "value": 1.0177081631540847,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "width of the PBME momentum distribution / exact width"
+  },
+  "psWidthQcleTwoPOneHundred": {
+   "tex": "1.00",
+   "value": 1.003004117824094,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "width of the QCLE momentum distribution / exact width"
+  },
+  "psSplitQPOneHundred": {
+   "tex": "0.05",
+   "value": 0.04558793244855508,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "mean momentum of state 1 minus that of state 2"
+  },
+  "psSplitQclePOneHundred": {
+   "tex": "0.05",
+   "value": 0.05379222862148936,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "mean momentum of state 1 minus that of state 2"
+  },
+  "psSplitPbmePOneHundred": {
+   "tex": "1.66",
+   "value": 1.664795570340587,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "mean momentum of state 1 minus that of state 2"
+  },
+  "psSplitPbmeSemPOneHundred": {
+   "tex": "0.03",
+   "value": 0.029840221846060687,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "jackknife over blocks"
+  },
+  "psGridPeakPOneHundred": {
+   "tex": "0.0036",
+   "value": 0.003566537922188818,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "largest |four-field - coefficient| over the peak density, any component"
+  },
+  "psGridLtwoPOneHundred": {
+   "tex": "0.010",
+   "value": 0.009903682115327248,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "largest relative L2 distance, four-field vs coefficient, any component"
+  },
+  "psStrangPeakPOneHundred": {
+   "tex": "6.4\\times10^{-6}",
+   "value": 6.375600272200772e-06,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "largest |Strang - coefficient| over the peak density, any component"
+  },
+  "psStrangLtwoPOneHundred": {
+   "tex": "1.7\\times10^{-5}",
+   "value": 1.6937901761695654e-05,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "largest relative L2 distance, Strang vs coefficient, any component"
+  },
+  "psGridCorrPOneHundred": {
+   "tex": "1.9\\times10^{-8}",
+   "value": 1.8159007424994116e-08,
+   "source": "19_phase_space_comparison_P100.json",
+   "note": "largest |four-field - coefficient - predicted Runge-Kutta error of free flight| over the peak density, any component"
+  },
+  "psCellRPOneHundred": {
+   "tex": "0.547",
+   "value": 0.546875,
+   "source": "18_pbme_phase_space_P100.json",
+   "note": ""
+  },
+  "psCellPPOneHundred": {
+   "tex": "1.25",
+   "value": 1.25,
+   "source": "18_pbme_phase_space_P100.json",
+   "note": ""
+  },
+  "psNegQMax": {
+   "tex": "0.002",
+   "value": 0.0018573906960668335,
+   "source": "19_*",
+   "note": "largest negative volume of an exact diagonal density"
+  },
+  "psTailMax": {
+   "tex": "2\\times10^{-5}",
+   "value": 1.1935530370503331e-05,
+   "source": "19_*",
+   "note": "largest root spectral power beyond 3/4 of Nyquist, quantum and QCLE fields"
+  },
+  "psSolverMax": {
+   "tex": "2\\times10^{-5}",
+   "value": 1.6937901761695654e-05,
+   "source": "19_*",
+   "note": "largest relative L2 distance between the Strang and coefficient fields"
+  },
+  "psReproMax": {
+   "tex": "3\\times10^{-14}",
+   "value": 2.942091015256665e-14,
+   "source": "18_*",
+   "note": "largest difference of a re-propagated chunk total from scripts/11"
+  },
+  "psTraceErr": {
+   "tex": "8\\times10^{-12}",
+   "value": 7.51798623355171e-12,
+   "source": "19_*",
+   "note": "|trace - 1| of the quantum field"
+  },
+  "psStrangStep": {
+   "tex": "0.25",
+   "value": null,
+   "source": "10b_*",
+   "note": "step of the Strang fields"
+  },
+  "psStrangPeakMax": {
+   "tex": "7\\times10^{-6}",
+   "value": 6.375600272200772e-06,
+   "source": "19_*",
+   "note": "largest |Strang - coefficient| over the peak density, all regimes"
+  },
+  "psGridPeakLowMax": {
+   "tex": "1\\times10^{-6}",
+   "value": 9.978309096159151e-07,
+   "source": "19_*",
+   "note": "largest |four-field - coefficient| over the peak density at P0 = 20, 30"
+  },
+  "psGridSameMeasures": {
+   "tex": "3\\times10^{-5}",
+   "value": 2.666749244433636e-05,
+   "source": "19_*",
+   "note": "largest difference of N_a or D_a between the four-field and coefficient solutions"
+  },
+  "psRkList": {
+   "tex": "30, 70\\text{ and }100",
+   "value": null,
+   "source": "19_*",
+   "note": "regimes of the Runge-Kutta comparison"
+  },
+  "psRkResidMax": {
+   "tex": "0.0031",
+   "value": 0.0030035986601923,
+   "source": "19_*",
+   "note": "largest relative L2 residual of the four-field - coefficient difference after subtracting the predicted Runge-Kutta error of free flight, P0 >= 30, any component"
+  },
+  "psRkAfterMax": {
+   "tex": "2\\times10^{-8}",
+   "value": 1.8159007424994116e-08,
+   "source": "19_*",
+   "note": "largest remaining |four-field - coefficient| over the peak density after that subtraction, P0 >= 30"
+  },
+  "psRkPredPTwenty": {
+   "tex": "2.3\\times10^{-7}",
+   "value": 2.343537755707331e-07,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "largest predicted Runge-Kutta error of free flight over the peak density, P0 = 20"
+  },
+  "psTrajOutsideMax": {
+   "tex": "7\\times10^{-5}",
+   "value": 7.00000000000145e-05,
+   "source": "18_*",
+   "note": "largest fraction of PBME trajectories outside the cells"
+  },
+  "psOutsidePbmeMax": {
+   "tex": "0.003",
+   "value": 0.0023831170707492417,
+   "source": "19_*",
+   "note": "largest change of a PBME D_a the trajectories outside the cells can cause"
+  },
+  "psTailPTen": {
+   "tex": "0.18",
+   "value": 0.1839098460465435,
+   "source": "07g_gh_coefficient_propagation_P10.h5",
+   "note": "root spectral power beyond 3/4 of Nyquist of the terminal QCLE diagonal densities at P0=10 (lower bound)"
+  },
+  "psOutsideMax": {
+   "tex": "6\\times10^{-6}",
+   "value": 5.762011664275421e-06,
+   "source": "19_*",
+   "note": "largest fraction of |rho| of a grid field outside the PBME cells"
+  },
+  "psFloorMax": {
+   "tex": "0.11",
+   "value": 0.10379482323274156,
+   "source": "19_*",
+   "note": "largest statistical floor of a PBME cell distance, relative to the quantum norm"
+  },
+  "psLtwoOverFloorMin": {
+   "tex": "13",
+   "value": 13.330303148734004,
+   "source": "19_*",
+   "note": "smallest ratio of a PBME cell L2 distance to its statistical floor (rounded down)"
+  },
+  "psLtwoQcleWorseTwoList": {
+   "tex": "20\\text{ and }70",
+   "value": [
+    20,
+    70
+   ],
+   "source": "19_*",
+   "note": "regimes where the QCLE rho22 is further from the exact one than the PBME's (L2, cells)"
+  },
+  "psLtwoQcleWorseCohList": {
+   "tex": "20\\text{ and }30",
+   "value": [
+    20,
+    30
+   ],
+   "source": "19_*",
+   "note": "regimes where the QCLE coherence is further from the exact one than the PBME's (L2, cells)"
+  },
+  "psNegQcleOneMin": {
+   "tex": "0.043",
+   "value": 0.043644233324401184,
+   "source": "19_*",
+   "note": "smallest QCLE negative volume of state 1"
+  },
+  "psNegQcleOneMax": {
+   "tex": "0.098",
+   "value": 0.09746541323344964,
+   "source": "19_*",
+   "note": "largest QCLE negative volume of state 1"
+  },
+  "psMomQcleHighMax": {
+   "tex": "0.022",
+   "value": 0.021148680387391275,
+   "source": "19_*",
+   "note": "largest QCLE D_a where Delta P < sigma_P / 2 (upper bound)"
+  },
+  "psShiftHighList": {
+   "tex": "70\\text{ and }100",
+   "value": [
+    70,
+    100
+   ],
+   "source": "config",
+   "note": "regimes with Delta P < sigma_P / 2"
+  },
+  "psMomQcleOneMax": {
+   "tex": "0.18",
+   "value": 0.17641905388896406,
+   "source": "19_*",
+   "note": "largest QCLE D_1 (upper bound)"
+  },
+  "psMomRatioMin": {
+   "tex": "1.2",
+   "value": 1.2102609717566177,
+   "source": "19_*",
+   "note": "smallest D_PBME / D_QCLE over regimes and states (lower bound)"
+  },
+  "psMomRatioMax": {
+   "tex": "15",
+   "value": 14.20032172331899,
+   "source": "19_*",
+   "note": "largest D_PBME / D_QCLE over regimes and states (upper bound)"
+  },
+  "psMomFloorMax": {
+   "tex": "0.064",
+   "value": 0.06395492940119464,
+   "source": "19_*",
+   "note": "largest statistical floor of a PBME momentum-distribution distance"
+  },
+  "psMomOverFloorMin": {
+   "tex": "8",
+   "value": 8.005401918136016,
+   "source": "19_*",
+   "note": "smallest ratio of a PBME D_a to its statistical floor (rounded down)"
+  },
+  "psMomMinQcleTwoPTwenty": {
+   "tex": "-0.038",
+   "value": -0.03785253756025596,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "minimum of the QCLE momentum distribution of state 2"
+  },
+  "psMomPeakQTwoPTwenty": {
+   "tex": "0.019",
+   "value": 0.019286200627634097,
+   "source": "19_phase_space_comparison_P20.json",
+   "note": "peak of the exact momentum distribution of state 2"
+  }
+ }
+}

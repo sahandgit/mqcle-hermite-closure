@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-08-20T22:32:46Z",
+    "script": "04_physical_frame.py",
+    "config": {
+      "nstates": 2,
+      "nbath": 1,
+      "convention": "traceless",
+      "operators": [
+        "full",
+        "pbme"
+      ],
+      "out": "results/raw/04_physical_frame.json"
+    },
+    "seed": null,
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.9",
+      "pandas": "3.0.2",
+      "h5py": "3.16.0",
+      "yaml": "6.0.3",
+      "torch": "not installed"
+    },
+    "dtype": "float64",
+    "platform": "Linux-6.18.5-fc-v20-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "command_line": "scripts/04_physical_frame.py",
+    "wall_time_s": 26.271297,
+    "git_commit": null
+  },
+  "checks": [
+    {
+      "name": "frame_projection_is_identity_on_rho_m",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    },
+    {
+      "name": "full_generator_frame_residual_zero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": "the physical statement, distinct from V_2 invariance"
+    },
+    {
+      "name": "pbme_frame_residual_nonzero",
+      "value": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "note": ""
+    }
+  ],
+  "all_passed": true,
+  "results": {
+    "dimensions": {
+      "mapping_phase_space": 4,
+      "physical_frame_complex_dim": 4,
+      "even_part_of_V2_dim": 11,
+      "note": "The physical frame is a proper subspace of V_2, so V_2 invariance does not imply frame invariance; this script settles the latter directly."
+    },
+    "cases": {
+      "full": {
+        "residual_is_zero": true,
+        "residual_expression": "0",
+        "squared_norm_expression": "0",
+        "seconds": 5.49
+      },
+      "pbme": {
+        "residual_is_zero": false,
+        "residual_expression": "z0**4*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/8 - z0**4*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/8 + z0**3*z1*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0**3*z1*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0**3*z1*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)/2 - z0**3*z1*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0**3*z1*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0**3*z3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - I*z0**3*z3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - I*z0**3*z3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + I*z0**3*z3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - z0**2*z1**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/8 + z0**2*z1**2*Derivative(h00(R0), R0)*Derivative(rho11(R0, P0), P0)/8 + z0**2*z1**2*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 + z0**2*z1**2*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 + z0**2*z1**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/8 - z0**2*z1**2*Derivative(h11(R0), R0)*Derivative(rho11(R0, P0), P0)/8 - I*z0**2*z1*z2*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + I*z0**2*z1*z2*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0**2*z1*z2*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - I*z0**2*z1*z2*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0**2*z1*z3*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 - I*z0**2*z1*z3*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 + z0**2*z2**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/4 - z0**2*z2**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/4 + z0**2*z2*z3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0**2*z2*z3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0**2*z2*z3*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)/2 - z0**2*z2*z3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0**2*z2*z3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - z0**2*z3**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/8 + z0**2*z3**2*Derivative(h00(R0), R0)*Derivative(rho11(R0, P0), P0)/8 + z0**2*z3**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/8 - z0**2*z3**2*Derivative(h11(R0), R0)*Derivative(rho11(R0, P0), P0)/8 - 3*z0**2*Derivative(h00(R0), R0)*Derivative(rho00(R0, P0), P0)/4 - z0**2*Derivative(h00(R0), R0)*Derivative(rho11(R0, P0), P0)/4 - z0**2*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 - z0**2*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 + 3*z0**2*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)/4 + z0**2*Derivative(h11(R0), R0)*Derivative(rho11(R0, P0), P0)/4 - z0*z1**3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0*z1**3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1**3*Derivative(h01(R0), R0)*Derivative(rho11(R0, P0), P0)/2 + z0*z1**3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0*z1**3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 - I*z0*z1**2*z2*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)/2 + I*z0*z1**2*z2*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)/2 - I*z0*z1**2*z3*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + I*z0*z1**2*z3*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + I*z0*z1**2*z3*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - I*z0*z1**2*z3*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z2**2*Derivative(h00(R0), R0)*Derivative(rho01(R0, P0), P0)/8 + z0*z1*z2**2*Derivative(h00(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z2**2*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)/2 - z0*z1*z2**2*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)/8 - z0*z1*z2**2*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)/8 + z0*z1*z2*z3*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0) + z0*z1*z2*z3*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0) ",
+        "squared_norm_expression": "5*Derivative(h00(R0), R0)**2*Derivative(rho00(R0, P0), P0)**2/4 - Derivative(h00(R0), R0)**2*Derivative(rho00(R0, P0), P0)*Derivative(rho11(R0, P0), P0)/2 + Derivative(h00(R0), R0)**2*Derivative(rho01(R0, P0), P0)**2 + Derivative(h00(R0), R0)**2*Derivative(rho10(R0, P0), P0)**2 + 5*Derivative(h00(R0), R0)**2*Derivative(rho11(R0, P0), P0)**2/4 + Derivative(h00(R0), R0)*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)*Derivative(rho01(R0, P0), P0) + Derivative(h00(R0), R0)*Derivative(h01(R0), R0)*Derivative(rho00(R0, P0), P0)*Derivative(rho10(R0, P0), P0) - Derivative(h00(R0), R0)*Derivative(h01(R0), R0)*Derivative(rho01(R0, P0), P0)*Derivative(rho11(R0, P0), P0) - Derivative(h00(R0), R0)*Derivative(h01(R0), R0)*Derivative(rho10(R0, P0), P0)*Derivative(rho11(R0, P0), P0) - 5*Derivative(h00(R0), R0)*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)**2/2 + Derivative(h00(R0), R0)*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)*Derivative(rho11(R0, P0), P0) - 2*Derivative(h00(R0), R0)*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)**2 - 2*Derivative(h00(R0), R0)*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)**2 - 5*Derivative(h00(R0), R0)*Derivative(h11(R0), R0)*Derivative(rho11(R0, P0), P0)**2/2 + 4*Derivative(h01(R0), R0)**2*Derivative(rho00(R0, P0), P0)**2 + 5*Derivative(h01(R0), R0)**2*Derivative(rho01(R0, P0), P0)**2 + 2*Derivative(h01(R0), R0)**2*Derivative(rho01(R0, P0), P0)*Derivative(rho10(R0, P0), P0) + 5*Derivative(h01(R0), R0)**2*Derivative(rho10(R0, P0), P0)**2 + 4*Derivative(h01(R0), R0)**2*Derivative(rho11(R0, P0), P0)**2 - Derivative(h01(R0), R0)*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)*Derivative(rho01(R0, P0), P0) - Derivative(h01(R0), R0)*Derivative(h11(R0), R0)*Derivative(rho00(R0, P0), P0)*Derivative(rho10(R0, P0), P0) + Derivative(h01(R0), R0)*Derivative(h11(R0), R0)*Derivative(rho01(R0, P0), P0)*Derivative(rho11(R0, P0), P0) + Derivative(h01(R0), R0)*Derivative(h11(R0), R0)*Derivative(rho10(R0, P0), P0)*Derivative(rho11(R0, P0), P0) + 5*Derivative(h11(R0), R0)**2*Derivative(rho00(R0, P0), P0)**2/4 - Derivative(h11(R0), R0)**2*Derivative(rho00(R0, P0), P0)*Derivative(rho11(R0, P0), P0)/2 + Derivative(h11(R0), R0)**2*Derivative(rho01(R0, P0), P0)**2 + Derivative(h11(R0), R0)**2*Derivative(rho10(R0, P0), P0)**2 + 5*Derivative(h11(R0), R0)**2*Derivative(rho11(R0, P0), P0)**2/4",
+        "seconds": 19.93
+      }
+    }
+  }
+}
