@@ -279,7 +279,7 @@ def fig2_numerics():
                    markevery=5, lw=1.0, label=f"$P_0={P0}$")
         tol = jload(f"07g_gh_coefficient_propagation_P{P0}.json")["metadata"]["time"]["krylov_tol"]
     a.axhline(tol, color=C_UNC, lw=0.7, ls="--")
-    a.text(0.02, tol * 1.5, "requested error per substep", color="0.4", fontsize=6)
+    a.text(0.02, tol * 1.5, "requested residual tolerance", color="0.4", fontsize=6)
     a.set_xlabel("$t/T$"); a.set_ylabel(r"$\epsilon_{\rm phys}(t)$")
     a.set_ylim(1e-17, 1e-8); a.set_xlim(0, 1)
     a.legend(ncol=3, loc="lower right", handlelength=1.4, columnspacing=0.8)
