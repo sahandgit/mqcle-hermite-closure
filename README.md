@@ -2,7 +2,7 @@
 
 Code, configuration and archived results for the article *Exact
 Gaussian–Hermite closure of the mapping quantum–classical Liouville equation*
-by Sahand Nikzat and Rony Modak Parai.
+by Sahand Nikzat, Ali Nassimi, and Rony Modak Parai.
 
 In the Meyer–Miller–Stock–Thoss mapping representation, the Liouville operator
 of the quantum–classical Liouville equation (QCLE) contains an excess coupling
