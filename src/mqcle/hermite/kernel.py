@@ -524,12 +524,12 @@ def arnoldi_expmv(apply, v: np.ndarray, t: float, m: int = 8,
     only thing this routine ever does with the operator is ``apply(x, out)``.
 
     Substepping is adaptive.  With
-    :math:`h_{m+1,m}` the last Arnoldi coefficient, Saad's a posteriori
-    estimate of the local error is
+    :math:`h_{m+1,m}` the last Arnoldi coefficient, the norm of the endpoint
+    Arnoldi residual (Botchev et al., 2013, Lemma 2.1) is
 
     .. math::
 
-        \mathrm{err}\simeq\beta\,h_{m+1,m}\,
+        \mathrm{err}=\beta\,h_{m+1,m}\,
         \bigl|\bigl(e^{\tau H_m}\bigr)_{m,1}\bigr| ,
 
     which is evaluated *before* the step is accepted, so a rejected
@@ -546,7 +546,8 @@ def arnoldi_expmv(apply, v: np.ndarray, t: float, m: int = 8,
         storage is ``m + 1`` state vectors, so at production sizes ``m`` is
         bounded by memory, not by accuracy: see the module notes.
     tol
-        Requested local error per substep, relative to :math:`\|v\|`.
+        Requested endpoint residual tolerance, relative to :math:`\|v\|`.
+        This is not a bound on the solution error.
     work
         Optional preallocated ``(m + 1,) + v.shape`` basis, reused across
         calls so that a time loop allocates nothing.

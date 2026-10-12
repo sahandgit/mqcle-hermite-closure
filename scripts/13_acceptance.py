@@ -295,9 +295,14 @@ def main() -> int:
 
     # 7. polynomial degree, Hermite order and the physical sector kept apart
     flat = " ".join(body.lower().split())
+    # Check the displayed projection and ordering definition, allowing prose
+    # edits without requiring one historical sentence verbatim.
     has_three = ("polynomial degree" in flat and "hermite order" in flat
                  and "physical sector" in flat
-                 and "hermite-ordered form, not the product itself" in flat)
+                 and r"\wick{q^{(4)}}" in body
+                 and r"\He_{\bm\alpha}(z)" in body
+                 and "orthogonal to" in flat and "ordinary product" in flat
+                 and "lower-order terms" in flat)
     check(has_three,
           "polynomial degree, Hermite order and physical sector kept distinct",
           "the defect is identified as the Hermite-ordered product, not the product")
